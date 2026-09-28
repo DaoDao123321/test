@@ -1,0 +1,1329 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: RDF2
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ AwakeRsn_RDF : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WakeupRsn_RDF : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566881322 NM_RDF: 8 RDF2
+ SG_ NW_ID : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NM_Ud_Srv : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NM_Ud_Launch : 16|6@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NM_Successor : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NM_Sleep_Ind : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NM_Sleep_ACK : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NM_Mode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2365522664 HRW_RE: 8 Vector__XXX
+ SG_ SQC_SG_HRW_RE_Pkt : 8|4@1+ (1,0) [0|15] ""  RDF2
+ SG_ CRC_SG_HRW_RE_Pkt : 0|8@1+ (1,0) [0|255] ""  RDF2
+ SG_ SpdR_AxleRtWhl_Cval : 32|16@1+ (0.00390625,0) [0|250.99609375] "km/h"  RDF2
+ SG_ SpdR_AxleLtWhl_Cval : 16|16@1+ (0.00390625,0) [0|250.99609375] "km/h"  RDF2
+
+BO_ 2566881578 RDF_State: 8 RDF2
+ SG_ Blockage_RS_State : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ System_RS_Availability : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WakeupRsn_RS_RDF : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SQC_SG_RS_Pkt : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CRC_SG_RS_Pkt : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566843178 CI: 8 RDF2
+ SG_ Serial_Num : 24|32@1+ (1,0) [0|99999] "" Vector__XXX
+ SG_ Date : 16|8@1+ (1,0) [1|31] "" Vector__XXX
+ SG_ Month : 8|8@1+ (1,0) [1|12] "" Vector__XXX
+ SG_ Year : 0|8@1+ (1,0) [0|99] "" Vector__XXX
+
+BO_ 2432631051 BS_E7: 8 Vector__XXX
+ SG_ LongitudinalAcceleration_Cval_BS : 56|8@1+ (0.1,-12.5) [-12.5|13] "m/s2"  RDF2
+ SG_ SQC_SG_BS_E7_Pkt : 8|4@1+ (1,0) [0|15] ""  RDF2
+ SG_ CRC_SG_BS_E7_Pkt : 0|8@1+ (1,0) [0|255] ""  RDF2
+ SG_ YawRateCorr_Cval_BS : 16|16@1+ (0.0001220703125,-3.92) [-3.92|3.9199658203125] "rad/s"  RDF2
+
+BO_ 2499740648 SCA: 8 Vector__XXX
+ SG_ IgnSw_Stat_SCA : 20|4@1+ (1,0) [0|15] ""  RDF2
+ SG_ DrvDirec_Stat_SCA : 18|2@1+ (1,0) [0|3] ""  RDF2
+ SG_ VehLongMotStateExt_SCA : 16|2@1+ (1,0) [0|3] ""  RDF2
+ SG_ SQC_SG_SCA_Pkt : 8|4@1+ (1,0) [0|15] ""  RDF2
+ SG_ CRC_SG_SCA_Pkt : 0|8@1+ (1,0) [0|255] ""  RDF2
+
+BO_ 2566849512 Brak_Sta: 8 Vector__XXX
+ SG_ CRC_SG_Brak_Sta_Pkt : 0|8@1+ (1,0) [0|255] ""  RDF2
+ SG_ SQC_SG_Brak_Sta_Pkt : 8|4@1+ (1,0) [0|15] ""  RDF2
+ SG_ EBS_BrkSw_Rq : 22|2@1+ (1,0) [0|3] ""  RDF2
+ SG_ ABS_Actv_Stat : 20|2@1+ (1,0) [0|3] ""  RDF2
+ SG_ ATC_BrkCtrl_Stat : 18|2@1+ (1,0) [0|3] ""  RDF2
+ SG_ ATC_EngCtrl_Stat : 16|2@1+ (1,0) [0|3] ""  RDF2
+
+BO_ 2365522408 HRW_FR: 8 Vector__XXX
+ SG_ CRC_SG_HRW_FR_Pkt : 0|8@1+ (1,0) [0|255] ""  RDF2
+ SG_ SQC_SG_HRW_FR_Pkt : 8|4@1+ (1,0) [0|15] ""  RDF2
+ SG_ SpdFtAxleRtWhl_Cval : 32|16@1+ (0.00390625,0) [0|250.99609375] "km/h"  RDF2
+ SG_ SpdFtAxleLtWhl_Cval : 16|16@1+ (0.00390625,0) [0|250.99609375] "km/h"  RDF2
+
+BO_ 2432617002 RDF_DM1: 8 RDF2
+ SG_ DTC_Stat_RDF : 16|24@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DTC_SPN_ConvMd_RDF : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DTC_OccCnt_RDF : 40|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ DTC_RSL_Flash_Stat_RDF : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_PL_Flash_Stat_RDF : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_MIL_Flash_Stat_RDF : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_AWL_Flash_Stat_RDF : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_RSL_Stat_RDF : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_PL_Stat_RDF : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_MIL_Stat_RDF : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC_AWL_Stat_RDF : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2365522730 RDF_C04: 8 RDF2
+ SG_ Obj_ID4 : 56|8@1+ (1,0) [0|99] "NoUnit" Vector__XXX
+ SG_ Spd_Y_Obj_Cval_RDF : 36|13@1+ (0.1,-400) [-400|400] "km/h" Vector__XXX
+ SG_ StdRngSpd_X_Obj_Cval_RDF : 31|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ StdRngSpd_Y_ObjStati_Cval_RDF : 26|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ StdRng_X_Obj_Cval_RDF : 21|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ StdRng_Y_Obj_Cval_RDF : 16|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ SQC_SG_RDF_C04_Pkt : 8|8@1+ (1,0) [0|239] "" Vector__XXX
+ SG_ CRC_SG_RDF_C04_Pkt : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2365522474 RDF_C03: 8 RDF2
+ SG_ Obj_ID3 : 32|8@1+ (1,0) [0|99] "NoUnit" Vector__XXX
+ SG_ Obj_uiLifeCycles : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Obj_ucObstacleProbability : 40|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ Spd_X_Obj_Cval_RDF : 16|13@1+ (0.1,-400) [-400|400] "km/h" Vector__XXX
+ SG_ SQC_SG_RDF_C03_Pkt : 8|8@1+ (1,0) [0|239] "" Vector__XXX
+ SG_ CRC_SG_RDF_C03_Pkt : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2365522218 RDF_C02: 8 RDF2
+ SG_ WidthObj_Cval_RDF : 40|8@1+ (0.1,-12.5) [-12.5|12.5] "m" Vector__XXX
+ SG_ Obj_ID2 : 48|8@1+ (1,0) [0|99] "NoUnit" Vector__XXX
+ SG_ Accel_X_Obj_Cval_RDF : 56|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s2" Vector__XXX
+ SG_ Dist_Y_Obj_Cval_RDF : 16|11@1+ (0.05,-51) [-51|51] "m" Vector__XXX
+ SG_ Dist_X_Obj_Cval_RDF : 27|13@1+ (0.05,-50) [-50|350] "m" Vector__XXX
+ SG_ SQC_SG_RDF_C02_Pkt : 8|8@1+ (1,0) [0|239] "" Vector__XXX
+ SG_ CRC_SG_RDF_C02_Pkt : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2365521962 RDF_C01: 8 RDF2
+ SG_ eMaintenanceState : 60|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ LossObj_Stat_RDF : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ uiProbabilityOfExistence : 48|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ uiDynConfidence : 40|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ TnlObsrv_Stat_RDF : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Obj_eClassification : 35|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TypeObj_Stat_RDF : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ RCS_Obj_Cval : 24|8@1+ (0.5,-40) [-40|85] "dB" Vector__XXX
+ SG_ Obj_ID1 : 16|8@1+ (1,0) [0|99] "NoUnit" Vector__XXX
+ SG_ SQC_SG_RDF_C01_Pkt : 8|8@1+ (1,0) [0|239] "" Vector__XXX
+ SG_ CRC_SG_RDF_C01_Pkt : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2565810938 APPL_SG_RDF: 8 Vector__XXX
+ SG_ APPL_SG_RDF_1 : 0|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_2 : 8|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_3 : 16|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_4 : 24|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_5 : 32|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_6 : 40|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_7 : 48|8@1+ (1,0) [0|0] ""  RDF2
+ SG_ APPL_SG_RDF_8 : 56|8@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564554737 D_RQ_GLOBAL_UDS_F1_241: 8 Vector__XXX
+ SG_ D_RQ_GLOBAL_UDS_F1_241 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564554738 D_RQ_GLOBAL_UDS_F2_242: 8 Vector__XXX
+ SG_ D_RQ_GLOBAL_UDS_F2_242 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564554744 D_RQ_GLOBAL_UDS_F8_248: 8 Vector__XXX
+ SG_ D_RQ_GLOBAL_UDS_F8_248 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564554745 D_RQ_GLOBAL_UDS_F9_249: 8 Vector__XXX
+ SG_ D_RQ_GLOBAL_UDS_F9_249 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564554746 D_RQ_GLOBAL_UDS_FA_250: 8 Vector__XXX
+ SG_ D_RQ_GLOBAL_UDS_FA_250 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564434673 D_RQ_RDF_F1_241: 8 Vector__XXX
+ SG_ D_RQ_RDF_F1_241 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564434674 D_RQ_RDF_F2_242: 8 Vector__XXX
+ SG_ D_RQ_RDF_F2_242 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564434680 D_RQ_RDF_F8_248: 8 Vector__XXX
+ SG_ D_RQ_RDF_F8_248 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564434681 D_RQ_RDF_F9_249: 8 Vector__XXX
+ SG_ D_RQ_RDF_F9_249 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564434682 D_RQ_RDF_FA_250: 8 Vector__XXX
+ SG_ D_RQ_RDF_FA_250 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564485418 D_RS_RDF_F1_241: 8 RDF2
+ SG_ D_RS_RDF_F1_241 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564485674 D_RS_RDF_F2_242: 8 RDF2
+ SG_ D_RS_RDF_F2_242 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564487210 D_RS_RDF_F8_248: 8 RDF2
+ SG_ D_RS_RDF_F8_248 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564487466 D_RS_RDF_F9_249: 8 RDF2
+ SG_ D_RS_RDF_F9_249 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564487722 D_RS_RDF_FA_250: 8 RDF2
+ SG_ D_RS_RDF_FA_250 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566905898 RDF_MESS: 8 RDF2
+ SG_ MESS_RDF_1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_2 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_3 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_4 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_5 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_6 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_7 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS_RDF_8 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566906154 RDF_MESS2: 8 RDF2
+ SG_ MESS2_RDF_1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_2 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_3 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_4 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_5 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_6 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_7 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MESS2_RDF_8 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565863978 SG_APPL_RDF: 8 RDF2
+ SG_ SG_APPL_RDF_1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_2 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_3 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_4 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_5 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_6 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_7 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SG_APPL_RDF_8 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564434661 TPA_CDS_2_RDF: 8 Vector__XXX
+ SG_ TPA_CDS_2_RDF : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564434455 TPA_DIAG_RQ_RDF_IC_17: 8 Vector__XXX
+ SG_ TPA_DIAG_RQ_RDF_IC_17 : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564429610 TPA_DIAG_RS_RDF_IC_17: 8 RDF2
+ SG_ TPA_DIAG_RS_RDF_IC_17 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564434685 TPA_DTP_2_RDF: 8 Vector__XXX
+ SG_ TPA_DTP_2_RDF : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+BO_ 2564482346 TPA_RDF_2_CDS: 8 RDF2
+ SG_ TPA_RDF_2_CDS : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564488490 TPA_RDF_2_DTP: 8 RDF2
+ SG_ TPA_RDF_2_DTP : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564483114 TPA_RDF_2_VRDU2: 8 RDF2
+ SG_ TPA_RDF_2_VRDU2 : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564434664 TPA_VRDU2_2_RDF: 8 Vector__XXX
+ SG_ TPA_VRDU2_2_RDF : 0|64@1+ (1,0) [0|0] ""  RDF2
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 2365522664 SpdR_AxleRtWhl_Cval "Rear Axle, Right Wheel Speed";
+CM_ SG_ 2365522664 SpdR_AxleLtWhl_Cval "Rear Axle, Left Wheel Speed";
+CM_ SG_ 2566881578 Blockage_RS_State "Radar system blockage state.
+0x0 No system damping (clean);
+0x1 Increasing system damp (pre);
+0x2 full system damping (blocked);
+0x3 reducing damping (pre-cleaned);
+0x4 unknown damping;
+0x5 RES;
+0xFE RES;
+0xFF SNA.";
+CM_ SG_ 2566881578 System_RS_Availability "Radar system availability.
+0x0 Device functions are disabled;
+0x1 Device functions are available;
+0x2 Reserved;
+0x3 SNA.";
+CM_ SG_ 2432631051 LongitudinalAcceleration_Cval_BS "Indicates the longitudinal acceleration of the vehicle.";
+CM_ SG_ 2432631051 YawRateCorr_Cval_BS "Yaw Rate Corrected  Current value BS.";
+CM_ SG_ 2499740648 IgnSw_Stat_SCA "Ignition switch state.
+0x0 Ignition OFF;
+0x1 Ignition ACC;
+0x2 Ignition ON;
+0x3 Ignition CRANK;
+0x4 RES;
+0xE RES;
+0xF SNA.";
+CM_ SG_ 2499740648 DrvDirec_Stat_SCA "Drive direction state.
+0x0 Backward;
+0x1 Standstill;
+0x2 Forward;
+0x3 SNA.";
+CM_ SG_ 2499740648 VehLongMotStateExt_SCA "Vehicle longitudinal motion state.
+0x0 Rolling;
+0x1 Fast;
+0x2 Secure State;
+0x3 SNA.";
+CM_ SG_ 2566849512 EBS_BrkSw_Rq "EBS Brake Switch.
+0x0 PASSIVE;
+0x1 ACTIVE;
+0x2 RES;
+0x3 SNA.";
+CM_ SG_ 2566849512 ABS_Actv_Stat "Anti-Lock Braking (ABS) Active.
+0x0 PASSIVE;
+0x1 ACTIVE;
+0x2 RES;
+0x3 SNA.";
+CM_ SG_ 2566849512 ATC_BrkCtrl_Stat "ASR Brake Control Active.
+0x0 PASSIVE;
+0x1 ACTIVE;
+0x2 RES;
+0x3 SNA.";
+CM_ SG_ 2566849512 ATC_EngCtrl_Stat "ASR Engine Control Active
+0x0 PASSIVE;
+0x1 ACTIVE;
+0x2 RES;
+0x3 SNA.";
+CM_ SG_ 2365522408 SpdFtAxleRtWhl_Cval "Front Axle, Right Wheel Speed";
+CM_ SG_ 2365522408 SpdFtAxleLtWhl_Cval "Front Axle, Left Wheel Speed";
+CM_ SG_ 2365522730 Obj_ID4 "Object Identification from 0 to 99.
+0xFE Invalid Object;
+0xFF SNA.";
+CM_ SG_ 2365522730 Spd_Y_Obj_Cval_RDF "Relative speed lateral (y) of relevant object Current value.
+0x1FFE ERR;
+0x1FFF SNA.";
+CM_ SG_ 2365522730 StdRngSpd_X_Obj_Cval_RDF "Longitudinal speed (vx) standard deviation gate of stationary object Current Value (RDF)(m/s)
+0x1F SNA.";
+CM_ SG_ 2365522730 StdRngSpd_Y_ObjStati_Cval_RDF "Lateral speed (vy) standard deviation gate of stationary object Current Value (RDF)(m/s)
+0x1F SNA.";
+CM_ SG_ 2365522730 StdRng_X_Obj_Cval_RDF "Longitudinal (x) distance standard deviation  of relevant object Current Value (RDF)(m)
+0x1F SNA.";
+CM_ SG_ 2365522730 StdRng_Y_Obj_Cval_RDF "Lateral (y) distance standard deviation  of relevant object Current Value (RDF)(m)
+0x1F SNA.";
+CM_ SG_ 2365522730 SQC_SG_RDF_C04_Pkt "Rolling counter from 0 to 239.";
+CM_ SG_ 2365522730 CRC_SG_RDF_C04_Pkt "CRC8-based checksum value.";
+CM_ SG_ 2365522474 Obj_ID3 "Object Identification from 0 to 99.
+0xFE Invalid Object;
+0xFF SNA.";
+CM_ SG_ 2365522474 Obj_uiLifeCycles "Object list cycle counts since object creation.";
+CM_ SG_ 2365522474 Obj_ucObstacleProbability "Probability of Elevation Objects.";
+CM_ SG_ 2365522474 Spd_X_Obj_Cval_RDF "Relative speed longitudinal (x) of relevant object Current value.
+0x1FFE ERR;
+0x1FFF SNA.";
+CM_ SG_ 2365522474 SQC_SG_RDF_C03_Pkt "Rolling counter from 0 to 239.";
+CM_ SG_ 2365522474 CRC_SG_RDF_C03_Pkt "CRC8-based checksum value.";
+CM_ SG_ 2365522218 WidthObj_Cval_RDF "Estimated width of object.
+0xFE ERR;
+0xFF SNA.";
+CM_ SG_ 2365522218 Obj_ID2 "Object Identification from 0 to 99.
+0xFE Invalid Object.
+0xFF SNA.";
+CM_ SG_ 2365522218 Accel_X_Obj_Cval_RDF "Acceleration longitudinal (x) of relevant object current value.";
+CM_ SG_ 2365522218 Dist_Y_Obj_Cval_RDF "Distance lateral (y) of relevant object current value.
+0x7FE ERR;
+0x7FF SNA.";
+CM_ SG_ 2365522218 Dist_X_Obj_Cval_RDF "Distance longitudinal (x) of relevant object current value.
+0x1FFE ERR;
+0x1FFF SNA.";
+CM_ SG_ 2365522218 SQC_SG_RDF_C02_Pkt "Rolling counter from 0 to 239.";
+CM_ SG_ 2365522218 CRC_SG_RDF_C02_Pkt "CRC8-based checksum value.";
+CM_ SG_ 2365521962 eMaintenanceState "Object maintenance state.
+0x0 Deleted;
+0x1 New;
+0x2 Measured;
+0x3 Predicted;
+0x4 Inactive;
+0x5 MAX_DIFF_TYPES;
+0x6 ERR;
+0x7 SNA.";
+CM_ SG_ 2365521962 LossObj_Stat_RDF "Object lost reason.
+0x0 No reason;
+0x1 Target lost;
+0x2 Distance far away;
+0x3 Distance left;
+0x4 Distance right;
+0x5 Obj Lane change left;
+0x6 Obj Lane change right;
+0x7 Obj Left curve;
+0x8 Obj Right curve;
+0xE ERR;
+0xF SNA.";
+CM_ SG_ 2365521962 uiProbabilityOfExistence "Probability that the object is a real object.
+0xFE ERR;
+0xFF SNA.";
+CM_ SG_ 2365521962 uiDynConfidence "Confidence of estimated dynamic property.
+0xFE ERR;
+0xFF SNA.";
+CM_ SG_ 2365521962 TnlObsrv_Stat_RDF "Tunnel observation state.
+0x0 Not Detected;
+0x1 Detected;
+0x2 ERR;
+0x3 SNA.";
+CM_ SG_ 2365521962 Obj_eClassification "Object estimated classification.
+0x0 Point;
+0x1 Car;
+0x2 Truck;
+0x3 Pedestrian;
+0x4 Motorcycle;
+0x5 Bicycle;
+0x6 Wide;
+0x7 Unclassified.";
+CM_ SG_ 2365521962 TypeObj_Stat_RDF "Object moving type.
+0x0 No object detected;
+0x1 Moving;
+0x2 Moving-stopped;
+0x3 Stationary;
+0x4 Crossing;
+0x5 Oncoming;
+0x6 ERR;
+0x7 SNA.";
+CM_ SG_ 2365521962 RCS_Obj_Cval "Object RCS current value.";
+CM_ SG_ 2365521962 Obj_ID1 "Object Identification from 0 to 99.
+0xFE Invalid Object.";
+CM_ SG_ 2365521962 SQC_SG_RDF_C01_Pkt "Rolling counter from 0 to 239.";
+CM_ SG_ 2365521962 CRC_SG_RDF_C01_Pkt "CRC8-based checksum value.";
+CM_ BO_ 2565810938 "APPL_SG_RDF";
+CM_ SG_ 2565810938 APPL_SG_RDF_1 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_2 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_3 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_4 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_5 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_6 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_7 "Externe Applikation zu Steuergerät";
+CM_ SG_ 2565810938 APPL_SG_RDF_8 "Externe Applikation zu Steuergerät";
+CM_ BO_ 2564554737 "Funktionaler Diagnose-Request (UDS)";
+CM_ BO_ 2564554738 "Funktionaler Diagnose-Request (UDS)";
+CM_ BO_ 2564554744 "Funktionaler Diagnose-Request (UDS)";
+CM_ BO_ 2564554745 "Funktionaler Diagnose-Request (UDS)";
+CM_ BO_ 2564554746 "Funktionaler Diagnose-Request (UDS)";
+CM_ BO_ 2564434673 "Diagnostic Request";
+CM_ BO_ 2564434674 "Diagnose Antwort";
+CM_ BO_ 2564434680 "Diagnostic Request";
+CM_ BO_ 2564434681 "Diagnostic Request";
+CM_ BO_ 2564434682 "Diagnostic Request";
+CM_ BO_ 2564485418 "Diagnostic Response";
+CM_ BO_ 2564485674 "Diagnostic Response";
+CM_ BO_ 2564487210 "Diagnostic Response";
+CM_ BO_ 2564487466 "Diagnostic Response";
+CM_ BO_ 2564487722 "Diagnostic Response";
+CM_ BO_ 2566905898 "RDF_MESS";
+CM_ SG_ 2566905898 MESS_RDF_1 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_2 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_3 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_4 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_5 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_6 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_7 "Messsignal";
+CM_ SG_ 2566905898 MESS_RDF_8 "Messsignal";
+CM_ BO_ 2566906154 "RDF_MESS2";
+CM_ SG_ 2566906154 MESS2_RDF_1 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_2 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_3 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_4 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_5 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_6 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_7 "Messsignal";
+CM_ SG_ 2566906154 MESS2_RDF_8 "Messsignal";
+CM_ BO_ 2565863978 "SG_APPL_RDF";
+CM_ SG_ 2565863978 SG_APPL_RDF_1 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_2 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_3 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_4 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_5 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_6 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_7 "Steuergerät an externe Applikation";
+CM_ SG_ 2565863978 SG_APPL_RDF_8 "Steuergerät an externe Applikation";
+CM_ BO_ 2564434661 "Transport Protocol";
+CM_ BO_ 2564434455 "Transport protocol - Diagnostic Request";
+CM_ BO_ 2564429610 "Transport protocol - Diagnostic Response";
+CM_ BO_ 2564434685 "Transport Protocol";
+CM_ BO_ 2564482346 "Transport Protocol";
+CM_ BO_ 2564488490 "Transport Protocol";
+CM_ BO_ 2564483114 "Transport Protocol";
+CM_ BO_ 2564434664 "Transport Protocol";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "NBTMax" INT 0 255;
+BA_DEF_  "NBTMin" INT 0 255;
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_  "SamplePointMin" FLOAT 0 100;
+BA_DEF_  "Manufacturer" ENUM  "DBAG","VAG","BMWAG","PAG","GM";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "ConverterInfo" STRING ;
+BA_DEF_  "VersionYear" INT 0 99;
+BA_DEF_  "VersionWeek" INT 0 53;
+BA_DEF_  "Version" HEX 0 255;
+BA_DEF_  "NmBaseAddress" HEX 0 1407;
+BA_DEF_  "NmMessageCount" INT 1 128;
+BA_DEF_ BU_  "NmNodeIdentifier" HEX 0 127;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "NWM-Botschaft" ENUM  "no","yes";
+BA_DEF_ BO_  "ApplMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgMinAcceptLength" INT 0 8;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagState" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgStartValue" STRING ;
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepitition","cyclicIfActiveAndSpontanWD","cyclicIfActiveFast","cyclicWithRepeatOnDemand","none";
+BA_DEF_ SG_  "GenSigSNA" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" HEX 0 4294967295;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepitition","cyclicIfActiveAndSpontanWD","cyclicIfActiveFast","cyclicWithRepeatOnDemand","none";
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigCycleTimeActive" INT 0 65535;
+BA_DEF_ SG_  "FlexKomSigName" STRING ;
+BA_DEF_ SG_  "FlexKomSID" INT 0 65535;
+BA_DEF_ SG_  "FlexKomComment" STRING ;
+BA_DEF_ SG_  "FlexKomIsMotorola" ENUM  "no","yes";
+BA_DEF_ SG_  "FlexKomSigLaenge" INT 1 64;
+BA_DEF_ SG_  "FlexKomSigStartPos" INT 0 63;
+BA_DEF_ SG_  "FlexKomSigStartValue" STRING ;
+BA_DEF_ SG_  "GenSigFuncType" ENUM  "NoFunction","MsgCounter","CRC-8","XOR","XOR-2","DatedBit","SW-KL15","not-used","Constant","Protocol","CRC-8-SAE_J1850","PROFILE_DAI_BR222_ID","PROFILE_DAI_BR222_noID","PROFILE_DAI_SAEJ","PROFILE_02";
+BA_DEF_ SG_  "GenSigDataID" STRING ;
+BA_DEF_ SG_  "GenSigTimeout_RDF2" INT 0 65535;
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "NBTMax" 20;
+BA_DEF_DEF_  "NBTMin" 15;
+BA_DEF_DEF_  "SamplePointMax" 81.25;
+BA_DEF_DEF_  "SamplePointMin" 80;
+BA_DEF_DEF_  "Manufacturer" "DBAG";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "ConverterInfo" "";
+BA_DEF_DEF_  "VersionYear" 0;
+BA_DEF_DEF_  "VersionWeek" 0;
+BA_DEF_DEF_  "Version" 0;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessageCount" 64;
+BA_DEF_DEF_  "NmNodeIdentifier" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "NWM-Botschaft" "no";
+BA_DEF_DEF_  "ApplMessage" "no";
+BA_DEF_DEF_  "GenMsgMinAcceptLength" 8;
+BA_DEF_DEF_  "GenMsgILSupport" "no";
+BA_DEF_DEF_  "DiagState" "no";
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "GenMsgStartValue" "";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclicX";
+BA_DEF_DEF_  "GenSigSNA" "";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "cyclicX";
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "GenSigCycleTimeActive" 0;
+BA_DEF_DEF_  "FlexKomSigName" "";
+BA_DEF_DEF_  "FlexKomSID" 0;
+BA_DEF_DEF_  "FlexKomComment" "";
+BA_DEF_DEF_  "FlexKomIsMotorola" "no";
+BA_DEF_DEF_  "FlexKomSigLaenge" 1;
+BA_DEF_DEF_  "FlexKomSigStartPos" 0;
+BA_DEF_DEF_  "FlexKomSigStartValue" "";
+BA_DEF_DEF_  "GenSigFuncType" "NoFunction";
+BA_DEF_DEF_  "GenSigDataID" "0xFF";
+BA_DEF_DEF_  "GenSigTimeout_RDF2" 0;
+BA_ "Version" 0;
+BA_ "VersionWeek" 50;
+BA_ "VersionYear" 16;
+BA_ "NmMessageCount" 256;
+BA_ "NmBaseAddress" 419397632;
+BA_ "ConverterInfo" "2.7.14 (SLP10)";
+BA_ "NmType" "DC-OSEK";
+BA_ "BusType" "CAN";
+BA_ "SamplePointMin" 83;
+BA_ "SamplePointMax" 88;
+BA_ "NBTMin" 10;
+BA_ "NBTMax" 20;
+BA_ "Baudrate" 666666;
+BA_ "NmNode" BU_ RDF2 1;
+BA_ "NmNodeIdentifier" BU_ RDF2 42;
+BA_ "GenMsgCycleTime" BO_ 2365522664 20;
+BA_ "GenMsgCycleTime" BO_ 2566881578 70;
+BA_ "GenMsgCycleTime" BO_ 2566843178 5000;
+BA_ "GenMsgCycleTime" BO_ 2432631051 20;
+BA_ "GenMsgCycleTime" BO_ 2499740648 50;
+BA_ "GenMsgCycleTime" BO_ 2566849512 20;
+BA_ "GenMsgCycleTime" BO_ 2365522408 20;
+BA_ "GenMsgCycleTime" BO_ 2432617002 1000;
+BA_ "GenMsgSendType" BO_ 2432617002 1;
+BA_ "GenMsgSendType" BO_ 2565810938 1;
+BA_ "GenMsgNrOfRepetition" BO_ 2565810938 2;
+BA_ "GenMsgDelayTime" BO_ 2565810938 20;
+BA_ "GenMsgStartValue" BO_ 2565810938 "255";
+BA_ "DiagResponse" BO_ 2565810938 0;
+BA_ "DiagRequest" BO_ 2565810938 0;
+BA_ "DiagState" BO_ 2565810938 0;
+BA_ "GenMsgILSupport" BO_ 2565810938 1;
+BA_ "GenMsgMinAcceptLength" BO_ 2565810938 8;
+BA_ "NWM-Botschaft" BO_ 2565810938 0;
+BA_ "NmMessage" BO_ 2565810938 0;
+BA_ "ApplMessage" BO_ 2565810938 0;
+BA_ "TpTxIndex" BO_ 2564554737 241;
+BA_ "GenMsgStartValue" BO_ 2564554737 "255";
+BA_ "DiagResponse" BO_ 2564554737 0;
+BA_ "DiagRequest" BO_ 2564554737 1;
+BA_ "DiagState" BO_ 2564554737 0;
+BA_ "GenMsgILSupport" BO_ 2564554737 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564554737 8;
+BA_ "NWM-Botschaft" BO_ 2564554737 0;
+BA_ "NmMessage" BO_ 2564554737 0;
+BA_ "ApplMessage" BO_ 2564554737 1;
+BA_ "GenMsgSendType" BO_ 2564554737 1;
+BA_ "TpTxIndex" BO_ 2564554738 242;
+BA_ "GenMsgStartValue" BO_ 2564554738 "255";
+BA_ "DiagResponse" BO_ 2564554738 0;
+BA_ "DiagRequest" BO_ 2564554738 1;
+BA_ "DiagState" BO_ 2564554738 0;
+BA_ "GenMsgILSupport" BO_ 2564554738 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564554738 8;
+BA_ "NWM-Botschaft" BO_ 2564554738 0;
+BA_ "NmMessage" BO_ 2564554738 0;
+BA_ "ApplMessage" BO_ 2564554738 1;
+BA_ "GenMsgSendType" BO_ 2564554738 1;
+BA_ "TpTxIndex" BO_ 2564554744 248;
+BA_ "GenMsgStartValue" BO_ 2564554744 "255";
+BA_ "DiagResponse" BO_ 2564554744 0;
+BA_ "DiagRequest" BO_ 2564554744 1;
+BA_ "DiagState" BO_ 2564554744 0;
+BA_ "GenMsgILSupport" BO_ 2564554744 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564554744 8;
+BA_ "NWM-Botschaft" BO_ 2564554744 0;
+BA_ "NmMessage" BO_ 2564554744 0;
+BA_ "ApplMessage" BO_ 2564554744 1;
+BA_ "GenMsgSendType" BO_ 2564554744 1;
+BA_ "TpTxIndex" BO_ 2564554745 249;
+BA_ "GenMsgStartValue" BO_ 2564554745 "255";
+BA_ "DiagResponse" BO_ 2564554745 0;
+BA_ "DiagRequest" BO_ 2564554745 1;
+BA_ "DiagState" BO_ 2564554745 0;
+BA_ "GenMsgILSupport" BO_ 2564554745 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564554745 8;
+BA_ "NWM-Botschaft" BO_ 2564554745 0;
+BA_ "NmMessage" BO_ 2564554745 0;
+BA_ "ApplMessage" BO_ 2564554745 1;
+BA_ "GenMsgSendType" BO_ 2564554745 1;
+BA_ "TpTxIndex" BO_ 2564554746 250;
+BA_ "GenMsgStartValue" BO_ 2564554746 "255";
+BA_ "DiagResponse" BO_ 2564554746 0;
+BA_ "DiagRequest" BO_ 2564554746 1;
+BA_ "DiagState" BO_ 2564554746 0;
+BA_ "GenMsgILSupport" BO_ 2564554746 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564554746 8;
+BA_ "NWM-Botschaft" BO_ 2564554746 0;
+BA_ "NmMessage" BO_ 2564554746 0;
+BA_ "ApplMessage" BO_ 2564554746 1;
+BA_ "GenMsgSendType" BO_ 2564554746 1;
+BA_ "TpTxIndex" BO_ 2564434673 241;
+BA_ "GenMsgStartValue" BO_ 2564434673 "255";
+BA_ "DiagResponse" BO_ 2564434673 0;
+BA_ "DiagRequest" BO_ 2564434673 1;
+BA_ "DiagState" BO_ 2564434673 0;
+BA_ "GenMsgILSupport" BO_ 2564434673 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434673 8;
+BA_ "NWM-Botschaft" BO_ 2564434673 0;
+BA_ "NmMessage" BO_ 2564434673 0;
+BA_ "ApplMessage" BO_ 2564434673 1;
+BA_ "GenMsgSendType" BO_ 2564434673 1;
+BA_ "TpTxIndex" BO_ 2564434674 242;
+BA_ "GenMsgStartValue" BO_ 2564434674 "255";
+BA_ "DiagResponse" BO_ 2564434674 0;
+BA_ "DiagRequest" BO_ 2564434674 1;
+BA_ "DiagState" BO_ 2564434674 0;
+BA_ "GenMsgILSupport" BO_ 2564434674 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434674 8;
+BA_ "NWM-Botschaft" BO_ 2564434674 0;
+BA_ "NmMessage" BO_ 2564434674 0;
+BA_ "ApplMessage" BO_ 2564434674 1;
+BA_ "GenMsgSendType" BO_ 2564434674 1;
+BA_ "TpTxIndex" BO_ 2564434680 248;
+BA_ "GenMsgStartValue" BO_ 2564434680 "255";
+BA_ "DiagResponse" BO_ 2564434680 0;
+BA_ "DiagRequest" BO_ 2564434680 1;
+BA_ "DiagState" BO_ 2564434680 0;
+BA_ "GenMsgILSupport" BO_ 2564434680 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434680 8;
+BA_ "NWM-Botschaft" BO_ 2564434680 0;
+BA_ "NmMessage" BO_ 2564434680 0;
+BA_ "ApplMessage" BO_ 2564434680 1;
+BA_ "GenMsgSendType" BO_ 2564434680 1;
+BA_ "TpTxIndex" BO_ 2564434681 249;
+BA_ "GenMsgStartValue" BO_ 2564434681 "255";
+BA_ "DiagResponse" BO_ 2564434681 0;
+BA_ "DiagRequest" BO_ 2564434681 1;
+BA_ "DiagState" BO_ 2564434681 0;
+BA_ "GenMsgILSupport" BO_ 2564434681 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434681 8;
+BA_ "NWM-Botschaft" BO_ 2564434681 0;
+BA_ "NmMessage" BO_ 2564434681 0;
+BA_ "ApplMessage" BO_ 2564434681 1;
+BA_ "GenMsgSendType" BO_ 2564434681 1;
+BA_ "TpTxIndex" BO_ 2564434682 250;
+BA_ "GenMsgStartValue" BO_ 2564434682 "0";
+BA_ "DiagResponse" BO_ 2564434682 0;
+BA_ "DiagRequest" BO_ 2564434682 1;
+BA_ "DiagState" BO_ 2564434682 0;
+BA_ "GenMsgILSupport" BO_ 2564434682 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434682 8;
+BA_ "NWM-Botschaft" BO_ 2564434682 0;
+BA_ "NmMessage" BO_ 2564434682 0;
+BA_ "ApplMessage" BO_ 2564434682 1;
+BA_ "GenMsgSendType" BO_ 2564434682 1;
+BA_ "TpTxIndex" BO_ 2564485418 241;
+BA_ "GenMsgStartValue" BO_ 2564485418 "255";
+BA_ "DiagResponse" BO_ 2564485418 1;
+BA_ "DiagRequest" BO_ 2564485418 0;
+BA_ "DiagState" BO_ 2564485418 0;
+BA_ "GenMsgILSupport" BO_ 2564485418 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564485418 8;
+BA_ "NWM-Botschaft" BO_ 2564485418 0;
+BA_ "NmMessage" BO_ 2564485418 0;
+BA_ "ApplMessage" BO_ 2564485418 1;
+BA_ "GenMsgSendType" BO_ 2564485418 1;
+BA_ "TpTxIndex" BO_ 2564485674 242;
+BA_ "GenMsgStartValue" BO_ 2564485674 "255";
+BA_ "DiagResponse" BO_ 2564485674 1;
+BA_ "DiagRequest" BO_ 2564485674 0;
+BA_ "DiagState" BO_ 2564485674 0;
+BA_ "GenMsgILSupport" BO_ 2564485674 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564485674 8;
+BA_ "NWM-Botschaft" BO_ 2564485674 0;
+BA_ "NmMessage" BO_ 2564485674 0;
+BA_ "ApplMessage" BO_ 2564485674 1;
+BA_ "GenMsgSendType" BO_ 2564485674 1;
+BA_ "TpTxIndex" BO_ 2564487210 248;
+BA_ "GenMsgStartValue" BO_ 2564487210 "255";
+BA_ "DiagResponse" BO_ 2564487210 1;
+BA_ "DiagRequest" BO_ 2564487210 0;
+BA_ "DiagState" BO_ 2564487210 0;
+BA_ "GenMsgILSupport" BO_ 2564487210 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564487210 8;
+BA_ "NWM-Botschaft" BO_ 2564487210 0;
+BA_ "NmMessage" BO_ 2564487210 0;
+BA_ "ApplMessage" BO_ 2564487210 1;
+BA_ "GenMsgSendType" BO_ 2564487210 1;
+BA_ "TpTxIndex" BO_ 2564487466 249;
+BA_ "GenMsgStartValue" BO_ 2564487466 "255";
+BA_ "DiagResponse" BO_ 2564487466 1;
+BA_ "DiagRequest" BO_ 2564487466 0;
+BA_ "DiagState" BO_ 2564487466 0;
+BA_ "GenMsgILSupport" BO_ 2564487466 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564487466 8;
+BA_ "NWM-Botschaft" BO_ 2564487466 0;
+BA_ "NmMessage" BO_ 2564487466 0;
+BA_ "ApplMessage" BO_ 2564487466 1;
+BA_ "GenMsgSendType" BO_ 2564487466 1;
+BA_ "TpTxIndex" BO_ 2564487722 250;
+BA_ "GenMsgStartValue" BO_ 2564487722 "255";
+BA_ "DiagResponse" BO_ 2564487722 1;
+BA_ "DiagRequest" BO_ 2564487722 0;
+BA_ "DiagState" BO_ 2564487722 0;
+BA_ "GenMsgILSupport" BO_ 2564487722 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564487722 8;
+BA_ "NWM-Botschaft" BO_ 2564487722 0;
+BA_ "NmMessage" BO_ 2564487722 0;
+BA_ "ApplMessage" BO_ 2564487722 1;
+BA_ "GenMsgSendType" BO_ 2564487722 1;
+BA_ "GenMsgSendType" BO_ 2566905898 1;
+BA_ "GenMsgNrOfRepetition" BO_ 2566905898 2;
+BA_ "GenMsgDelayTime" BO_ 2566905898 20;
+BA_ "GenMsgStartValue" BO_ 2566905898 "255";
+BA_ "DiagResponse" BO_ 2566905898 0;
+BA_ "DiagRequest" BO_ 2566905898 0;
+BA_ "DiagState" BO_ 2566905898 0;
+BA_ "GenMsgILSupport" BO_ 2566905898 1;
+BA_ "GenMsgMinAcceptLength" BO_ 2566905898 8;
+BA_ "NWM-Botschaft" BO_ 2566905898 0;
+BA_ "NmMessage" BO_ 2566905898 0;
+BA_ "ApplMessage" BO_ 2566905898 0;
+BA_ "GenMsgSendType" BO_ 2566906154 1;
+BA_ "GenMsgNrOfRepetition" BO_ 2566906154 2;
+BA_ "GenMsgDelayTime" BO_ 2566906154 20;
+BA_ "GenMsgStartValue" BO_ 2566906154 "255";
+BA_ "DiagResponse" BO_ 2566906154 0;
+BA_ "DiagRequest" BO_ 2566906154 0;
+BA_ "DiagState" BO_ 2566906154 0;
+BA_ "GenMsgILSupport" BO_ 2566906154 1;
+BA_ "GenMsgMinAcceptLength" BO_ 2566906154 8;
+BA_ "NWM-Botschaft" BO_ 2566906154 0;
+BA_ "NmMessage" BO_ 2566906154 0;
+BA_ "ApplMessage" BO_ 2566906154 0;
+BA_ "GenMsgSendType" BO_ 2565863978 1;
+BA_ "GenMsgNrOfRepetition" BO_ 2565863978 2;
+BA_ "GenMsgDelayTime" BO_ 2565863978 20;
+BA_ "GenMsgStartValue" BO_ 2565863978 "255";
+BA_ "DiagResponse" BO_ 2565863978 0;
+BA_ "DiagRequest" BO_ 2565863978 0;
+BA_ "DiagState" BO_ 2565863978 0;
+BA_ "GenMsgILSupport" BO_ 2565863978 1;
+BA_ "GenMsgMinAcceptLength" BO_ 2565863978 8;
+BA_ "NWM-Botschaft" BO_ 2565863978 0;
+BA_ "NmMessage" BO_ 2565863978 0;
+BA_ "ApplMessage" BO_ 2565863978 0;
+BA_ "GenMsgStartValue" BO_ 2564434661 "255";
+BA_ "DiagResponse" BO_ 2564434661 0;
+BA_ "DiagRequest" BO_ 2564434661 0;
+BA_ "DiagState" BO_ 2564434661 0;
+BA_ "GenMsgILSupport" BO_ 2564434661 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434661 8;
+BA_ "NWM-Botschaft" BO_ 2564434661 0;
+BA_ "NmMessage" BO_ 2564434661 0;
+BA_ "ApplMessage" BO_ 2564434661 0;
+BA_ "TpTxIndex" BO_ 2564434455 17;
+BA_ "GenMsgStartValue" BO_ 2564434455 "0";
+BA_ "DiagResponse" BO_ 2564434455 0;
+BA_ "DiagRequest" BO_ 2564434455 0;
+BA_ "DiagState" BO_ 2564434455 0;
+BA_ "GenMsgILSupport" BO_ 2564434455 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434455 8;
+BA_ "NWM-Botschaft" BO_ 2564434455 0;
+BA_ "NmMessage" BO_ 2564434455 0;
+BA_ "ApplMessage" BO_ 2564434455 0;
+BA_ "TpTxIndex" BO_ 2564429610 17;
+BA_ "GenMsgStartValue" BO_ 2564429610 "0";
+BA_ "DiagResponse" BO_ 2564429610 0;
+BA_ "DiagRequest" BO_ 2564429610 0;
+BA_ "DiagState" BO_ 2564429610 0;
+BA_ "GenMsgILSupport" BO_ 2564429610 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564429610 8;
+BA_ "NWM-Botschaft" BO_ 2564429610 0;
+BA_ "NmMessage" BO_ 2564429610 0;
+BA_ "ApplMessage" BO_ 2564429610 0;
+BA_ "GenMsgStartValue" BO_ 2564434685 "255";
+BA_ "DiagResponse" BO_ 2564434685 0;
+BA_ "DiagRequest" BO_ 2564434685 0;
+BA_ "DiagState" BO_ 2564434685 0;
+BA_ "GenMsgILSupport" BO_ 2564434685 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434685 8;
+BA_ "NWM-Botschaft" BO_ 2564434685 0;
+BA_ "NmMessage" BO_ 2564434685 0;
+BA_ "ApplMessage" BO_ 2564434685 0;
+BA_ "GenMsgStartValue" BO_ 2564482346 "255";
+BA_ "DiagResponse" BO_ 2564482346 0;
+BA_ "DiagRequest" BO_ 2564482346 0;
+BA_ "DiagState" BO_ 2564482346 0;
+BA_ "GenMsgILSupport" BO_ 2564482346 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564482346 8;
+BA_ "NWM-Botschaft" BO_ 2564482346 0;
+BA_ "NmMessage" BO_ 2564482346 0;
+BA_ "ApplMessage" BO_ 2564482346 0;
+BA_ "GenMsgStartValue" BO_ 2564488490 "255";
+BA_ "DiagResponse" BO_ 2564488490 0;
+BA_ "DiagRequest" BO_ 2564488490 0;
+BA_ "DiagState" BO_ 2564488490 0;
+BA_ "GenMsgILSupport" BO_ 2564488490 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564488490 8;
+BA_ "NWM-Botschaft" BO_ 2564488490 0;
+BA_ "NmMessage" BO_ 2564488490 0;
+BA_ "ApplMessage" BO_ 2564488490 0;
+BA_ "TpTxIndex" BO_ 2564483114 2;
+BA_ "GenMsgStartValue" BO_ 2564483114 "255";
+BA_ "DiagResponse" BO_ 2564483114 0;
+BA_ "DiagRequest" BO_ 2564483114 0;
+BA_ "DiagState" BO_ 2564483114 0;
+BA_ "GenMsgILSupport" BO_ 2564483114 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564483114 8;
+BA_ "NWM-Botschaft" BO_ 2564483114 0;
+BA_ "NmMessage" BO_ 2564483114 0;
+BA_ "ApplMessage" BO_ 2564483114 0;
+BA_ "GenMsgStartValue" BO_ 2564434664 "255";
+BA_ "DiagResponse" BO_ 2564434664 0;
+BA_ "DiagRequest" BO_ 2564434664 0;
+BA_ "DiagState" BO_ 2564434664 0;
+BA_ "GenMsgILSupport" BO_ 2564434664 0;
+BA_ "GenMsgMinAcceptLength" BO_ 2564434664 8;
+BA_ "NWM-Botschaft" BO_ 2564434664 0;
+BA_ "NmMessage" BO_ 2564434664 0;
+BA_ "ApplMessage" BO_ 2564434664 0;
+BA_ "GenSigStartValue" SG_ 3221225472 AwakeRsn_RDF 1;
+BA_ "GenSigStartValue" SG_ 3221225472 WakeupRsn_RDF 255;
+BA_ "GenSigStartValue" SG_ 2566881322 NW_ID 255;
+BA_ "GenSigStartValue" SG_ 2566881322 NM_Ud_Srv 255;
+BA_ "GenSigStartValue" SG_ 2566881322 NM_Ud_Launch 64;
+BA_ "GenSigStartValue" SG_ 2566881322 NM_Successor 255;
+BA_ "GenSigStartValue" SG_ 2566881322 NM_Sleep_ACK 1;
+BA_ "GenSigStartValue" SG_ 2566881322 NM_Mode 255;
+BA_ "GenSigStartValue" SG_ 2566843178 Date 1;
+BA_ "GenSigStartValue" SG_ 2566843178 Month 1;
+BA_ "GenSigStartValue" SG_ 2432631051 LongitudinalAcceleration_Cval_BS 0;
+BA_ "GenSigStartValue" SG_ 2432631051 YawRateCorr_Cval_BS 32112.64;
+BA_ "GenSigStartValue" SG_ 2365522730 Obj_ID4 254;
+BA_ "GenSigStartValue" SG_ 2365522730 Spd_Y_Obj_Cval_RDF 4000;
+BA_ "GenSigStartValue" SG_ 2365522474 Obj_ID3 254;
+BA_ "GenSigStartValue" SG_ 2365522474 Spd_X_Obj_Cval_RDF 4000;
+BA_ "GenSigStartValue" SG_ 2365522218 WidthObj_Cval_RDF 125;
+BA_ "GenSigStartValue" SG_ 2365522218 Obj_ID2 254;
+BA_ "GenSigStartValue" SG_ 2365522218 Accel_X_Obj_Cval_RDF 125;
+BA_ "GenSigStartValue" SG_ 2365522218 Dist_Y_Obj_Cval_RDF 1020;
+BA_ "GenSigStartValue" SG_ 2365522218 Dist_X_Obj_Cval_RDF 1000;
+BA_ "GenSigSNA" SG_ 2365521962 RCS_Obj_Cval "*";
+BA_ "GenSigStartValue" SG_ 2365521962 RCS_Obj_Cval 80;
+BA_ "GenSigStartValue" SG_ 2365521962 Obj_ID1 254;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_1 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_1 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_1 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_1 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_1 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_1 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_1 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_1 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_1 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_2 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_2 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_2 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_2 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_2 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_2 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_2 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_2 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_2 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_3 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_3 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_3 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_3 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_3 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_3 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_3 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_3 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_3 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_4 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_4 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_4 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_4 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_4 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_4 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_4 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_4 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_4 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_5 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_5 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_5 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_5 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_5 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_5 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_5 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_5 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_5 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_6 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_6 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_6 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_6 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_6 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_6 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_6 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_6 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_6 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_7 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_7 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_7 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_7 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_7 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_7 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_7 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_7 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_7 0;
+BA_ "FlexKomSigStartValue" SG_ 2565810938 APPL_SG_RDF_8 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565810938 APPL_SG_RDF_8 0;
+BA_ "FlexKomSigLaenge" SG_ 2565810938 APPL_SG_RDF_8 64;
+BA_ "FlexKomIsMotorola" SG_ 2565810938 APPL_SG_RDF_8 0;
+BA_ "FlexKomComment" SG_ 2565810938 APPL_SG_RDF_8 "Externe Applikation zu Steuergerät (degraded)";
+BA_ "FlexKomSID" SG_ 2565810938 APPL_SG_RDF_8 1;
+BA_ "FlexKomSigName" SG_ 2565810938 APPL_SG_RDF_8 "SG_APPL_SG_RDF_636wpg9gsd9owc104zpzd7q6z";
+BA_ "GenSigSendType" SG_ 2565810938 APPL_SG_RDF_8 1;
+BA_ "GenSigStartValue" SG_ 2565810938 APPL_SG_RDF_8 0;
+BA_ "FlexKomIsMotorola" SG_ 2564554737 D_RQ_GLOBAL_UDS_F1_241 0;
+BA_ "FlexKomSigStartPos" SG_ 2564554737 D_RQ_GLOBAL_UDS_F1_241 0;
+BA_ "FlexKomSigLaenge" SG_ 2564554737 D_RQ_GLOBAL_UDS_F1_241 64;
+BA_ "FlexKomSigName" SG_ 2564554737 D_RQ_GLOBAL_UDS_F1_241 "D_RQ_GLOBAL_UDS_F1_241";
+BA_ "FlexKomIsMotorola" SG_ 2564554738 D_RQ_GLOBAL_UDS_F2_242 0;
+BA_ "FlexKomSigStartPos" SG_ 2564554738 D_RQ_GLOBAL_UDS_F2_242 0;
+BA_ "FlexKomSigLaenge" SG_ 2564554738 D_RQ_GLOBAL_UDS_F2_242 64;
+BA_ "FlexKomSigName" SG_ 2564554738 D_RQ_GLOBAL_UDS_F2_242 "D_RQ_GLOBAL_UDS_F2_242";
+BA_ "FlexKomIsMotorola" SG_ 2564554744 D_RQ_GLOBAL_UDS_F8_248 0;
+BA_ "FlexKomSigStartPos" SG_ 2564554744 D_RQ_GLOBAL_UDS_F8_248 0;
+BA_ "FlexKomSigLaenge" SG_ 2564554744 D_RQ_GLOBAL_UDS_F8_248 64;
+BA_ "FlexKomSigName" SG_ 2564554744 D_RQ_GLOBAL_UDS_F8_248 "D_RQ_GLOBAL_UDS_F8_248";
+BA_ "FlexKomIsMotorola" SG_ 2564554745 D_RQ_GLOBAL_UDS_F9_249 0;
+BA_ "FlexKomSigStartPos" SG_ 2564554745 D_RQ_GLOBAL_UDS_F9_249 0;
+BA_ "FlexKomSigLaenge" SG_ 2564554745 D_RQ_GLOBAL_UDS_F9_249 64;
+BA_ "FlexKomSigName" SG_ 2564554745 D_RQ_GLOBAL_UDS_F9_249 "D_RQ_GLOBAL_UDS_F9_249";
+BA_ "FlexKomIsMotorola" SG_ 2564554746 D_RQ_GLOBAL_UDS_FA_250 0;
+BA_ "FlexKomSigStartPos" SG_ 2564554746 D_RQ_GLOBAL_UDS_FA_250 0;
+BA_ "FlexKomSigLaenge" SG_ 2564554746 D_RQ_GLOBAL_UDS_FA_250 64;
+BA_ "FlexKomSigName" SG_ 2564554746 D_RQ_GLOBAL_UDS_FA_250 "D_RQ_GLOBAL_UDS_FA_250";
+BA_ "FlexKomIsMotorola" SG_ 2564434673 D_RQ_RDF_F1_241 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434673 D_RQ_RDF_F1_241 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434673 D_RQ_RDF_F1_241 64;
+BA_ "FlexKomSigName" SG_ 2564434673 D_RQ_RDF_F1_241 "D_RQ_RDF_F1_241";
+BA_ "FlexKomIsMotorola" SG_ 2564434674 D_RQ_RDF_F2_242 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434674 D_RQ_RDF_F2_242 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434674 D_RQ_RDF_F2_242 64;
+BA_ "FlexKomSigName" SG_ 2564434674 D_RQ_RDF_F2_242 "D_RQ_RDF_F2_242";
+BA_ "FlexKomIsMotorola" SG_ 2564434680 D_RQ_RDF_F8_248 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434680 D_RQ_RDF_F8_248 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434680 D_RQ_RDF_F8_248 64;
+BA_ "FlexKomSigName" SG_ 2564434680 D_RQ_RDF_F8_248 "D_RQ_RDF_F8_248";
+BA_ "FlexKomIsMotorola" SG_ 2564434681 D_RQ_RDF_F9_249 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434681 D_RQ_RDF_F9_249 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434681 D_RQ_RDF_F9_249 64;
+BA_ "FlexKomSigName" SG_ 2564434681 D_RQ_RDF_F9_249 "D_RQ_RDF_F9_249";
+BA_ "FlexKomIsMotorola" SG_ 2564434682 D_RQ_RDF_FA_250 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434682 D_RQ_RDF_FA_250 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434682 D_RQ_RDF_FA_250 64;
+BA_ "FlexKomSigName" SG_ 2564434682 D_RQ_RDF_FA_250 "D_RQ_RDF_FA_250";
+BA_ "FlexKomIsMotorola" SG_ 2564485418 D_RS_RDF_F1_241 0;
+BA_ "FlexKomSigStartPos" SG_ 2564485418 D_RS_RDF_F1_241 0;
+BA_ "FlexKomSigLaenge" SG_ 2564485418 D_RS_RDF_F1_241 64;
+BA_ "FlexKomSigName" SG_ 2564485418 D_RS_RDF_F1_241 "D_RS_RDF_F1_241";
+BA_ "FlexKomIsMotorola" SG_ 2564485674 D_RS_RDF_F2_242 0;
+BA_ "FlexKomSigStartPos" SG_ 2564485674 D_RS_RDF_F2_242 0;
+BA_ "FlexKomSigLaenge" SG_ 2564485674 D_RS_RDF_F2_242 64;
+BA_ "FlexKomSigName" SG_ 2564485674 D_RS_RDF_F2_242 "D_RS_RDF_F2_242";
+BA_ "FlexKomIsMotorola" SG_ 2564487210 D_RS_RDF_F8_248 0;
+BA_ "FlexKomSigStartPos" SG_ 2564487210 D_RS_RDF_F8_248 0;
+BA_ "FlexKomSigLaenge" SG_ 2564487210 D_RS_RDF_F8_248 64;
+BA_ "FlexKomSigName" SG_ 2564487210 D_RS_RDF_F8_248 "D_RS_RDF_F8_248";
+BA_ "FlexKomIsMotorola" SG_ 2564487466 D_RS_RDF_F9_249 0;
+BA_ "FlexKomSigStartPos" SG_ 2564487466 D_RS_RDF_F9_249 0;
+BA_ "FlexKomSigLaenge" SG_ 2564487466 D_RS_RDF_F9_249 64;
+BA_ "FlexKomSigName" SG_ 2564487466 D_RS_RDF_F9_249 "D_RS_RDF_F9_249";
+BA_ "FlexKomIsMotorola" SG_ 2564487722 D_RS_RDF_FA_250 0;
+BA_ "FlexKomSigStartPos" SG_ 2564487722 D_RS_RDF_FA_250 0;
+BA_ "FlexKomSigLaenge" SG_ 2564487722 D_RS_RDF_FA_250 64;
+BA_ "FlexKomSigName" SG_ 2564487722 D_RS_RDF_FA_250 "D_RS_RDF_FA_250";
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_1 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_1 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_1 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_1 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_1 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_1 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_1 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_1 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_1 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_2 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_2 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_2 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_2 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_2 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_2 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_2 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_2 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_2 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_3 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_3 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_3 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_3 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_3 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_3 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_3 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_3 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_3 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_4 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_4 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_4 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_4 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_4 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_4 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_4 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_4 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_4 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_5 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_5 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_5 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_5 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_5 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_5 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_5 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_5 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_5 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_6 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_6 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_6 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_6 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_6 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_6 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_6 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_6 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_6 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_7 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_7 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_7 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_7 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_7 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_7 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_7 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_7 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_7 0;
+BA_ "FlexKomSigStartValue" SG_ 2566905898 MESS_RDF_8 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566905898 MESS_RDF_8 0;
+BA_ "FlexKomSigLaenge" SG_ 2566905898 MESS_RDF_8 64;
+BA_ "FlexKomIsMotorola" SG_ 2566905898 MESS_RDF_8 0;
+BA_ "FlexKomComment" SG_ 2566905898 MESS_RDF_8 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566905898 MESS_RDF_8 53;
+BA_ "FlexKomSigName" SG_ 2566905898 MESS_RDF_8 "SG_RDF_MESS_AR_3amq7kft4hiitjj51htg5u4hx";
+BA_ "GenSigSendType" SG_ 2566905898 MESS_RDF_8 1;
+BA_ "GenSigStartValue" SG_ 2566905898 MESS_RDF_8 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_1 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_1 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_1 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_1 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_1 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_1 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_1 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_1 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_1 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_2 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_2 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_2 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_2 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_2 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_2 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_2 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_2 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_2 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_3 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_3 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_3 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_3 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_3 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_3 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_3 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_3 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_3 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_4 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_4 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_4 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_4 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_4 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_4 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_4 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_4 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_4 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_5 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_5 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_5 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_5 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_5 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_5 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_5 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_5 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_5 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_6 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_6 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_6 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_6 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_6 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_6 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_6 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_6 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_6 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_7 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_7 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_7 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_7 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_7 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_7 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_7 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_7 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_7 0;
+BA_ "FlexKomSigStartValue" SG_ 2566906154 MESS2_RDF_8 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2566906154 MESS2_RDF_8 0;
+BA_ "FlexKomSigLaenge" SG_ 2566906154 MESS2_RDF_8 64;
+BA_ "FlexKomIsMotorola" SG_ 2566906154 MESS2_RDF_8 0;
+BA_ "FlexKomComment" SG_ 2566906154 MESS2_RDF_8 "Messsignal (degraded)";
+BA_ "FlexKomSID" SG_ 2566906154 MESS2_RDF_8 54;
+BA_ "FlexKomSigName" SG_ 2566906154 MESS2_RDF_8 "SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8pgi5abr5i";
+BA_ "GenSigSendType" SG_ 2566906154 MESS2_RDF_8 1;
+BA_ "GenSigStartValue" SG_ 2566906154 MESS2_RDF_8 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_1 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_1 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_1 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_1 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_1 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_1 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_1 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_1 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_1 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_2 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_2 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_2 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_2 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_2 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_2 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_2 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_2 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_2 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_3 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_3 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_3 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_3 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_3 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_3 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_3 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_3 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_3 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_4 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_4 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_4 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_4 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_4 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_4 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_4 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_4 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_4 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_5 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_5 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_5 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_5 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_5 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_5 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_5 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_5 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_5 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_6 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_6 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_6 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_6 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_6 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_6 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_6 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_6 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_6 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_7 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_7 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_7 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_7 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_7 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_7 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_7 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_7 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_7 0;
+BA_ "FlexKomSigStartValue" SG_ 2565863978 SG_APPL_RDF_8 "FFFFFFFFFFFFFFFFh";
+BA_ "FlexKomSigStartPos" SG_ 2565863978 SG_APPL_RDF_8 0;
+BA_ "FlexKomSigLaenge" SG_ 2565863978 SG_APPL_RDF_8 64;
+BA_ "FlexKomIsMotorola" SG_ 2565863978 SG_APPL_RDF_8 0;
+BA_ "FlexKomComment" SG_ 2565863978 SG_APPL_RDF_8 "Steuergerät an externe Applikation (degraded)";
+BA_ "FlexKomSID" SG_ 2565863978 SG_APPL_RDF_8 56;
+BA_ "FlexKomSigName" SG_ 2565863978 SG_APPL_RDF_8 "SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn7icrife7";
+BA_ "GenSigSendType" SG_ 2565863978 SG_APPL_RDF_8 1;
+BA_ "GenSigStartValue" SG_ 2565863978 SG_APPL_RDF_8 0;
+BA_ "FlexKomIsMotorola" SG_ 2564434661 TPA_CDS_2_RDF 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434661 TPA_CDS_2_RDF 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434661 TPA_CDS_2_RDF 64;
+BA_ "FlexKomSigName" SG_ 2564434661 TPA_CDS_2_RDF "TPA_CDS_2_RDF";
+BA_ "FlexKomIsMotorola" SG_ 2564434455 TPA_DIAG_RQ_RDF_IC_17 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434455 TPA_DIAG_RQ_RDF_IC_17 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434455 TPA_DIAG_RQ_RDF_IC_17 64;
+BA_ "FlexKomSigName" SG_ 2564434455 TPA_DIAG_RQ_RDF_IC_17 "TPA_DIAG_RQ_RDF_IC_17";
+BA_ "FlexKomIsMotorola" SG_ 2564429610 TPA_DIAG_RS_RDF_IC_17 0;
+BA_ "FlexKomSigStartPos" SG_ 2564429610 TPA_DIAG_RS_RDF_IC_17 0;
+BA_ "FlexKomSigLaenge" SG_ 2564429610 TPA_DIAG_RS_RDF_IC_17 64;
+BA_ "FlexKomSigName" SG_ 2564429610 TPA_DIAG_RS_RDF_IC_17 "TPA_DIAG_RS_RDF_IC_17";
+BA_ "FlexKomIsMotorola" SG_ 2564434685 TPA_DTP_2_RDF 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434685 TPA_DTP_2_RDF 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434685 TPA_DTP_2_RDF 64;
+BA_ "FlexKomSigName" SG_ 2564434685 TPA_DTP_2_RDF "TPA_DTP_2_RDF";
+BA_ "FlexKomIsMotorola" SG_ 2564482346 TPA_RDF_2_CDS 0;
+BA_ "FlexKomSigStartPos" SG_ 2564482346 TPA_RDF_2_CDS 0;
+BA_ "FlexKomSigLaenge" SG_ 2564482346 TPA_RDF_2_CDS 64;
+BA_ "FlexKomSigName" SG_ 2564482346 TPA_RDF_2_CDS "TPA_RDF_2_CDS";
+BA_ "FlexKomIsMotorola" SG_ 2564488490 TPA_RDF_2_DTP 0;
+BA_ "FlexKomSigStartPos" SG_ 2564488490 TPA_RDF_2_DTP 0;
+BA_ "FlexKomSigLaenge" SG_ 2564488490 TPA_RDF_2_DTP 64;
+BA_ "FlexKomSigName" SG_ 2564488490 TPA_RDF_2_DTP "TPA_RDF_2_DTP";
+BA_ "FlexKomIsMotorola" SG_ 2564483114 TPA_RDF_2_VRDU2 0;
+BA_ "FlexKomSigStartPos" SG_ 2564483114 TPA_RDF_2_VRDU2 0;
+BA_ "FlexKomSigLaenge" SG_ 2564483114 TPA_RDF_2_VRDU2 64;
+BA_ "FlexKomSigName" SG_ 2564483114 TPA_RDF_2_VRDU2 "TPA_RDF_2_VRDU2";
+BA_ "FlexKomIsMotorola" SG_ 2564434664 TPA_VRDU2_2_RDF 0;
+BA_ "FlexKomSigStartPos" SG_ 2564434664 TPA_VRDU2_2_RDF 0;
+BA_ "FlexKomSigLaenge" SG_ 2564434664 TPA_VRDU2_2_RDF 64;
+BA_ "FlexKomSigName" SG_ 2564434664 TPA_VRDU2_2_RDF "TPA_VRDU2_2_RDF";
+VAL_ 2365522664 SpdR_AxleRtWhl_Cval 64256 "RES" 65535 "SNA" 65279 "ERR" 65023 "RES" ;
+VAL_ 2365522664 SpdR_AxleLtWhl_Cval 64256 "RES" 65535 "SNA" 65279 "ERR" 65023 "RES" ;
+VAL_ 2566881578 Blockage_RS_State 255 "Signal Not Available" 254 "Reserved" 5 "Reserved" 4 "UNKNOWN damping" 3 "reducing DAMPING (pre-cleaned)" 2 "full system damping (blocked)" 1 "increasing system damp(pre)" 0 "no system damping (clean)" ;
+VAL_ 2566881578 System_RS_Availability 3 "Signal Not Available" 2 "Reserved" 1 "device functions are available" 0 "device functions are disabled" ;
+VAL_ 2566881578 WakeupRsn_RS_RDF 255 "SNA" 254 "RES" 1 "RES" 0 "NETWORK" ;
+VAL_ 2432631051 LongitudinalAcceleration_Cval_BS 255 "SNA" 254 "ERR" 253 "RES" ;
+VAL_ 2432631051 YawRateCorr_Cval_BS 65535 "SNA" 65279 "ERR" 65023 "RES" ;
+VAL_ 2499740648 IgnSw_Stat_SCA 15 "SNA" 14 "RES" 4 "RES" 3 "ING_CRANK" 2 "ING_ON" 1 "ING_ACC" 0 "ING_OFF" ;
+VAL_ 2499740648 DrvDirec_Stat_SCA 3 "SNA" 2 "FWD" 1 "STNDSTL" 0 "BWD" ;
+VAL_ 2499740648 VehLongMotStateExt_SCA 3 "SNA" 2 "Secure STST" 1 "Fast" 0 "Rolling" ;
+VAL_ 2566849512 EBS_BrkSw_Rq 3 "SNA" 2 "RES" 1 "ACTIVE" 0 "PASSIVE" ;
+VAL_ 2566849512 ABS_Actv_Stat 3 "SNA" 2 "RES" 1 "ACTIVE" 0 "PASSIVE" ;
+VAL_ 2566849512 ATC_BrkCtrl_Stat 3 "SNA" 2 "RES" 1 "ACTIVE" 0 "PASSIVE" ;
+VAL_ 2566849512 ATC_EngCtrl_Stat 3 "SNA" 2 "RES" 1 "ACTIVE" 0 "PASSIVE" ;
+VAL_ 2365522408 SpdFtAxleRtWhl_Cval 64256 "RES" 65535 "SNA" 65279 "ERR" 65023 "RES" ;
+VAL_ 2365522408 SpdFtAxleLtWhl_Cval 64256 "res" 65535 "SNA" 65279 "ERR" 65023 "RES" ;
+VAL_ 2365522730 Obj_ID4 254 "Invalid object" 255 "SNA" ;
+VAL_ 2365522730 Spd_Y_Obj_Cval_RDF 8001 "RES" 8191 "SNA" 8190 "ERR" ;
+VAL_ 2365522730 StdRngSpd_X_Obj_Cval_RDF 31 "SNA" 30 "BELW_10.000" 29 "BELW_7.762" 28 "BELW_6.025" 27 "BELW_4.676" 26 "BELW_3.630" 25 "BELW_2.817" 24 "BELW_2.187" 23 "BELW_1.697" 22 "BELW_1.317" 21 "BELW_1.023" 20 "BELW_0.794" 19 "BELW_0.616" 18 "BELW_0.478" 17 "BELW_0.371" 16 "BELW_0.288" 15 "BELW_0.224" 14 "BELW_0.174" 13 "BELW_0.135" 12 "BELW_0.105" 11 "BELW_0.081" 10 "BELW_0.063" 9 "BELW_0.049" 8 "BELW_0.038" 7 "BELW_0.029" 6 "BELW_0.023" 5 "BELW_0.018" 4 "BELW_0.014" 3 "BELW_0.011" 2 "BELW_0.008" 1 "BELW_0.006" 0 "BELW_0.005" ;
+VAL_ 2365522730 StdRngSpd_Y_ObjStati_Cval_RDF 31 "SNA" 30 "BELW_10.000" 29 "BELW_7.762" 28 "BELW_6.025" 27 "BELW_4.676" 26 "BELW_3.630" 25 "BELW_2.817" 24 "BELW_2.187" 23 "BELW_1.697" 22 "BELW_1.317" 21 "BELW_1.023" 20 "BELW_0.794" 19 "BELW_0.616" 18 "BELW_0.478" 17 "BELW_0.371" 16 "BELW_0.288" 15 "BELW_0.224" 14 "BELW_0.174" 13 "BELW_0.135" 12 "BELW_0.105" 11 "BELW_0.081" 10 "BELW_0.063" 9 "BELW_0.049" 8 "BELW_0.038" 7 "BELW_0.029" 6 "BELW_0.023" 5 "BELW_0.018" 4 "BELW_0.014" 3 "BELW_0.011" 2 "BELW_0.008" 1 "BELW_0.006" 0 "BELW_0.005" ;
+VAL_ 2365522730 StdRng_X_Obj_Cval_RDF 31 "SNA" 30 "BELW_10.000" 29 "BELW_7.762" 28 "BELW_6.025" 27 "BELW_4.676" 26 "BELW_3.630" 25 "BELW_2.817" 24 "BELW_2.187" 23 "BELW_1.697" 22 "BELW_1.317" 21 "BELW_1.023" 20 "BELW_0.794" 19 "BELW_0.616" 18 "BELW_0.478" 17 "BELW_0.371" 16 "BELW_0.288" 15 "BELW_0.224" 14 "BELW_0.174" 13 "BELW_0.135" 12 "BELW_0.105" 11 "BELW_0.081" 10 "BELW_0.063" 9 "BELW_0.049" 8 "BELW_0.038" 7 "BELW_0.029" 6 "BELW_0.023" 5 "BELW_0.018" 4 "BELW_0.014" 3 "BELW_0.011" 2 "BELW_0.008" 1 "BELW_0.006" 0 "BELW_0.005" ;
+VAL_ 2365522730 StdRng_Y_Obj_Cval_RDF 31 "SNA" 30 "BELW_10.000" 29 "BELW_7.762" 28 "BELW_6.025" 27 "BELW_4.676" 26 "BELW_3.630" 25 "BELW_2.817" 24 "BELW_2.187" 23 "BELW_1.697" 22 "BELW_1.317" 21 "BELW_1.023" 20 "BELW_0.794" 19 "BELW_0.616" 18 "BELW_0.478" 17 "BELW_0.371" 16 "BELW_0.288" 15 "BELW_0.224" 14 "BELW_0.174" 13 "BELW_0.135" 12 "BELW_0.105" 11 "BELW_0.081" 10 "BELW_0.063" 9 "BELW_0.049" 8 "BELW_0.038" 7 "BELW_0.029" 6 "BELW_0.023" 5 "BELW_0.018" 4 "BELW_0.014" 3 "BELW_0.011" 2 "BELW_0.008" 1 "BELW_0.006" 0 "BELW_0.005" ;
+VAL_ 2365522474 Obj_ID3 254 "Invalid object" 255 "SNA" ;
+VAL_ 2365522474 Obj_ucObstacleProbability 255 "SNA" 254 "ERR" ;
+VAL_ 2365522474 Spd_X_Obj_Cval_RDF 8001 "RES" 8190 "ERR" 8191 "SNA" ;
+VAL_ 2365522218 WidthObj_Cval_RDF 255 "SNA" 254 "ERR" 253 "RES" ;
+VAL_ 2365522218 Obj_ID2 254 "Invalid object" 255 "SNA" ;
+VAL_ 2365522218 Accel_X_Obj_Cval_RDF 255 "SNA" 254 "RES" 253 "RES" 252 "RES" 251 "RES" ;
+VAL_ 2365522218 Dist_Y_Obj_Cval_RDF 2045 "RES" 2044 "RES" 2043 "RES" 2042 "RES" 2041 "RES" 2047 "SNA" 2046 "ERR" ;
+VAL_ 2365522218 Dist_X_Obj_Cval_RDF 8001 "RES" 8191 "SNA" 8190 "ERR" ;
+VAL_ 2365521962 eMaintenanceState 7 "SNA" 6 "ERR" 5 "MAX_DIFF_TYPES" 4 "Inactive" 3 "Predected" 2 "Measured" 1 "New" 0 "Deleted" ;
+VAL_ 2365521962 LossObj_Stat_RDF 15 "SNA" 14 "ERR" 13 "RES" 12 "RES" 11 "RES" 10 "RES" 9 "RES" 8 "ObjLossLRightCrv" 7 "ObjLossLeftCrv" 6 "LaneChngRight" 5 "LaneChngLeft" 4 "ObjDisRight" 3 "ObjDisLeft" 2 "ObjDisFarAway" 1 "target_lost" 0 "no_reason" ;
+VAL_ 2365521962 uiProbabilityOfExistence 255 "SNA" 254 "ERR" ;
+VAL_ 2365521962 uiDynConfidence 255 "SNA" 254 "ERR" ;
+VAL_ 2365521962 TnlObsrv_Stat_RDF 3 "SNA" 2 "ERR" 1 "DTCT" 0 "NOTDTCT" ;
+VAL_ 2365521962 Obj_eClassification 7 "Unclassified" 6 "Wide" 5 "Bicycle" 4 "Motorcycle" 3 "Pedestrian" 2 "Truck" 1 "Car" 0 "Point" ;
+VAL_ 2365521962 TypeObj_Stat_RDF 7 "SNA" 6 "ERR" 5 "OnCom" 4 "cross" 3 "stati" 2 "Mov_Stop" 1 "Mov" 0 "not_detec" ;
+VAL_ 2365521962 RCS_Obj_Cval 255 "SNA" 254 "NDEF" 253 "NDEF" 252 "NDEF" 251 "NDEF" ;
+VAL_ 2365521962 Obj_ID1 254 "Invalid object" 255 "SNA" ;
+SIG_GROUP_ 2565810938 SG_APPL_SG_RDF_636wpg9gsd9owc104 1 : APPL_SG_RDF_1 APPL_SG_RDF_2 APPL_SG_RDF_3 APPL_SG_RDF_4 APPL_SG_RDF_5 APPL_SG_RDF_6 APPL_SG_RDF_7 APPL_SG_RDF_8;
+SIG_GROUP_ 2566905898 SG_RDF_MESS_AR_3amq7kft4hiitjj51 1 : MESS_RDF_1 MESS_RDF_2 MESS_RDF_3 MESS_RDF_4 MESS_RDF_5 MESS_RDF_6 MESS_RDF_7 MESS_RDF_8;
+SIG_GROUP_ 2566906154 SG_RDF_MESS2_AR_6ayvw8ss4wyuqha8 1 : MESS2_RDF_1 MESS2_RDF_2 MESS2_RDF_3 MESS2_RDF_4 MESS2_RDF_5 MESS2_RDF_6 MESS2_RDF_7 MESS2_RDF_8;
+SIG_GROUP_ 2565863978 SG_SG_APPL_RDF_aj6u6b8iy1ezpmgmn 1 : SG_APPL_RDF_1 SG_APPL_RDF_2 SG_APPL_RDF_3 SG_APPL_RDF_4 SG_APPL_RDF_5 SG_APPL_RDF_6 SG_APPL_RDF_7 SG_APPL_RDF_8;
+

@@ -1,0 +1,214 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Traj
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ VIE_standstill : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 262 VIE_Info: 64 Vector__XXX
+ SG_ VIE_vxvRefMs : 256|12@1+ (0.01,0) [0|40.95] "m/s" Vector__XXX
+ SG_ VIE_SteerAngleOffset_deg : 240|12@1- (0.1,0) [-204.8|204.7] "" Vector__XXX
+ SG_ VIE_slopeAngle_deg : 224|12@1- (0.1,0) [-204.8|204.7] "" Vector__XXX
+ SG_ VIE_psiDtOpt : 208|16@1+ (0.0001220703125,-3.92) [-3.92|4.0798779296875] "rad/s" Vector__XXX
+ SG_ VIE_kapTraj : 184|12@1- (0.0001,0) [-0.2048|0.2047] "" Vector__XXX
+ SG_ VIE_ayvRefMs2 : 168|12@1- (0.01,0) [-20.48|20.47] "m/s^2" Vector__XXX
+ SG_ VIE_axvRoadSlopeMs2 : 152|12@1- (0.01,0) [-20.48|20.47] "m/s^2" Vector__XXX
+ SG_ VIE_axvRefMs2 : 136|12@1- (0.01,0) [-20.48|20.47] "m/s^2" Vector__XXX
+ SG_ VIE_axRefMs2 : 120|12@1- (0.01,0) [-20.48|20.47] "m/s^2" Vector__XXX
+ SG_ VIE_axRefDt : 104|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VIE_alpSideSlipAngle : 96|8@1- (0.001,0) [-0.128|0.127] "" Vector__XXX
+ SG_ System_StopPointMode : 88|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ System_State : 76|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ System_Segldx : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ System_P_Forward_b : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ System_FunctionState : 80|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ System_E_Brake_b : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Refline_Valid : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Planning_aTar : 64|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ ego_local_heading : 48|12@1- (0.1,0) [-204.8|204.7] "" Vector__XXX
+ SG_ ego_local_y : 32|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ ego_local_x : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_07_b : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_06_b : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_05_b : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_04_b : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_03_b : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_02_b : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Select_WorkPos_01_b : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Home_b : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_Forward_b : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_P_E_Brake_b : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 259 planning_trajectory_01: 64 Traj
+ SG_ traj_y_16 : 496|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_15 : 480|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_14 : 464|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_13 : 448|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_12 : 432|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_11 : 416|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_10 : 400|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_09 : 384|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_08 : 368|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_07 : 352|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_06 : 336|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_05 : 320|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_04 : 304|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_03 : 288|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_02 : 272|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_y_01 : 256|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_16 : 240|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_15 : 224|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_14 : 208|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_13 : 192|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_12 : 176|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_11 : 160|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_10 : 144|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_09 : 128|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_08 : 112|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_07 : 96|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_06 : 80|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_05 : 64|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_04 : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_03 : 32|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_02 : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ traj_x_01 : 0|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+BO_ 261 control_points: 64 Traj
+ SG_ control_y_12 : 368|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_11 : 352|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_10 : 336|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_09 : 320|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_08 : 304|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_07 : 288|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_06 : 272|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_05 : 256|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_04 : 240|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_03 : 224|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_02 : 208|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_y_01 : 192|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_12 : 176|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_11 : 160|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_10 : 144|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_09 : 128|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_08 : 112|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_07 : 96|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_06 : 80|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_05 : 64|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_04 : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_03 : 32|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_02 : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ control_x_01 : 0|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+BO_ 260 planning_trajectory_02: 64 Traj
+
+BO_ 258 map_points_02: 64 Traj
+
+BO_ 257 map_points_01: 64 Traj
+ SG_ map_y_16 : 496|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_15 : 480|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_14 : 464|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_13 : 448|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_12 : 432|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_11 : 416|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_10 : 400|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_09 : 384|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_08 : 368|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_07 : 352|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_06 : 336|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_05 : 320|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_04 : 304|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_03 : 288|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_02 : 272|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_y_01 : 256|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_16 : 240|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_15 : 224|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_14 : 208|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_13 : 192|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_12 : 176|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_11 : 160|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_10 : 144|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_09 : 128|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_08 : 112|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_07 : 96|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_06 : 80|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_05 : 64|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_04 : 48|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_03 : 32|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_02 : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ map_x_01 : 0|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "TrajPoints";
+BA_ "VFrameFormat" BO_ 262 14;
+BA_ "GenMsgCycleTime" BO_ 259 20;
+BA_ "VFrameFormat" BO_ 259 14;
+BA_ "GenMsgCycleTime" BO_ 261 20;
+BA_ "VFrameFormat" BO_ 261 14;
+BA_ "GenMsgCycleTime" BO_ 260 20;
+BA_ "VFrameFormat" BO_ 260 14;
+BA_ "GenMsgCycleTime" BO_ 258 20;
+BA_ "VFrameFormat" BO_ 258 14;
+BA_ "GenMsgCycleTime" BO_ 257 20;
+BA_ "VFrameFormat" BO_ 257 14;
+

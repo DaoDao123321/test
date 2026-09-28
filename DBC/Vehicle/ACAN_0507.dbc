@@ -1,0 +1,620 @@
+VERSION "20241003.01"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU EBS ICU BMS TBOX EHPS IECU BCM EPB IPC GW
+
+
+BO_ 2566834843 EHPS_DM1: 8 EHPS
+ SG_ DM1RedStopLampStatus : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DM1AmberWamingLampStatus : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2365562448 EPB2: 8 EPB
+ SG_ ParkBrRelsInhibitSt : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ParkBrkInhibitSt : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ErrorCode : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EPB_HaltBrakeSt : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ HUC_BrkPostion : 16|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ EPBC1MsgSrc : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EPB_ParkBrkSt : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EPB_HADHndShkRespSt : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2566877776 EPBC1_ADCU: 8 IECU
+ SG_ ParkingBrakeControl : 32|8@1+ (0.4,0) [0|100] "" Vector__XXX
+ SG_ Counter_EPBC1_ADCU : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Checksum_EPBC1_ADCU : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ HaltBrakeControl : 8|8@1+ (0.4,0) [0|100.4] "" Vector__XXX
+
+BO_ 2180993104 AutoDrive_ADCU: 8 IECU
+ SG_ HaltBrakeEnable : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Counter_AutoDrive_ADCU : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Checksum_AutoDrive_ADCU : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ADModeEnable : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ADCU_LgtdCtrlSt : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2566844672 CCVS1_VCUPE: 8 VCU
+ SG_ ParkingBrakeSwitch : 2|2@1+ (1,0) [0|3] ""  IECU
+ SG_ WheelBasedVehicleSpeed : 8|16@1+ (0.00390625,0) [0|250] "km/h"  IECU
+ SG_ BrakeSwitch : 28|2@1+ (1,0) [0|3] ""  IECU
+
+BO_ 2348810251 TSC1_EBS: 8 EBS
+ SG_ OverrideControlMode_TSC1_AE : 0|2@1+ (1,0) [0|0] ""  IECU
+ SG_ RequestedSpeedCtrlCondition_0002 : 2|2@1+ (1,0) [0|0] ""  IECU
+ SG_ RequestedTorque_TSC1_AE : 24|8@1+ (1,-125) [-125|125] "%"  IECU
+ SG_ MessageCounter_TSC1_AE : 56|4@1+ (1,0) [0|7] ""  IECU
+ SG_ MessageChecksum_TSC1_AE : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566851024 VCU_PowerInfo: 8 VCU
+ SG_ VCU_VehSts : 0|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VCU_EmergencySwitch_status : 6|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Renaining_Range : 32|8@1+ (2,0) [0|255] "km"  IECU
+ SG_ VCU_24V_Voltage : 40|8@1+ (0.2,0) [0|255] "V"  IECU
+ SG_ VCU_VehFaultCode : 48|8@1+ (1,0) [0|255] ""  IECU
+
+BO_ 2566832407 ICU_ODO: 8 ICU
+ SG_ ICU_ODO : 0|32@1+ (0.005,0) [0|21055400] "km"  IECU
+ SG_ ICU_Trip : 32|32@1+ (0.005,0) [0|21055400] "km"  IECU
+
+BO_ 2558644467 B2V_ST1: 8 BMS
+ SG_ B2V_ST1_Checksum : 0|8@1+ (1,0) [0|255] ""  IECU
+ SG_ B2V_ST1_ALIV : 8|4@1+ (1,0) [0|15] ""  IECU
+ SG_ B2V_ST1_BMS : 12|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_ACC_Relay : 14|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Balance : 15|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_ChgLine : 16|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_ChgMode : 17|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_ChgSt : 19|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Fault_Levl : 21|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_DelTemp : 24|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_OverTemp : 26|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_OverHVolt : 28|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_LowHVolt : 30|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_LowSOC : 32|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_OverUcell : 34|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_LowUcell : 36|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_LowInsRes : 38|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_UcellUniformity : 40|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_OverChg : 42|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_OverDisChg : 44|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_LowTemp : 46|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_DelParaU : 48|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_HW : 50|2@1+ (1,0) [0|3] ""  IECU
+ SG_ B2V_ST1_Flt_OverSOC : 52|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Flt_SOCJump : 53|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Flt_LocalComm : 54|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Flt_SysNotMatched : 55|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Flt_HVIL : 56|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Flt_Fog : 57|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_Flt_Fire : 58|1@1+ (1,0) [0|1] ""  IECU
+ SG_ B2V_ST1_GBT32960FltNum : 59|5@1+ (1,0) [0|31] ""  IECU
+
+BO_ 2558841075 B2V_ST2: 8 BMS
+ SG_ B2V_ST4_Max_Temp : 0|8@1+ (1,-50) [-50|-50] "℃"  IECU
+ SG_ B2V_ST4_Min_Temp : 8|8@1+ (1,-50) [-50|205] "℃"  IECU
+ SG_ B2V_ST4_Avg_Temp : 16|8@1+ (1,-50) [-50|65485] "℃"  IECU
+ SG_ B2V_ST4_MaxTemp_CSCNo : 24|8@1+ (1,0) [0|16777215] ""  IECU
+ SG_ B2V_ST4_MaxTemp_Position : 32|8@1+ (1,0) [0|4294967295] ""  IECU
+ SG_ B2V_ST4_MinTemp_CSCNo : 40|8@1+ (1,0) [0|1099511627775] ""  IECU
+ SG_ B2V_ST4_MinTemp_Position : 48|8@1+ (1,0) [0|255] ""  IECU
+
+BO_ 2566842107 BUS_Time: 8 TBOX
+ SG_ TBOX_Seconds : 0|8@1+ (0.25,0) [0|62.5] "s"  IECU
+ SG_ TBOX_Minutes : 8|8@1+ (1,0) [0|250] "mins"  IECU
+ SG_ TBOX_Hours : 16|8@1+ (1,0) [0|250] "hr"  IECU
+ SG_ TBOX_Mounth : 24|8@1+ (1,0) [0|250] "months"  IECU
+ SG_ TBOX_Day : 32|8@1+ (0.25,0) [0|62.5] "days"  IECU
+ SG_ TBOX_Year : 40|8@1+ (1,1985) [1985|2235] "years"  IECU
+ SG_ LocalMinuteOffset : 48|8@1+ (1,-125) [-125|125] "mins"  IECU
+ SG_ LocalHourOffset : 56|8@1+ (1,-125) [-125|125] "hr"  IECU
+
+BO_ 2298375691 HRW_EBS: 8 EBS
+ SG_ RearAxleRightWheelSpeed : 48|16@1+ (0.00390625,0) [0|250.996] "km/h"  IECU
+ SG_ RearAxleLeftWheelSpeed : 32|16@1+ (0.00390625,0) [0|250.996] "km/h"  IECU
+ SG_ FrontAxleRightWheelSpeed : 16|16@1+ (0.00390625,0) [0|250.996] "km/h"  IECU
+ SG_ FrontAxleLeftWheelSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "km/h"  IECU
+
+BO_ 2566834699 DM1_ABS: 8 EBS
+ SG_ RedStopLampState_DM1_ABS : 4|2@1+ (1,0) [0|3] ""  IPC,GW,IECU
+ SG_ ProtectLampStatus_DM1_ABS : 0|2@1+ (1,0) [0|3] ""  IPC,GW,IECU
+ SG_ MalfunctIndicatLampStat_DM1_ABS : 6|2@1+ (1,0) [0|3] ""  IECU,IPC,GW
+ SG_ AmberWarningLampStatus_DM1_ABS : 2|2@1+ (1,0) [0|3] ""  IPC,GW,IECU
+
+BO_ 2566869747 B2V_ST4: 8 BMS
+ SG_ BMS_MaxVoltBat_SubsNum : 0|8@1+ (1,0) [0|255] ""  IECU
+ SG_ BMS_MaxVoltBat_SingleNum : 8|16@1+ (1,0) [0|65535] ""  IECU
+ SG_ BMS_MinVoltBat_SubsNum : 24|8@1+ (1,0) [0|255] ""  IECU
+ SG_ BMS_MinVoltBat_SingleNum : 32|16@1+ (1,0) [0|65535] ""  IECU
+
+BO_ 2566870003 B2V_ST3: 8 BMS
+ SG_ BMS_MaxTmpBat_SubsNum : 0|8@1+ (1,0) [0|255] ""  IECU
+ SG_ BMS_MaxTmpBat_SingleNum : 8|8@1+ (1,0) [0|255] ""  IECU
+ SG_ BMS_MinTmpBat_SubsNum : 16|8@1+ (1,0) [0|255] ""  IECU
+ SG_ BMS_MinTmpBat_SingleNum : 24|8@1+ (1,0) [0|255] ""  IECU
+
+BO_ 2566861043 BMS_V_A_SOC: 8 BMS
+ SG_ BMS_BatSoc : 0|8@1+ (0.004,0) [0|255] ""  IECU
+ SG_ BMS_SumVolt : 8|16@1+ (0.1,0) [0|65535] "V"  IECU
+ SG_ BMS_SumCurr : 24|16@1+ (0.1,-1000) [-1000|5553.5] "A"  IECU
+
+BO_ 2348994715 EHPS_EPSO1: 8 EHPS
+ SG_ Steering_Angle : 0|16@1+ (0.1,-1575) [-1575|0] "deg"  IECU
+ SG_ Mote_torque_Steering : 16|8@1+ (0.1,-12.8) [-12.8|0] "Nm" Vector__XXX
+ SG_ steering_angle_spd : 32|8@1+ (10,0) [0|0] "deg/s"  IECU
+ SG_ Torque_Steering : 40|8@1+ (0.1,-12.8) [-12.8|0] "Nm"  IECU
+ SG_ ECU_MODE_CONT : 48|4@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ WS_msg_counter : 56|4@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EPS_Fd_Checksum : 60|4@1+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 2348981200 IECU_EPSI: 8 IECU
+ SG_ EPS_Ref_Steering_Angle : 0|16@1+ (0.1,-1575) [-1575|0] "deg" Vector__XXX
+ SG_ EPS_ECU_MODE : 16|4@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ VCU_state : 20|1@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Steering_valid_State : 21|1@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EPS_Overlay_TQ : 24|8@1+ (0.1,-12.8) [-12.8|0] "Nm" Vector__XXX
+ SG_ EPS_Ref_steering_angle_spd : 32|8@1+ (10,0) [0|0] "deg/s" Vector__XXX
+ SG_ msg_counter : 56|4@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EPS_Fd_Checksum : 60|4@1+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 2632777627 TP_CM_EHPS: 8 EHPS
+ SG_ ControlByte : 0|8@1+ (1,0) [0|0] "bit"  IECU
+ SG_ TotalNumberOfBbytes : 8|16@1+ (1,0) [0|0] "bit"  IECU
+ SG_ TotalNumberOfPackets : 24|8@1+ (1,0) [0|0] "bit"  IECU
+ SG_ ParameterGroupNumber : 40|24@1+ (1,0) [0|0] "bit"  IECU
+
+BO_ 2632712091 TP_DT_EHPS: 8 EHPS
+ SG_ SequenceNumber : 0|8@1+ (1,1) [0|0] "bit"  IECU
+ SG_ PacketisedData : 8|56@1+ (1,1) [0|0] "bit"  IECU
+
+BO_ 2566854305 EPS_EPSO2: 8 EHPS
+ SG_ EPS_MotSpd : 0|16@1+ (0.125,0) [0|0] "RPM"  IECU
+
+BO_ 2566827568 AIR1_BCM: 8 BCM
+ SG_ Trailer_Air_Pres : 8|8@1+ (8,0) [0|2000] "kPa"  IECU
+ SG_ Serv_Brk_Air_Pres_Circ_1 : 16|8@1+ (8,0) [0|2000] "kPa"  IECU
+ SG_ Serv_Brk_Air_Pres_Circ_2 : 24|8@1+ (8,0) [0|2000] "kPa"  IECU
+
+BO_ 2565865739 EBC1_ABS: 8 EBS
+ SG_ ASREngCtrlActive : 0|2@1+ (1,0) [0|3] "N/A"  IECU
+ SG_ ASRBrkCtrlActive : 2|2@1+ (1,0) [0|3] "N/A"  IECU
+ SG_ ABS_Active : 4|2@1+ (1,0) [0|3] "N/A"  IECU
+ SG_ EBSBrkSwt : 6|2@1+ (1,0) [0|3] "N/A"  IECU
+ SG_ BrkPdlPos : 8|8@1+ (0.4,0) [0|100] "%"  IECU
+ SG_ ASROffroadSwitch : 18|2@1+ (1,0) [0|3] "N/A"  IECU
+ SG_ EBSRedWarningSignal : 42|2@1+ (1,0) [0|3] "N/A"  IECU
+ SG_ ABS_EBSAmberWarningSignal : 44|2@1+ (1,0) [0|3] "N/A"  IECU
+
+BO_ 2566831883 EBC2_EBS: 8 EBS
+ SG_ FrontAxleSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "km/h"  IECU
+ SG_ RelativeSpeedFrontAxleLeftWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  IECU
+ SG_ RelativeSpeedFrontAxleRightWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  IECU
+ SG_ RelativeSpeedRearAxle1LeftWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  IECU
+ SG_ RelativeSpeedRearAxle1RightWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  IECU
+ SG_ RelativeSpeedRearAxle2LeftWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  IECU
+ SG_ RelativeSpeedRearAxle2RightWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  IECU
+
+BO_ 2566827275 EBC3_EBS: 8 EBS
+ SG_ BrkAppPressHihRangRear3RigtWheel : 56|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangRear3LeftWheel : 48|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangRear2RigtWheel : 40|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangRear2LeftWheel : 32|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangRear1RigtWheel : 24|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangRear1LeftWheel : 16|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangFrontRigtWheel : 8|8@1+ (5,0) [0|1250] "kPa"  IECU
+ SG_ BrkAppPressHihRangFrontLeftWheel : 0|8@1+ (5,0) [0|1250] "kPa"  IECU
+
+BO_ 2566767627 EBC5_EBS: 8 EBS
+ SG_ BrakeTemperatureWarning : 0|2@1+ (1,0) [0|0] ""  IECU
+ SG_ HaltBrakeMode : 2|3@1+ (1,0) [0|0] ""  IECU
+ SG_ HillHolderMode : 5|3@1+ (1,0) [0|0] ""  IECU
+ SG_ FoundationBrakeUse : 8|2@1+ (1,0) [0|0] ""  IECU
+ SG_ XBRSystemState : 10|2@1+ (1,0) [0|0] ""  IECU
+ SG_ XBRActiveControlMode : 12|4@1+ (1,0) [0|0] ""  IECU
+ SG_ XBRAccelerationLimit : 16|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s2"  IECU
+ SG_ ParkBrakeActuatorFullyActivated : 24|2@1+ (1,0) [0|0] ""  IECU
+ SG_ EmergrncyBrakingActive : 26|2@1+ (1,0) [0|0] ""  IECU
+
+BO_ 2566803211 VDC1_EBS: 8 EBS
+ SG_ VDCLampState : 0|2@1+ (1,0) [0|0] ""  IECU
+ SG_ VDCFullyOperational : 2|2@1+ (1,0) [0|0] ""  IECU
+
+BO_ 2565867787 VDC2_EBS: 8 EBS
+ SG_ LongitudinalAcceleration : 56|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s^2"  IECU
+ SG_ LateralAcceleration : 40|16@1+ (0.00048828125,-15.687) [-15.687|16.31251171875] "m/s^2"  IECU
+ SG_ YawRate : 24|16@1+ (0.0001220703125,-3.92) [-3.92|3.92] "rad/s"  IECU
+ SG_ SteeringWheelAngleSensorType : 22|2@1+ (1,0) [0|0] ""  IECU
+ SG_ SteeringWheelTurnCounter : 16|6@1+ (1,-32) [-32|29] "turn"  IECU
+ SG_ SteeringWheelAngle : 0|16@1+ (0.0009765625,-31.374) [-31.374|31.374] "rad"  IECU
+
+BO_ 2566838539 AUXIO_T_EBS: 8 EBS
+ SG_ Auxiliary_IO4_EBS_TralrBrkStatus : 0|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO3_EBS : 2|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO2_EBS : 4|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO1_EBS : 6|2@1+ (1,0) [0|3] ""  IECU
+ SG_ TrailerControlPressure : 8|8@1+ (5,0) [0|1250] "kpa"  IECU
+ SG_ Auxiliary_IO8_DoorSwitch : 16|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO7_LowPressureSwitch : 18|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO6_EBS_RearAxle1 : 20|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO5_EBS_ParkBrakSwitch : 22|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO12_EBS : 24|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO11_EBS : 26|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO10_EBS : 28|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Auxiliary_IO9_EBS_EBISwitch : 30|2@1+ (1,0) [0|3] ""  IECU
+
+BO_ 2566811659 CVW_EBS: 8 EBS
+ SG_ PowerVehicleWeight : 0|16@1+ (10,0) [0|642550] "KG"  IECU
+ SG_ GrossCombinationWeight : 16|16@1+ (10,0) [0|642550] "KG"  IECU
+
+BO_ 2349075242 XBR_IECU: 8 IECU
+ SG_ ExternalAccelerationDemand : 0|16@1+ (0.00048828125,-15.687) [-15.687|16.31251171875] "m/s2" Vector__XXX
+ SG_ XBR_EBI_Mode : 16|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ XBR_Priority : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ XBR_ControlMode : 20|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ XBR_Urgency : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ MessageCounter_AEBS : 56|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Checksum_AEBS : 60|4@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2349015240 EBS21: 8 EBS
+ SG_ Vehc_ABS_Active : 0|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VehRetaderCtrlActive : 2|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VehServBrkActive : 4|2@1+ (1,0) [0|3] ""  IECU
+ SG_ AutoTowVehBrkActive : 6|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VDC_Active : 8|2@1+ (1,0) [0|3] ""  IECU
+ SG_ SuprtSideOrAxleWiseBrkForceDistb : 10|2@1+ (1,0) [0|3] ""  IECU
+ SG_ WheelBaseVehSpd : 16|16@1+ (0.00390625,0) [0|250] "km/h"  IECU
+
+BO_ 2566834768 DM1_EPB: 8 EPB
+ SG_ ProtectLampStatus_EPB : 0|2@1+ (1,0) [0|3] ""  IECU
+ SG_ AmberWarningLampStatus_EPB : 2|2@1+ (1,0) [0|3] ""  IECU
+ SG_ RedStopLampState_EPB : 4|2@1+ (1,0) [0|3] ""  IECU
+ SG_ MalfunctIndicatLampStat_EPB : 6|2@1+ (1,0) [0|3] ""  IECU
+ SG_ DTC1_EPB : 16|32@1+ (1,0) [0|3] ""  IECU
+ SG_ DTC2_EPB : 48|32@1+ (1,0) [0|3] ""  IECU
+ SG_ DTC3_EPB : 80|32@1+ (1,0) [0|3] ""  IECU
+ SG_ DTC4_EPB : 112|32@1+ (1,0) [0|3] ""  IECU
+ SG_ DTC5_EPB : 144|32@1+ (1,0) [0|3] ""  IECU
+
+BO_ 2566863952 EPB1: 8 EPB
+ SG_ Pressure_of_springbrakechamber : 0|8@1+ (1,0) [0|255] "Kpa"  IECU
+ SG_ ReasonFor_InhibitionOfEPBrelease : 8|4@1+ (1,0) [0|15] ""  IECU
+ SG_ ReasonFORinhibition_ofEPBapply : 12|4@1+ (1,0) [0|15] ""  IECU
+ SG_ AmberWarningLampStatus_EPB1 : 20|2@1+ (1,0) [0|3] ""  IECU
+ SG_ RedStopLampState_EPB1 : 22|2@1+ (1,0) [0|3] ""  IECU
+ SG_ State_of_inhibition_ofEPBapply : 50|2@1+ (1,0) [0|3] ""  IECU
+ SG_ StateoOf_inhibition_ofEPBrelease : 24|8@1+ (1,0) [0|255] ""  IECU
+ SG_ Working_mode_of_EPB : 40|8@1+ (1,0) [0|255] ""  IECU
+ SG_ Trailer_test_activation_state : 48|2@1+ (1,0) [0|3] ""  IECU
+ SG_ PositionofEPBHCU : 56|8@1+ (1,-125) [-125|125] ""  IECU
+ SG_ EPB_HCU_inParking_state : 52|2@1+ (1,0) [0|3] ""  IECU
+ SG_ EPBHCU_in_Release_state : 54|2@1+ (1,0) [0|3] ""  IECU
+ SG_ State_of_EPB : 32|8@1+ (1,0) [0|255] ""  IECU
+
+
+
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "BaudRate" FLOAT 0 2000000;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmMessageCount" INT 1 255;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_  "ILTxTimeout" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagState" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","immediate";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagUudtResponse" ENUM  "false","true";
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 1;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 65535;
+BA_DEF_DEF_  "DBName" "ydzt";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "BaudRate" 2000000;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "NmMessageCount" 255;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 2000;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 640;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "ILTxTimeout" 0;
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 320;
+BA_DEF_DEF_  "ILUsed" "yes";
+BA_DEF_DEF_  "NodeLayerModules" " ";
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 50;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "DiagState" "no";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "DiagUudtResponse" "false";
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_ "NmAsrTimeoutTime" 2000;
+BA_ "NmAsrRepeatMessageTime" 3200;
+BA_ "Manufacturer" "Vector";
+BA_ "NmMessageCount" 255;
+BA_ "DBName" "ACAN";
+BA_ "GenMsgCycleTime" BO_ 2365562448 20;
+BA_ "GenMsgCycleTime" BO_ 2566877776 20;
+BA_ "GenMsgILSupport" BO_ 2180993104 1;
+BA_ "GenMsgCycleTimeFast" BO_ 2180993104 0;
+BA_ "GenMsgCycleTime" BO_ 2180993104 20;
+BA_ "GenMsgILSupport" BO_ 2566844672 1;
+BA_ "VFrameFormat" BO_ 2566844672 1;
+BA_ "GenMsgCycleTime" BO_ 2566844672 100;
+BA_ "GenMsgSendType" BO_ 2566844672 0;
+BA_ "GenMsgILSupport" BO_ 2348810251 1;
+BA_ "VFrameFormat" BO_ 2348810251 1;
+BA_ "GenMsgCycleTime" BO_ 2348810251 10;
+BA_ "GenMsgSendType" BO_ 2348810251 0;
+BA_ "GenMsgILSupport" BO_ 2566851024 1;
+BA_ "VFrameFormat" BO_ 2566851024 1;
+BA_ "GenMsgCycleTime" BO_ 2566851024 100;
+BA_ "GenMsgSendType" BO_ 2566851024 0;
+BA_ "GenMsgILSupport" BO_ 2566832407 1;
+BA_ "VFrameFormat" BO_ 2566832407 1;
+BA_ "GenMsgCycleTime" BO_ 2566832407 1000;
+BA_ "GenMsgSendType" BO_ 2566832407 0;
+BA_ "GenMsgILSupport" BO_ 2558644467 1;
+BA_ "VFrameFormat" BO_ 2558644467 1;
+BA_ "GenMsgCycleTime" BO_ 2558644467 100;
+BA_ "GenMsgSendType" BO_ 2558644467 0;
+BA_ "GenMsgILSupport" BO_ 2558841075 1;
+BA_ "VFrameFormat" BO_ 2558841075 1;
+BA_ "GenMsgCycleTime" BO_ 2558841075 100;
+BA_ "GenMsgSendType" BO_ 2558841075 0;
+BA_ "GenMsgILSupport" BO_ 2566842107 1;
+BA_ "VFrameFormat" BO_ 2566842107 1;
+BA_ "GenMsgCycleTime" BO_ 2566842107 1000;
+BA_ "GenMsgSendType" BO_ 2566842107 0;
+BA_ "GenMsgILSupport" BO_ 2298375691 1;
+BA_ "VFrameFormat" BO_ 2298375691 1;
+BA_ "GenMsgCycleTime" BO_ 2298375691 20;
+BA_ "GenMsgSendType" BO_ 2298375691 0;
+BA_ "GenMsgSendType" BO_ 2566834699 1;
+BA_ "GenMsgILSupport" BO_ 2566834699 1;
+BA_ "GenMsgILSupport" BO_ 2566869747 1;
+BA_ "VFrameFormat" BO_ 2566869747 1;
+BA_ "GenMsgCycleTime" BO_ 2566869747 1000;
+BA_ "GenMsgSendType" BO_ 2566869747 0;
+BA_ "GenMsgILSupport" BO_ 2566870003 1;
+BA_ "VFrameFormat" BO_ 2566870003 1;
+BA_ "GenMsgCycleTime" BO_ 2566870003 1000;
+BA_ "GenMsgSendType" BO_ 2566870003 0;
+BA_ "GenMsgILSupport" BO_ 2566861043 1;
+BA_ "VFrameFormat" BO_ 2566861043 1;
+BA_ "GenMsgCycleTime" BO_ 2566861043 500;
+BA_ "GenMsgSendType" BO_ 2566861043 0;
+BA_ "GenMsgILSupport" BO_ 2348994715 1;
+BA_ "VFrameFormat" BO_ 2348994715 1;
+BA_ "GenMsgCycleTime" BO_ 2348994715 10;
+BA_ "GenMsgSendType" BO_ 2348994715 0;
+BA_ "GenMsgILSupport" BO_ 2348981200 1;
+BA_ "GenMsgCycleTime" BO_ 2348981200 10;
+BA_ "GenMsgSendType" BO_ 2348981200 0;
+BA_ "GenMsgILSupport" BO_ 2632777627 1;
+BA_ "GenMsgSendType" BO_ 2632777627 1;
+BA_ "GenMsgILSupport" BO_ 2632712091 1;
+BA_ "GenMsgSendType" BO_ 2632712091 1;
+BA_ "GenMsgILSupport" BO_ 2566854305 1;
+BA_ "GenMsgCycleTime" BO_ 2566854305 20;
+BA_ "VFrameFormat" BO_ 2566854305 1;
+BA_ "GenMsgILSupport" BO_ 2566827568 1;
+BA_ "VFrameFormat" BO_ 2566827568 1;
+BA_ "GenMsgCycleTime" BO_ 2566827568 1000;
+BA_ "GenMsgSendType" BO_ 2566827568 0;
+BA_ "GenMsgILSupport" BO_ 2565865739 1;
+BA_ "VFrameFormat" BO_ 2565865739 1;
+BA_ "GenMsgCycleTime" BO_ 2565865739 50;
+BA_ "GenMsgSendType" BO_ 2565865739 0;
+BA_ "GenMsgILSupport" BO_ 2566831883 1;
+BA_ "VFrameFormat" BO_ 2566831883 1;
+BA_ "GenMsgCycleTime" BO_ 2566831883 50;
+BA_ "GenMsgSendType" BO_ 2566831883 0;
+BA_ "GenMsgILSupport" BO_ 2566827275 1;
+BA_ "VFrameFormat" BO_ 2566827275 1;
+BA_ "GenMsgCycleTime" BO_ 2566827275 100;
+BA_ "GenMsgSendType" BO_ 2566827275 0;
+BA_ "GenMsgILSupport" BO_ 2566767627 1;
+BA_ "VFrameFormat" BO_ 2566767627 1;
+BA_ "GenMsgCycleTime" BO_ 2566767627 100;
+BA_ "GenMsgSendType" BO_ 2566767627 0;
+BA_ "GenMsgILSupport" BO_ 2566803211 1;
+BA_ "VFrameFormat" BO_ 2566803211 1;
+BA_ "GenMsgCycleTime" BO_ 2566803211 100;
+BA_ "GenMsgSendType" BO_ 2566803211 0;
+BA_ "GenMsgILSupport" BO_ 2565867787 1;
+BA_ "VFrameFormat" BO_ 2565867787 1;
+BA_ "GenMsgCycleTime" BO_ 2565867787 20;
+BA_ "GenMsgSendType" BO_ 2565867787 0;
+BA_ "GenMsgILSupport" BO_ 2566838539 1;
+BA_ "GenMsgCycleTime" BO_ 2566838539 100;
+BA_ "VFrameFormat" BO_ 2566838539 1;
+BA_ "GenMsgILSupport" BO_ 2566811659 1;
+BA_ "VFrameFormat" BO_ 2566811659 1;
+BA_ "GenMsgCycleTime" BO_ 2566811659 1000;
+BA_ "GenMsgSendType" BO_ 2566811659 0;
+BA_ "GenMsgILSupport" BO_ 2349075242 1;
+BA_ "VFrameFormat" BO_ 2349075242 1;
+BA_ "GenMsgCycleTime" BO_ 2349075242 20;
+BA_ "GenMsgSendType" BO_ 2349075242 0;
+BA_ "GenMsgILSupport" BO_ 2349015240 1;
+BA_ "VFrameFormat" BO_ 2349015240 1;
+BA_ "GenMsgCycleTime" BO_ 2349015240 100;
+BA_ "GenMsgSendType" BO_ 2349015240 0;
+BA_ "GenMsgILSupport" BO_ 2566834768 1;
+BA_ "VFrameFormat" BO_ 2566834768 1;
+BA_ "GenMsgCycleTime" BO_ 2566834768 1000;
+BA_ "GenMsgSendType" BO_ 2566834768 0;
+BA_ "GenMsgILSupport" BO_ 2566863952 1;
+BA_ "VFrameFormat" BO_ 2566863952 1;
+BA_ "GenMsgCycleTime" BO_ 2566863952 100;
+BA_ "GenMsgSendType" BO_ 2566863952 0;
+BA_ "GenSigStartValue" SG_ 2365562448 HUC_BrkPostion 125;
+VAL_ 2180993104 HaltBrakeEnable 3 "Unavailable" 2 "error" 1 "enable" 0 "disable" ;
+VAL_ 2180993104 ADModeEnable 3 "Unavailable" 2 "error" 1 "enable" 0 "disable" ;
+VAL_ 2180993104 ADCU_LgtdCtrlSt 5 "Recovery mode" 4 "L5" 3 "L4" 2 "L3 主/副CAN可控，开关操作优先" 1 "L2 Req(主CAN可控)
+" 0 "No Request" ;
+VAL_ 2348810251 OverrideControlMode_TSC1_AE 0 "Override Disable" 1 "Speed Control" 2 "Torque Control" 3 "speed torque limit ctrl" ;
+VAL_ 2348810251 RequestedSpeedCtrlCondition_0002 0 "TransOptiDrvlinDisengagNolockCnd" 1 "StabOptiDrvlinDisengagNolockCnd" 2 "StabOptiDrvlinengagInlockCnd1" 3 "StabOptiDrvlinengagInlockCnd2" ;
+VAL_ 2558644467 B2V_ST1_ALIV 15 "Signal Invalid" ;
+VAL_ 2558644467 B2V_ST1_BMS 0 "HV open" 1 "Precharge" 2 "HV closed" 3 "Fail to HV on" ;
+VAL_ 2558644467 B2V_ST1_ACC_Relay 0 "Open" 1 "Closed" ;
+VAL_ 2558644467 B2V_ST1_Balance 0 "No Balancing" 1 "Balancing" ;
+VAL_ 2558644467 B2V_ST1_ChgLine 0 "Not connected" 1 "Connected" ;
+VAL_ 2558644467 B2V_ST1_ChgMode 0 "Reserved" 1 "DC charging" 2 "AC charging" 3 "Other charging" ;
+VAL_ 2558644467 B2V_ST1_ChgSt 0 "Ready to be charging" 1 "Charging" 2 "End of Charge" 3 "Charge error" ;
+VAL_ 2558644467 B2V_ST1_Fault_Levl 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_DelTemp 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_OverTemp 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_OverHVolt 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_LowHVolt 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_LowSOC 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_OverUcell 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_LowUcell 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_LowInsRes 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_UcellUniformity 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_OverChg 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_OverDisChg 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_LowTemp 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_DelParaU 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_HW 0 "Normal" 1 "Level 1-Light fault" 2 "Level 2-More severe fault" 3 "Level3-Most severe fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_OverSOC 0 "Normal" 1 "Fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_SOCJump 0 "Normal" 1 "Fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_LocalComm 0 "Normal" 1 "fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_SysNotMatched 0 "Normal" 1 "fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_HVIL 0 "Normal" 1 "fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_Fog 0 "Normal" 1 "fault" ;
+VAL_ 2558644467 B2V_ST1_Flt_Fire 0 "Normal" 1 "fault" ;
+VAL_ 2566834699 RedStopLampState_DM1_ABS 0 "Lamp off" 1 "Lamp on" 2 "Reserved" 3 "Not available" ;
+VAL_ 2566834699 ProtectLampStatus_DM1_ABS 3 "Not available" 2 "Reserved" 1 "Lamp on" 0 "Lamp off" ;
+VAL_ 2566834699 MalfunctIndicatLampStat_DM1_ABS 3 "Not available" 2 "Reserved" 1 "Lamp on" 0 "Lamp off" ;
+VAL_ 2566834699 AmberWarningLampStatus_DM1_ABS 0 "Lamp off" 1 "Lamp on" 2 "Reserved" 3 "Not available" ;
+VAL_ 2565865739 ASREngCtrlActive 0 "ASR engine control passive but installed" 1 "ASR engine control active" 2 "RSvrd" 3 "Not Available" ;
+VAL_ 2565865739 ASRBrkCtrlActive 0 "ASR brake control passive but installed" 1 "ASR brake control active" 2 "Rsvrd" 3 "Not Available" ;
+VAL_ 2565865739 ABS_Active 0 "ABS passive but installed" 1 "ABS active" 2 "Rsvrd" 3 "Not Available" ;
+VAL_ 2565865739 EBSBrkSwt 0 "BrkPdl is not being Pressed" 1 "BrkPdl is being Pressed" 2 "Rsvrd" 3 "Not Available" ;
+VAL_ 2565865739 ASROffroadSwitch 0 "Passive" 1 "Active" 2 "Rsvrd" 3 "Not Available" ;
+VAL_ 2565865739 EBSRedWarningSignal 0 "OFF" 1 "ON" 2 "Rsvrd" 3 "Take No Action" ;
+VAL_ 2565865739 ABS_EBSAmberWarningSignal 0 "OFF" 1 "ON" 2 "Rsvrd" 3 "Take No Action" ;
+VAL_ 2566767627 BrakeTemperatureWarning 0 "Fadig warning not active" 1 "Fading warning active" 2 "reserved" 3 "not available" ;
+VAL_ 2566767627 HaltBrakeMode 0 "inactive" 1 "active" 2 "active,not functioning properly" 6 "Rsvrd" 3 "TBD" 4 "TBD" 5 "TBD" 7 "TBD" ;
+VAL_ 2566767627 HillHolderMode 0 "inactive" 1 "active" 2 "active,but in a short time" 6 "Rsvrd" ;
+VAL_ 2566767627 FoundationBrakeUse 0 "not in use" 1 "in use" 3 "not available" 2 "Rsvrd" ;
+VAL_ 2566767627 XBRSystemState 0 "AnyExternalBrakeDemandBeAccept" 2 "NoExternalBrakeDemandBeAccept" 3 "not available" 1 "Only Ext BrkDeHi Prio Be Acpt" ;
+VAL_ 2566767627 XBRActiveControlMode 0 "No Brk Demnd excut" 1 "DrivBrk DemndExcut,NoExtBrkDemnd" 2 "AdditionalMode_Of_XBRCtrl_Excut" 3 "MaxMode_Of_XBRCtrl_Excut" ;
+VAL_ 2566767627 ParkBrakeActuatorFullyActivated 0 "ParkBrakeActuatorNotFullyActivat" 1 "ParkBrakeActuatorFullyActivated" ;
+VAL_ 2566767627 EmergrncyBrakingActive 0 "inactive" 1 "active" 2 "reserved" 3 "not available" ;
+VAL_ 2566803211 VDCLampState 0 "off" 1 "on" 2 "not supported" 3 "not available" ;
+VAL_ 2566803211 VDCFullyOperational 0 "not fully operational" 1 "fully operational" 2 "not supported" 3 "not available" ;
+VAL_ 2565867787 SteeringWheelAngleSensorType 0 "Relative measuring principle" 1 "Absolute measuring principle" 2 "Reserved" 3 "not available" ;
+VAL_ 2566838539 Auxiliary_IO4_EBS_TralrBrkStatus 0 "Trailer brake inactive" 1 "Trailer Brake active" 2 "Error Indicator" 3 "Not available" ;
+VAL_ 2566838539 Auxiliary_IO3_EBS 0 "Halt Brake Mode inactive" 1 "Halt Brake Mode active" 2 "Description for the value '0x2'" 3 "Halt Brk Mod not available cvfff" ;
+VAL_ 2566838539 Auxiliary_IO2_EBS 0 "Requested Brake Light Off" 1 "Requested Brake Light On" 3 "Not available" ;
+VAL_ 2566838539 Auxiliary_IO1_EBS 0 "Brake Assist Off" 1 "Brake Assist On" 3 "Not available" ;
+VAL_ 2566838539 Auxiliary_IO8_DoorSwitch 0 "Release door brake" 1 "Activate door brake" 2 "Error Indicator" 3 "Not available" ;
+VAL_ 2566838539 Auxiliary_IO7_LowPressureSwitch 0 "Supply pressure insufficient" 1 "Supply pressure sufficient" 2 "Error Indicator" 3 "Not available or not installed" ;
+VAL_ 2566838539 Auxiliary_IO6_EBS_RearAxle1 0 "Differential Lock Disengaged" 1 "Differential Lock Engaged" 2 "Error indicator" 3 "Not available or not installed" ;
+VAL_ 2566838539 Auxiliary_IO5_EBS_ParkBrakSwitch 0 "Parking brake not set" 1 "Parking brake set" 2 "Error indicator" 3 "Not available or not installed" ;
+VAL_ 2566838539 Auxiliary_IO11_EBS 0 "Auxiliary channel off" 1 "Auxiliary channel on" ;
+VAL_ 2566838539 Auxiliary_IO10_EBS 0 "Auxiliary channel off" 1 "Auxiliary channel on" ;
+VAL_ 2566838539 Auxiliary_IO9_EBS_EBISwitch 0 "Retarder integration disabled" 1 "Retarder integration enabled" 2 "Error indicator" 3 "Not available or not installed" ;
+VAL_ 2349075242 XBR_EBI_Mode 0 "no endurance brake integration allowed" 1 "only endurance brakes allowed" 2 "endurance brake integration allowed" 3 "not available" ;
+VAL_ 2349075242 XBR_Priority 0 "highest priority" 1 "high priority" 2 "Medium priority" 3 "low priority" ;
+VAL_ 2349075242 XBR_ControlMode 0 "Override Disable" 1 "AccnCtrlWithAddMod" 2 "AccnCtrlWithMaxiMod" 3 "N/A" ;
+VAL_ 2349015240 Vehc_ABS_Active 0 "Passive" 1 "Active" 2 "Error" 3 "N/A" ;
+VAL_ 2349015240 VehRetaderCtrlActive 0 "Passive" 1 "Active" 2 "Error" 3 "N/A" ;
+VAL_ 2349015240 VehServBrkActive 0 "Vehicle Service Brk Passive" 1 "Vehicle Service Brk Active" 2 "Err Ind" 3 "N/A" 3 "N/A" ;
+VAL_ 2349015240 AutoTowVehBrkActive 0 "Passive" 1 "Active" 2 "Error" 3 "Not Avaiable" ;
+VAL_ 2349015240 VDC_Active 0 "Passive but installed" 1 "VDC active" 2 "error indication" 3 "N/A" ;
+VAL_ 2349015240 SuprtSideOrAxleWiseBrkForceDistb 0 "Disable" 1 "Enable" 2 "Error" 3 "N/A" ;
+VAL_ 2566834768 ProtectLampStatus_EPB 0 "LampOff" 1 "LampOn" 2 "Reserved" 3 "TakeNoAction" ;
+VAL_ 2566834768 AmberWarningLampStatus_EPB 0 "LampOff" 1 "LampOn" 2 "Reserved" 3 "TakeNoAction" ;
+VAL_ 2566834768 RedStopLampState_EPB 0 "LampOff" 1 "LampOn" 2 "Reserved" 3 "TakeNoAction" ;
+VAL_ 2566834768 MalfunctIndicatLampStat_EPB 0 "LampOff" 1 "LampOn" 2 "Reserved" 3 "TakeNoAction" ;
+VAL_ 2566863952 ReasonFor_InhibitionOfEPBrelease 0 "No active inhibit reason" 1 "Brake pedal not pressed" 2 "External inhibit reason" 3 "Insufficient air pressure" 4 "Trailer test active" 20 "Error" 21 "Not available" ;
+VAL_ 2566863952 ReasonFORinhibition_ofEPBapply 0 "Parking brake apply not inhibited" 1 "Workshop mode active" 2 "High vehicle speed" 3 "External inhibit reason" 20 "Error" 21 "Not available" ;
+VAL_ 2566863952 AmberWarningLampStatus_EPB1 0 "Lamp off" 1 "Lamp on" 2 "Reserved" 3 "Not available" ;
+VAL_ 2566863952 RedStopLampState_EPB1 0 "Lamp off" 1 "Lamp on" 2 "Reserved" 3 "Not available" ;
+VAL_ 2566863952 State_of_inhibition_ofEPBapply 0 "EPB apply not inhibited" 1 "EPB automatic apply inhibited" 2 "Error" 3 "Not available" ;
+VAL_ 2566863952 StateoOf_inhibition_ofEPBrelease 0 "Not release inhibit active" 1 "Auto release inhibited" 2 "A and M release inhibited" 596 "Error" 597 "Not available" ;
+VAL_ 2566863952 Working_mode_of_EPB 0 "Normal mode active" 1 "Workshop mode active" 2 "Backup mode active" 3 "Automatic mode active" 5 "Roler Test Bench Mode Active" 6 "Internal EPB error" 596 "Error" 597 "Not available" ;
+VAL_ 2566863952 Trailer_test_activation_state 0 "EPB not in trailer test position" 1 "EPB in trailer test position" 2 "Error" 3 "Not available" ;
+VAL_ 2566863952 EPB_HCU_inParking_state 0 "Lever not in position" 1 "Lever in position" 2 "Error" 3 "Not available" ;
+VAL_ 2566863952 EPBHCU_in_Release_state 0 "Lever not in position" 1 "Lever in position" 2 "Error" 3 "Not available" ;
+VAL_ 2566863952 State_of_EPB 0 "Parking brake not applied" 1 "Parking brake applied" 2 "Parking brake releasing" 3 "Parking brake applying" 5 "Secondary braking active" 6 "XBR braking active" 596 "Error" 597 "Not available" ;
+

@@ -1,0 +1,341 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PBOX Veh
+
+
+BO_ 1024 IMU_ORIGIN_GYRO: 8 PBOX
+ SG_ IMU_ORI_gyroX : 7|20@0+ (1E-05,-5.23598) [-5.23598|5.23598] "rad/s" Vector__XXX
+ SG_ IMU_ORI_gyroY : 19|20@0+ (1E-05,-5.23598) [-5.23598|5.23598] "rad/s" Vector__XXX
+ SG_ IMU_ORI_gyroZ : 43|20@0+ (1E-05,-5.23598) [-5.23598|5.23598] "rad/s" Vector__XXX
+
+BO_ 1025 IMU_ORIGIN_ACC: 8 PBOX
+ SG_ IMU_ORI_accX : 7|20@0+ (0.0001,-60) [-60|44.8575] "m/s2" Vector__XXX
+ SG_ IMU_ORI_accY : 19|20@0+ (0.0001,-60) [-60|44.8575] "m/s2" Vector__XXX
+ SG_ IMU_ORI_accZ : 43|20@0+ (0.0001,-60) [-60|44.8575] "m/s2" Vector__XXX
+
+BO_ 1026 IMU_ORIGIN_COMMON: 8 PBOX
+ SG_ IMU_ORI_gpsWeek : 7|16@0+ (1,0) [0|65535] "week" Vector__XXX
+ SG_ IMU_ORI_gpsSow : 23|32@0+ (1,0) [0|604800000] "ms" Vector__XXX
+ SG_ IMU_temperatue : 55|16@0+ (0.01,-100) [-100|200] "°C" Vector__XXX
+
+BO_ 1028 IMU_BIAS_CORRECTED_ACC: 8 PBOX
+ SG_ IMU_BIAS_CORRECTED_accX : 7|20@0+ (0.0001,-60) [-60|44.8575] "m/s2" Vector__XXX
+ SG_ IMU_BIAS_CORRECTED_accY : 19|20@0+ (0.0001,-60) [-60|44.8575] "m/s2" Vector__XXX
+ SG_ IMU_BIAS_CORRECTED_accZ : 43|20@0+ (0.0001,-60) [-60|44.8575] "m/s2" Vector__XXX
+
+BO_ 1029 IMU_BIAS_CORRECTED_ANGRATE: 8 PBOX
+ SG_ IMU_BIAS_CORRECTED_angRateX : 7|20@0+ (1E-05,-5.235987) [-5.235987|5.235987] "rad/s" Vector__XXX
+ SG_ IMU_BIAS_CORRECTED_angRateY : 19|20@0+ (1E-05,-5.235987) [-5.235987|5.235987] "rad/s" Vector__XXX
+ SG_ IMU_BIAS_CORRECTED_angRateZ : 43|20@0+ (1E-05,-5.235987) [-5.235987|5.235987] "rad/s" Vector__XXX
+
+BO_ 1030 IMU_BIAS_CORRECTED_COMMON: 8 PBOX
+ SG_ IMU_gpsWeek : 7|16@0+ (1,0) [0|65535] "week" Vector__XXX
+ SG_ IMU_gpsSow : 23|32@0+ (1,0) [0|604800000] "ms" Vector__XXX
+ SG_ IMU_temperatue_2 : 55|16@0+ (0.01,-100) [-100|200] "°C" Vector__XXX
+
+BO_ 1032 GNSS_SOL_RESULT_NUM: 8 PBOX
+ SG_ GNSS_numSats : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GNSS_numSatsUsed : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GNSS_usedSnrAvg : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ HEADING_svs : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ HEADING_soln_svs : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1033 GNSS_SOL_RESULT_DOP: 8 PBOX
+ SG_ GNSS_hdop : 7|16@0+ (0.01,-327) [-327|327] "" Vector__XXX
+ SG_ GNSS_pdop : 23|16@0+ (0.01,-327) [-327|327] "" Vector__XXX
+ SG_ GNSS_vdop : 39|16@0+ (0.01,-327) [-327|327] "" Vector__XXX
+
+BO_ 1034 GNSS_SOL_RESULT_COMMON: 8 PBOX
+ SG_ GNSS_gpsWeek : 7|16@0+ (1,0) [0|65535] "week" Vector__XXX
+ SG_ GNSS_gpsSow : 23|32@0+ (1,0) [0|604800000] "ms" Vector__XXX
+
+BO_ 1035 GNSS_SOL_RESULT_STATUS: 8 PBOX
+ SG_ GNSS_postion_type : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GNSS_solution_type : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ HEADING_position_type : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ HEADING_solution_type : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GNSS_velocity_type : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1036 GNSS_SOL_RESULT_LATITUDE: 8 PBOX
+ SG_ GNSS_latitude : 7|32@0+ (1E-07,-90) [-90|90] "degree" Vector__XXX
+ SG_ GNSS_latitude_std : 39|16@0+ (0.01,0) [0|65.54] "m" Vector__XXX
+
+BO_ 1037 GNSS_SOL_RESULT_LONGITUDE: 8 PBOX
+ SG_ GNSS_longitude : 7|32@0+ (1E-07,-180) [-180|180] "degree" Vector__XXX
+ SG_ GNSS_longitude_std : 39|16@0+ (0.01,0) [0|655.35] "m" Vector__XXX
+
+BO_ 1038 GNSS_SOL_RESULT_ALTITUDE: 8 PBOX
+ SG_ GNSS_altitude : 7|24@0+ (0.01,-10000) [-10000|10000] "m" Vector__XXX
+ SG_ GNSS_altitude_std : 31|16@0+ (0.01,0) [0|65.54] "m" Vector__XXX
+ SG_ GNSS_undulation : 47|24@0+ (0.01,-10000) [-10000|10000] "m" Vector__XXX
+
+BO_ 1039 GNSS_SOL_RESULT_SPD: 8 PBOX
+ SG_ GNSS_horizontal_spd : 7|16@0+ (0.01,-100) [-100|100] "m/s" Vector__XXX
+ SG_ GNSS_track_over_ground : 23|16@0+ (0.01,-180) [-180|180] "degree" Vector__XXX
+ SG_ GNSS_vertical_spd : 39|16@0+ (0.01,-100) [-100|100] "m/s" Vector__XXX
+
+BO_ 1040 GNSS_SOL_RESULT_LATENCY: 8 PBOX
+ SG_ GNSS_measure_latency : 7|32@0+ (0.1,0) [0|100] "s" Vector__XXX
+ SG_ GNSS_diffAge : 39|32@0+ (0.1,0) [0|100] "s" Vector__XXX
+
+BO_ 1041 INS_SOL_RESULT_COMMON: 8 PBOX
+ SG_ INS_gpsWeek : 7|16@0+ (1,0) [0|65535] "week" Vector__XXX
+ SG_ INS_gpsSow : 23|32@0+ (1,0) [0|604800000] "ms" Vector__XXX
+
+BO_ 1042 INS_SOL_RESULT_LATITUDE: 8 PBOX
+ SG_ INS_latitude : 7|32@0+ (1E-07,-90) [-90|90] "degree" Vector__XXX
+ SG_ INS_latitudeStd : 39|16@0+ (0.01,0) [0|65.54] "m" Vector__XXX
+
+BO_ 1043 INS_SOL_RESULT_LONGITUDE: 8 PBOX
+ SG_ INS_longitude : 7|32@0+ (1E-07,-180) [-180|180] "degree" Vector__XXX
+ SG_ INS_longitudeStd : 39|16@0+ (0.01,0) [0|65.54] "m" Vector__XXX
+
+BO_ 1044 INS_SOL_RESULT_ALTITUDE: 8 PBOX
+ SG_ INS_altitude : 7|24@0+ (0.01,-10000) [-10000|10000] "m" Vector__XXX
+ SG_ INS_altitudeStd : 31|16@0+ (0.01,0) [0|65.54] "m" Vector__XXX
+ SG_ INS_undulation : 47|24@0+ (0.01,-10000) [-10000|10000] "m" Vector__XXX
+
+BO_ 1045 INS_SOL_RESULT_ANGLE: 8 PBOX
+ SG_ INS_courseAngle : 7|16@0+ (0.01,0) [0|360] "degree" Vector__XXX
+ SG_ INS_yawAngle : 23|16@0+ (0.01,-180) [-180|180] "degree" Vector__XXX
+ SG_ INS_pitch : 39|16@0+ (0.01,-90) [-90|90] "degree" Vector__XXX
+ SG_ INS_roll : 55|16@0+ (0.01,-180) [-180|180] "degree" Vector__XXX
+
+BO_ 1046 INS_SOL_RESULT_ANGLE_STD: 8 PBOX
+ SG_ INS_courseAngleStd : 7|16@0+ (0.01,0) [0|65.54] "degree" Vector__XXX
+ SG_ INS_yawAngleStd : 23|16@0+ (0.01,0) [0|65.54] "degree" Vector__XXX
+ SG_ INS_pitchStd : 39|16@0+ (0.01,0) [0|65.54] "degree" Vector__XXX
+ SG_ INS_rollStd : 55|16@0+ (0.01,0) [0|65.54] "degree" Vector__XXX
+
+BO_ 1047 INS_SOL_RESULT_VEL: 8 PBOX
+ SG_ INS_velocity : 7|16@0+ (0.01,0) [0|200] "m/s" Vector__XXX
+ SG_ INS_velocityE : 23|16@0+ (0.01,-100) [-100|100] "m/s" Vector__XXX
+ SG_ INS_velocityN : 39|16@0+ (0.01,-100) [-100|100] "m/s" Vector__XXX
+ SG_ INS_velocityU : 55|16@0+ (0.01,-100) [-100|100] "m/s" Vector__XXX
+
+BO_ 1048 INS_SOL_RESULT_VEL_STD: 8 PBOX
+ SG_ INS_velocityStd : 7|16@0+ (0.01,0) [0|65.54] "m/s" Vector__XXX
+ SG_ INS_velocityEStd : 23|16@0+ (0.01,0) [0|65.54] "m/s" Vector__XXX
+ SG_ INS_velocityNStd : 39|16@0+ (0.01,0) [0|65.54] "m/s" Vector__XXX
+ SG_ INS_velocityUStd : 55|16@0+ (0.01,0) [0|65.54] "m/s" Vector__XXX
+
+BO_ 1049 INS_SOL_RESULT_STATUS: 8 PBOX
+ SG_ INS_insStatus : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ INS_posType : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1050 HEADING_ANGLE: 8 PBOX
+ SG_ HEADING_heading : 7|16@0+ (0.01,0) [0|360] "degree" Vector__XXX
+ SG_ HEADING_pitch : 23|16@0+ (0.01,-90) [-90|90] "degree" Vector__XXX
+ SG_ HEADING_heading_std : 39|10@0+ (0.01,0) [0|10] "degree" Vector__XXX
+ SG_ HEADING_pitch_std : 45|10@0+ (0.01,0) [0|10] "degree" Vector__XXX
+ SG_ HEADING_length : 51|12@0+ (0.01,0) [0|40.95] "m" Vector__XXX
+
+BO_ 1056 DEVSTATUS: 8 PBOX
+ SG_ DEVSTATUS_ap_temperatue : 7|16@0+ (0.01,-100) [-100|200] "℃" Vector__XXX
+
+BO_ 2298375691 HRW_EBS: 8 Veh
+ SG_ FrontAxleLeftWheelSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+ SG_ FrontAxleRightWheelSpeed : 16|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+ SG_ RearAxleLeftWheelSpeed : 32|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+ SG_ RearAxleRightWheelSpeed : 48|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+
+
+
+CM_ " ";
+CM_ SG_ 1024 IMU_ORI_gyroX "陀螺X轴（原始信号） IMU整机坐标系下陀螺仪X轴数据";
+CM_ SG_ 1024 IMU_ORI_gyroY "陀螺Y轴（原始信号） IMU整机坐标系下陀螺仪Y轴数据";
+CM_ SG_ 1024 IMU_ORI_gyroZ "陀螺Z轴（原始信号） IMU整机坐标系下陀螺仪Z轴数据";
+CM_ SG_ 1025 IMU_ORI_accX "加计X轴（原始信号） IMU整机坐标系下加速度计X轴数据";
+CM_ SG_ 1025 IMU_ORI_accY "加计Y轴（原始信号） IMU整机坐标系下加速度计Y轴数据";
+CM_ SG_ 1025 IMU_ORI_accZ "加计Z轴（原始信号） IMU整机坐标系下加速度计Z轴数据";
+CM_ SG_ 1026 IMU_ORI_gpsWeek "时间戳，GPS周 自1980年1月6日0点起到现在经过的周数";
+CM_ SG_ 1026 IMU_ORI_gpsSow "时间戳，GPS周内秒 自该周起始时间到现在经过的秒数";
+CM_ SG_ 1026 IMU_temperatue "温度 温度（摄氏度）";
+CM_ SG_ 1028 IMU_BIAS_CORRECTED_accX "加计X轴（修正信号） IMU整机坐标系下加速度计X轴数据";
+CM_ SG_ 1028 IMU_BIAS_CORRECTED_accY "加计Y轴（修正信号） IMU整机坐标系下加速度计Y轴数据";
+CM_ SG_ 1028 IMU_BIAS_CORRECTED_accZ "加计Z轴（修正信号） IMU整机坐标系下加速度计Z轴数据";
+CM_ SG_ 1029 IMU_BIAS_CORRECTED_angRateX "陀螺X轴（修正信号） IMU整机坐标系下陀螺仪X轴数据";
+CM_ SG_ 1029 IMU_BIAS_CORRECTED_angRateY "陀螺Y轴（修正信号） IMU整机坐标系下陀螺仪Y轴数据";
+CM_ SG_ 1029 IMU_BIAS_CORRECTED_angRateZ "陀螺Z轴（修正信号） IMU整机坐标系下陀螺仪Z轴数据";
+CM_ SG_ 1030 IMU_gpsWeek "时间戳，GPS周 自1980年1月6日0点起到现在经过的周数";
+CM_ SG_ 1030 IMU_gpsSow "时间戳，GPS周内秒 自该周起始时间到现在经过的秒数";
+CM_ SG_ 1030 IMU_temperatue_2 "温度 温度（摄氏度）";
+CM_ SG_ 1032 GNSS_numSats "主天线收星数 主天线收星数";
+CM_ SG_ 1032 GNSS_numSatsUsed "主天线参与解算卫星数 主天线参与解算卫星数";
+CM_ SG_ 1032 GNSS_usedSnrAvg "主天线参与解算卫星的平均载噪比 主天线参与解算卫星的平均载噪比";
+CM_ SG_ 1032 HEADING_svs "定向天线可见卫星数";
+CM_ SG_ 1032 HEADING_soln_svs "参与定向的卫星数";
+CM_ SG_ 1033 GNSS_hdop "水平位置精度因子 水平位置精度因子";
+CM_ SG_ 1033 GNSS_pdop "空间位置精度因子 空间位置精度因子";
+CM_ SG_ 1033 GNSS_vdop "高程精度因子 高程精度因子";
+CM_ SG_ 1034 GNSS_gpsWeek "时间戳，GPS周 自1980年1月6日0点起到现在经过的周数";
+CM_ SG_ 1034 GNSS_gpsSow "时间戳，GPS周内秒 自该周起始时间到现在经过的秒数";
+CM_ SG_ 1035 GNSS_postion_type "定位状态    同BESTGNSSPOS协议中PosType";
+CM_ SG_ 1035 GNSS_solution_type "GNSS解算状态    同BESTGNSSPOS协议中SolType";
+CM_ SG_ 1035 HEADING_position_type "定向类型";
+CM_ SG_ 1035 HEADING_solution_type "解算状态";
+CM_ SG_ 1035 GNSS_velocity_type "速度类型 与定位状态一致";
+CM_ SG_ 1036 GNSS_latitude "纬度 主天线位置的纬度（WGS84）";
+CM_ SG_ 1036 GNSS_latitude_std "纬度标准差 主天线位置的纬度（WGS84）";
+CM_ SG_ 1037 GNSS_longitude "经度 主天线位置的经度（WGS84）";
+CM_ SG_ 1037 GNSS_longitude_std "经度标准差 主天线位置的经度（WGS84）";
+CM_ SG_ 1038 GNSS_altitude "海拔 主天线位置的海拔高度（WGS84）";
+CM_ SG_ 1038 GNSS_altitude_std "海拔标准差 主天线位置的海拔高度（WGS84）";
+CM_ SG_ 1038 GNSS_undulation "高程异常值";
+CM_ SG_ 1039 GNSS_horizontal_spd "水平速度";
+CM_ SG_ 1039 GNSS_track_over_ground "前进方向与真北的夹角";
+CM_ SG_ 1039 GNSS_vertical_spd "垂直速度 其中正值表示高度（上升)增加，负值表示高度(下降)减少";
+CM_ SG_ 1040 GNSS_measure_latency "延迟";
+CM_ SG_ 1040 GNSS_diffAge "gnss差分龄期 差分龄期";
+CM_ SG_ 1041 INS_gpsWeek "时间戳，GPS周 自1980年1月6日0点起到现在经过的周数";
+CM_ SG_ 1041 INS_gpsSow "时间戳，GPS周内秒 自该周起始时间到现在经过的秒数";
+CM_ SG_ 1042 INS_latitude "纬度 用户车体坐标系原点的纬度（WGS84）";
+CM_ SG_ 1042 INS_latitudeStd "纬度标准差 用户车体坐标系原点的纬度（WGS84）";
+CM_ SG_ 1043 INS_longitude "经度 用户车体坐标系原点的纬度（WGS84）";
+CM_ SG_ 1043 INS_longitudeStd "经度标准差 用户车体坐标系原点的纬度（WGS84）";
+CM_ SG_ 1044 INS_altitude "海拔 用户车体坐标系原点的纬度（WGS84）";
+CM_ SG_ 1044 INS_altitudeStd "海拔标准差 用户车体坐标系原点的纬度（WGS84）";
+CM_ SG_ 1044 INS_undulation "10hz";
+CM_ SG_ 1045 INS_courseAngle "航迹角（运动轨迹切线方向与正北夹角） 载体运动轨迹切线方向（速度方向）与正北方向的夹角";
+CM_ SG_ 1045 INS_yawAngle "航向（车头前进方向与正北夹角） 载体车头前进方向与正北方向的夹角";
+CM_ SG_ 1045 INS_pitch "俯仰角 载体车头向上倾斜的角度";
+CM_ SG_ 1045 INS_roll "翻滚角 载体车身右下倾斜的角度";
+CM_ SG_ 1046 INS_courseAngleStd "航迹角标准差 载体运动轨迹切线方向（速度方向）与正北方向的夹角的标准差";
+CM_ SG_ 1046 INS_yawAngleStd "航向标准差 载体车头前进方向与正北方向的夹角标准差";
+CM_ SG_ 1046 INS_pitchStd "俯仰角标准差 载体车头向上倾斜的角度标准差";
+CM_ SG_ 1046 INS_rollStd "翻滚角标准差 载体车身右下倾斜的角度标准差";
+CM_ SG_ 1047 INS_velocity "速度 用户车体坐标系原点运动的合速度";
+CM_ SG_ 1047 INS_velocityE "东向速度 用户车体坐标系原点的东向速度";
+CM_ SG_ 1047 INS_velocityN "北向速度 用户车体坐标系原点的北向速度";
+CM_ SG_ 1047 INS_velocityU "天向速度 用户车体坐标系原点的天向速度";
+CM_ SG_ 1048 INS_velocityStd "速度标准差 用户车体坐标系原点运动的合速度标准差";
+CM_ SG_ 1048 INS_velocityEStd "东向速度标准差 用户车体坐标系原点的东向速度标准差";
+CM_ SG_ 1048 INS_velocityNStd "北向速度标准差 用户车体坐标系原点的北向速度标准差";
+CM_ SG_ 1048 INS_velocityUStd "天向速度标准差 用户车体坐标系原点的天向速度标准差";
+CM_ SG_ 1049 INS_insStatus "INS解算状态    同INSPVAX协议中的INS Status";
+CM_ SG_ 1049 INS_posType "定位状态    同INSPVAX协议中的PosType";
+CM_ SG_ 1050 HEADING_heading "方位角";
+CM_ SG_ 1050 HEADING_pitch "俯仰角";
+CM_ SG_ 1050 HEADING_heading_std "方位角标准差";
+CM_ SG_ 1050 HEADING_pitch_std "俯仰角标准差";
+CM_ SG_ 1050 HEADING_length "定向基线长度";
+CM_ SG_ 1056 DEVSTATUS_ap_temperatue "设备温度";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","IfActive","CE","CA","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnChange","OnWrite","IfActive","OnChangeWithRepetition","OnWriteWithRepetition","IfActiveWithRepetition","NoSigSendType","OnChangeAndIfActive","OnChangeAndIfActiveWithRepetition","CA","CE","Event";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 1000000000;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmNode" ENUM  "Not","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 65535;
+BA_DEF_ BU_  "NmCAN" INT 0 2;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmBaseAddress" HEX 0 2047;
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "ILUsed" "No";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "Not";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmCAN" 0;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "BusType" "CAN";
+BA_ "DBName" "ByNav_HRW_X2_CAN_v01";
+BA_ "GenMsgSendType" BO_ 1024 5;
+BA_ "GenMsgSendType" BO_ 1025 5;
+BA_ "GenMsgSendType" BO_ 1026 5;
+BA_ "GenMsgSendType" BO_ 1028 5;
+BA_ "GenMsgSendType" BO_ 1029 5;
+BA_ "GenMsgSendType" BO_ 1030 5;
+BA_ "GenMsgSendType" BO_ 1032 5;
+BA_ "GenMsgSendType" BO_ 1033 5;
+BA_ "GenMsgSendType" BO_ 1034 5;
+BA_ "GenMsgSendType" BO_ 1035 5;
+BA_ "GenMsgSendType" BO_ 1036 5;
+BA_ "GenMsgSendType" BO_ 1037 5;
+BA_ "GenMsgSendType" BO_ 1038 5;
+BA_ "GenMsgSendType" BO_ 1039 5;
+BA_ "GenMsgSendType" BO_ 1040 5;
+BA_ "GenMsgSendType" BO_ 1041 5;
+BA_ "GenMsgSendType" BO_ 1042 5;
+BA_ "GenMsgSendType" BO_ 1043 5;
+BA_ "GenMsgSendType" BO_ 1044 5;
+BA_ "GenMsgSendType" BO_ 1045 5;
+BA_ "GenMsgSendType" BO_ 1046 5;
+BA_ "GenMsgSendType" BO_ 1047 5;
+BA_ "GenMsgSendType" BO_ 1048 5;
+BA_ "GenMsgSendType" BO_ 1049 5;
+BA_ "GenMsgSendType" BO_ 1050 5;
+BA_ "GenMsgSendType" BO_ 1056 5;
+BA_ "GenMsgCycleTime" BO_ 2298375691 20;
+

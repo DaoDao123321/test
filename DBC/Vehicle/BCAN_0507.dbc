@@ -1,0 +1,335 @@
+VERSION "20241003.01"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IECU VCU_PE VCU TCU MCU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ IECU_Reserved1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ IECU_Reserved2 : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ IECU_Reserved3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IECU_TipperActionReq : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ BatExchangeReq : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ VCU_TipperStats : 0|3@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_Reserved1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_Reserved2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_Reserved3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AccelActuPos : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ AccelActuPosV : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccelEfctvPosV : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AccelEfctvPos : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ VCUBrkPdlActuPos : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ VCUKickdown1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566886657 IECU_VCUreq: 8 IECU
+ SG_ IECU_VCUToqReqVal : 0|16@1+ (1,-3200) [-3200|3353] ""  VCU
+ SG_ IECU_VCUCtrlReq : 16|2@1+ (1,0) [0|3] ""  VCU
+ SG_ IECU_VCUShiftPosReq : 18|3@1+ (1,0) [0|7] ""  VCU
+ SG_ IECU_EHBSDriveoffReq : 21|2@1+ (1,0) [0|3] ""  VCU
+ SG_ IECU_Sts : 24|3@1+ (1,0) [0|3] ""  VCU
+ SG_ IECU_AutoDrvngModeFailureSts : 27|3@1+ (1,0) [0|7] ""  VCU
+ SG_ iECU_BCMCrankReq : 30|1@1+ (1,0) [0|1] "Nm"  VCU
+ SG_ iECU_BCMOFFReq : 31|1@1+ (1,0) [0|1] "Nm"  VCU
+ SG_ AutoDriveSwitchStatus : 32|2@1+ (1,0) [0|3] ""  VCU
+ SG_ MessageCounter_iECU_VCUreq : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ CheckSum_iECU_VCUreq : 60|4@1+ (1,0) [0|15] ""  VCU
+
+BO_ 2566574887 VCU_CtrlRspns: 8 VCU_PE
+ SG_ VCU_AutoDriveSwitchStatus : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_CtrlMode : 0|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VCU_Available : 2|3@1+ (1,0) [0|7] ""  IECU
+ SG_ VCU_IECUToqReqResp : 5|3@1+ (1,0) [0|7] ""  IECU
+ SG_ VCU_IECUToqReqRespV : 11|1@1+ (1,0) [0|1] ""  IECU
+ SG_ MessageCounter_VCU_CtrlRspns : 56|4@1+ (1,0) [0|7] ""  IECU
+ SG_ CheckSum_VCU_CtrlRspns : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566848551 VCU_18FF0027h: 8 VCU
+ SG_ BrakeForceStatus : 9|1@1+ (1,0) [0|1] ""  IECU
+ SG_ DrivingForceStatus : 10|1@1+ (1,0) [0|1] ""  IECU
+ SG_ VCUAvailable : 32|1@1+ (1,0) [0|1] ""  IECU
+ SG_ VCUAcceleratorePedalOverride : 33|1@1+ (1,0) [0|1] ""  IECU
+ SG_ PrplsnSysAtv : 38|2@1+ (1,0) [0|3] ""  IECU
+ SG_ MessageCounter_18FF0027h : 56|4@1+ (1,0) [0|15] ""  IECU
+ SG_ CheckSum_18FF0027h : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2365200167 VCU_CalcPTTrq: 8 VCU
+ SG_ Shift_READY_Signal : 12|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CurrentTorqueV : 14|1@1+ (1,0) [0|1] ""  IECU
+ SG_ DriverRequestTorqueV : 15|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CurrentTorque : 16|16@1+ (0.1,-3200) [-3200|3353] "Nm"  IECU
+ SG_ DriverRequestTorque : 32|16@1+ (0.1,-3200) [-3200|3353] "Nm"  IECU
+ SG_ VCU_CalcPTTrq_RllCnt : 56|4@1+ (1,0) [0|15] ""  IECU
+ SG_ VCU_CalcPTTrq_ChkSum : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566527015 VCU_HVCtrl: 8 VCU
+ SG_ PowerLimitIndication : 33|1@1+ (1,0) [0|1] ""  IECU
+
+BO_ 2566536231 VCU_PTTrqXtrm: 8 VCU
+ SG_ TorqueMIN : 0|16@1+ (0.1,-3200) [-3200|3353] "Nm"  IECU
+ SG_ TorqueMAX : 16|16@1+ (0.1,-3200) [-3200|3353] "Nm"  IECU
+ SG_ TorqueMAX_V : 32|1@1+ (1,0) [0|1] ""  IECU
+ SG_ TorqueMIN_V : 33|1@1+ (1,0) [0|1] ""  IECU
+ SG_ VCU_PTTrqXtrm_RllCnt : 56|4@1+ (1,0) [0|7] ""  IECU
+ SG_ VCU_PTTrqXtrm_ChkSum : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566849027 TCU_StateMess: 8 TCU
+ SG_ VCU_TCUSts : 0|4@1+ (1,0) [0|15] ""  IECU
+ SG_ VCU_TranAMModFedb : 4|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VCU_TCUGearChgeReq : 6|2@1+ (1,0) [0|3] ""  IECU
+ SG_ VCU_TCUFltLvl : 8|3@1+ (1,0) [0|7] ""  IECU
+
+BO_ 2348876549 CLU_Info: 8 TCU
+ SG_ CLU1_Inf_Gear : 0|8@1+ (1,0) [0|255] ""  IECU
+ SG_ CLU1_Inf_S : 8|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CLU2_Inf_C : 9|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CLU1_Inf_TrailerMode : 11|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CLU1_Inf_OverLineMode : 12|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CLU1_Inf_SelfLearing : 13|1@1+ (1,0) [0|1] ""  IECU
+ SG_ CLU1_Inf_Life : 56|8@1+ (1,0) [0|255] ""  IECU
+
+BO_ 2565866755 ETC2: 8 TCU
+ SG_ TransSelectedGear : 0|8@1+ (1,-125) [-125|125] ""  IECU
+ SG_ TransActualGearRatio : 8|16@1+ (0.001,0) [0|64.255] ""  IECU
+ SG_ TransCurrentGear : 24|8@1+ (1,-125) [-125|125] ""  IECU
+ SG_ TransRequestedRange : 32|16@1+ (1,0) [0|255] "per"  IECU
+ SG_ TransCurrentRange : 48|16@1+ (1,0) [0|255] "per"  IECU
+
+BO_ 2565865987 ETC1: 8 TCU
+ SG_ TCU_Shift_Operation : 4|2@1+ (1,0) [0|3] ""  IECU
+ SG_ TCU_OutShaft_Speed : 8|16@1+ (0.125,0) [0|65535] "Rpm"  IECU
+ SG_ TCU_InShaft_Speed : 40|16@1+ (0.125,0) [0|65535] "Rpm"  IECU
+
+BO_ 2566853104 MCU1_BaseMess1_OTA: 8 MCU
+ SG_ VCU_MCUSts1 : 0|4@1+ (1,0) [0|15] ""  IECU
+ SG_ VCU_MCUFltLvl1 : 8|3@1+ (1,0) [0|255] ""  IECU
+ SG_ VCU_AlwTrqMax1 : 16|16@1+ (1,0) [0|65535] "Nm"  IECU
+ SG_ VCU_AlwTrqMin1 : 32|16@1+ (1,-5000) [-5000|60535] "Nm"  IECU
+ SG_ VCU_LifeSig1 : 56|8@1+ (1,0) [0|255] ""  IECU
+
+BO_ 2566853360 MCU1_BasicMess2_OTA: 8 MCU
+ SG_ VCU_DriMotNo1 : 4|4@1+ (1,0) [0|15] ""  IECU
+ SG_ VCU_DriMotSts1 : 8|3@1+ (1,0) [0|7] ""  IECU
+ SG_ VCU_Reserve1 : 11|5@1+ (1,0) [0|31] ""  IECU
+ SG_ VCU_DriMotTmp1 : 16|8@1+ (1,-40) [-40|215] "℃"  IECU
+ SG_ VCU_DriMCUTmp1 : 24|8@1+ (1,-40) [-40|215] "℃"  IECU
+ SG_ VCU_NowOutTrq1 : 32|16@1+ (1,-5000) [-5000|60535] "Nm"  IECU
+ SG_ VCU_NowOutRpm1 : 48|16@1+ (1,-12000) [-12000|53535] "Rpm"  IECU
+
+BO_ 2566853616 MCU1_BaseMess3_OTA: 8 MCU
+ SG_ VCU_MCUDCBusVolt1 : 0|16@1+ (1,0) [0|65535] "V"  IECU
+ SG_ VCU_MCUDCBusCurr1 : 16|16@1+ (1,-1000) [-1000|64535] "A"  IECU
+ SG_ VCU_DriMotFltSum1 : 32|8@1+ (1,0) [0|255] ""  IECU
+ SG_ VCU_DriMotFltCode1 : 40|8@1+ (1,0) [0|255] ""  IECU
+ SG_ VCU_MotRelsoVal1 : 48|16@1+ (0.1,0) [0|65535] ""  IECU
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "BaudRate" FLOAT 0 2000000;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmMessageCount" INT 1 255;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_  "ILTxTimeout" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagState" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","immediate";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagUudtResponse" ENUM  "false","true";
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 1;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 65535;
+BA_DEF_DEF_  "DBName" "ydzt";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "BaudRate" 2000000;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "NmMessageCount" 255;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 2000;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 640;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "ILTxTimeout" 0;
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 320;
+BA_DEF_DEF_  "ILUsed" "yes";
+BA_DEF_DEF_  "NodeLayerModules" " ";
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 50;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "DiagState" "no";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "DiagUudtResponse" "false";
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_ "NmAsrTimeoutTime" 2000;
+BA_ "NmAsrRepeatMessageTime" 3200;
+BA_ "Manufacturer" "Vector";
+BA_ "NmMessageCount" 255;
+BA_ "DBName" "BCAN";
+BA_ "VFrameFormat" BO_ 2566886657 1;
+BA_ "GenMsgCycleTime" BO_ 2566886657 20;
+BA_ "GenMsgSendType" BO_ 2566886657 0;
+BA_ "GenMsgILSupport" BO_ 2566886657 1;
+BA_ "VFrameFormat" BO_ 2566574887 1;
+BA_ "GenMsgCycleTime" BO_ 2566574887 20;
+BA_ "GenMsgSendType" BO_ 2566574887 0;
+BA_ "GenMsgILSupport" BO_ 2566574887 1;
+BA_ "VFrameFormat" BO_ 2566848551 1;
+BA_ "GenMsgCycleTime" BO_ 2566848551 20;
+BA_ "GenMsgSendType" BO_ 2566848551 0;
+BA_ "GenMsgILSupport" BO_ 2566848551 1;
+BA_ "VFrameFormat" BO_ 2365200167 1;
+BA_ "GenMsgCycleTime" BO_ 2365200167 20;
+BA_ "GenMsgSendType" BO_ 2365200167 0;
+BA_ "GenMsgILSupport" BO_ 2365200167 1;
+BA_ "VFrameFormat" BO_ 2566527015 1;
+BA_ "GenMsgCycleTime" BO_ 2566527015 20;
+BA_ "GenMsgSendType" BO_ 2566527015 0;
+BA_ "GenMsgILSupport" BO_ 2566527015 1;
+BA_ "VFrameFormat" BO_ 2566536231 1;
+BA_ "GenMsgCycleTime" BO_ 2566536231 20;
+BA_ "GenMsgSendType" BO_ 2566536231 0;
+BA_ "GenMsgILSupport" BO_ 2566536231 1;
+BA_ "VFrameFormat" BO_ 2566849027 1;
+BA_ "GenMsgCycleTime" BO_ 2566849027 100;
+BA_ "GenMsgSendType" BO_ 2566849027 0;
+BA_ "GenMsgILSupport" BO_ 2566849027 1;
+BA_ "VFrameFormat" BO_ 2348876549 1;
+BA_ "GenMsgCycleTime" BO_ 2348876549 100;
+BA_ "GenMsgSendType" BO_ 2348876549 0;
+BA_ "GenMsgILSupport" BO_ 2348876549 1;
+BA_ "VFrameFormat" BO_ 2565866755 1;
+BA_ "GenMsgCycleTime" BO_ 2565866755 100;
+BA_ "GenMsgSendType" BO_ 2565866755 0;
+BA_ "GenMsgILSupport" BO_ 2565866755 1;
+BA_ "VFrameFormat" BO_ 2565865987 1;
+BA_ "GenMsgCycleTime" BO_ 2565865987 100;
+BA_ "GenMsgSendType" BO_ 2565865987 0;
+BA_ "GenMsgILSupport" BO_ 2565865987 1;
+BA_ "VFrameFormat" BO_ 2566853104 1;
+BA_ "GenMsgCycleTime" BO_ 2566853104 500;
+BA_ "GenMsgSendType" BO_ 2566853104 0;
+BA_ "GenMsgILSupport" BO_ 2566853104 1;
+BA_ "VFrameFormat" BO_ 2566853360 1;
+BA_ "GenMsgCycleTime" BO_ 2566853360 10;
+BA_ "GenMsgSendType" BO_ 2566853360 0;
+BA_ "GenMsgILSupport" BO_ 2566853360 1;
+BA_ "VFrameFormat" BO_ 2566853616 1;
+BA_ "GenMsgCycleTime" BO_ 2566853616 100;
+BA_ "GenMsgSendType" BO_ 2566853616 0;
+BA_ "GenMsgILSupport" BO_ 2566853616 1;
+VAL_ 3221225472 IECU_TipperActionReq 0 "NoOperation" 1 "Up" 2 "Down" ;
+VAL_ 3221225472 BatExchangeReq 0 "No Request" 1 "Request" 2 "Reserved" 3 "Reserved" ;
+VAL_ 3221225472 VCU_TipperStats 0 "Bottom" 1 "Top" 2 "Blocking" 3 "InOperation" 4 "UnKnow" 7 "Error" ;
+VAL_ 3221225472 AccelActuPosV 1 "Invalid" 0 "Valid" ;
+VAL_ 3221225472 AccelEfctvPosV 0 "Valid" 1 "Invalid" ;
+VAL_ 3221225472 VCUKickdown1 1 "Kickdown" 0 "No Kickdown" ;
+VAL_ 2566886657 IECU_VCUCtrlReq 0 "No Request" 1 "Request" 2 "Reserved" 3 "Reserved" ;
+VAL_ 2566886657 IECU_VCUShiftPosReq 0 "Default" 1 "R" 2 "N" 3 "D" ;
+VAL_ 2566886657 IECU_EHBSDriveoffReq 0 "No Request" 1 "Request" 2 "Reserved" 3 "Reserved" ;
+VAL_ 2566886657 IECU_Sts 0 "Off" 1 "Disable" 2 "Enable" 3 "Active" 4 "Fault" ;
+VAL_ 2566886657 IECU_AutoDrvngModeFailureSts 0 "No error" 1 "Performance degradation" 2 "TemporaryNotAvailable" 3 "PermanentNotAvailable" 4 "Reserved" 5 "Reserved" 6 "Reserved" 7 "Reserved" ;
+VAL_ 2566886657 iECU_BCMCrankReq 0 "No Request" 1 "Request" ;
+VAL_ 2566886657 iECU_BCMOFFReq 0 "No Request" 1 "Request" ;
+VAL_ 2566886657 AutoDriveSwitchStatus 0 "off" 1 "Active" 2 "Unknown" 3 "Error" ;
+VAL_ 2566574887 VCU_CtrlMode 0 "Default" 1 "IECU Mode" 2 "Manual Mode" 3 "Reserved" ;
+VAL_ 2566574887 VCU_Available 1 "Available" 0 "Not Availabke" ;
+VAL_ 2566574887 VCU_IECUToqReqResp 0 "No Request" 1 "Request Honored" 2 "Lost Arbitration" 3 "Failure Temporay" 4 "Failure Permanent" 5 "Precondition not satisfied" 6 "Reserved" 7 "Reserved" ;
+VAL_ 2566848551 BrakeForceStatus 0 "No Braking Force" 1 "Braking Force" ;
+VAL_ 2566848551 DrivingForceStatus 0 "No Driving Force" 1 "Driving Force" ;
+VAL_ 2566848551 VCUAvailable 0 "Unavilable" 1 "Available" ;
+VAL_ 2566848551 VCUAcceleratorePedalOverride 1 "Override" 0 "No override" ;
+VAL_ 2566848551 PrplsnSysAtv 0 "Power Not Ready" 1 "Power Ready" 2 "Reserved" 3 "NotAvailable" 3 "NotAvailable" ;
+VAL_ 2566848551 MessageCounter_18FF0027h 3 "NotAvailable" ;
+VAL_ 2566848551 CheckSum_18FF0027h 3 "NotAvailable" ;
+VAL_ 2365200167 Shift_READY_Signal 0 "禁止换挡" 1 "允许换挡" ;
+VAL_ 2365200167 CurrentTorqueV 1 "Invalid" 0 "Valid" ;
+VAL_ 2365200167 DriverRequestTorqueV 1 "Invalid" 0 "Valid" ;
+VAL_ 2365200167 DriverRequestTorque 0 "Valid" ;
+VAL_ 2566527015 PowerLimitIndication 0 "no power limit" 1 "power limit" ;
+VAL_ 2566536231 TorqueMAX_V 1 "Invalid" 0 "Valid" ;
+VAL_ 2566536231 TorqueMIN_V 1 "Invalid" 0 "Valid" ;
+VAL_ 2566536231 VCU_PTTrqXtrm_ChkSum 0 "Valid" ;
+VAL_ 2565866755 TransCurrentGear 0 "N档" 1 "D1" 2 "D2" 3 "D3" 4 "D4" 5 "D5" 25 "R档" 27 "换挡过程中" 28 "档位错误" ;
+VAL_ 2566853104 VCU_MCUSts1 0 "自检成功" 1 "使能成功" 2 "转速模式" 3 "转矩模式" 4 "转速模式转矩受限" 5 "转矩模式转速受限" 7 "主动放电中" 8 "防溜坡控制工作模式" ;
+VAL_ 2566853104 VCU_MCUFltLvl1 0 "无故障" 1 "一级故障" 2 "二级故障" 3 "三级故障" ;
+VAL_ 2566853360 VCU_DriMotSts1 1 "耗电" 2 "发电" 4 "关闭状态" 6 "准备状态" 7 "异常" 0 "无效" ;
+

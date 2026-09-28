@@ -1,0 +1,329 @@
+VERSION "20241003.01"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BCM IECU AC TS TPMS
+
+
+BO_ 2566885377 IECU2BCM: 8 IECU
+ SG_ TurnLeftLightsRequest : 0|2@1+ (1,0) [0|3] ""  BCM
+ SG_ EmergencyLightsRequest : 8|2@1+ (1,0) [0|3] ""  BCM
+ SG_ WindshieldWasherRequest : 10|2@1+ (1,0) [0|3] ""  BCM
+ SG_ HornRequest : 12|2@1+ (1,0) [0|3] ""  BCM
+ SG_ TurnRightLightsRequest : 14|2@1+ (1,0) [0|3] ""  BCM
+ SG_ HighBeamLightsRequest : 16|2@1+ (1,0) [0|3] ""  BCM
+ SG_ RearFogLightsRequest : 20|2@1+ (1,0) [0|3] ""  BCM
+ SG_ FrontFogLightsRequest : 22|2@1+ (1,0) [0|3] ""  BCM
+ SG_ FlashEndLampRequest : 30|2@1+ (1,0) [0|3] ""  BCM
+ SG_ DippedHeadLightRequest : 32|2@1+ (1,0) [0|3] ""  BCM
+ SG_ WorkLightRequest : 34|2@1+ (1,0) [0|3] ""  BCM
+ SG_ ParkingLightsRequest : 36|2@1+ (1,0) [0|3] ""  BCM
+ SG_ ReversingLightRequest : 38|2@1+ (1,0) [0|3] ""  BCM
+ SG_ PoliceCeilingLightRequest : 46|2@1+ (1,0) [0|3] ""  BCM
+
+BO_ 2566873633 BCAO2_BCM: 8 BCM
+ SG_ Parking_Lights_Status : 0|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Low_Beam_Lights_Status : 2|2@1+ (1,0) [0|3] ""  IECU
+ SG_ High_Beam_Lights_Status : 4|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Front_Fog_Lights_Status : 6|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Rear_Fog_Lights_Status : 8|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Working_Light_Status : 10|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Turn_Left_Lights_Status : 12|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Turn_Right_Lights_Status : 14|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Emergency_Lights_Status : 16|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Brake_Lights_Status : 18|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Windshield_Wiper_Status : 20|4@1+ (1,0) [0|15] ""  IECU
+ SG_ Windshield_Washer_Status : 24|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Windshield_Wiper_Position : 26|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Door_Left_Open : 28|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Door_Right_Open : 30|2@1+ (1,0) [0|3] ""  IECU
+ SG_ ReversingLightStatus : 32|2@1+ (1,0) [0|3] ""  IECU
+ SG_ FlashEndLampStatus : 34|2@1+ (1,0) [0|3] ""  IECU
+ SG_ HornStatus : 36|2@1+ (1,0) [0|3] ""  IECU
+ SG_ AutoLightsStatus : 44|2@1+ (1,0) [0|3] ""  IECU
+ SG_ SystemPowerMode : 48|2@1+ (1,0) [0|3] ""  IECU
+
+BO_ 2552296239 IECU_ACReq: 8 IECU
+ SG_ AC_SetTem : 0|7@1+ (0.5,0) [0|63.5] "℃"  AC
+ SG_ AC_LoopSignal : 7|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_BlowSignal : 8|3@1+ (1,0) [0|7] ""  AC
+ SG_ AC_AirSignal : 11|4@1+ (1,0) [0|15] ""  AC
+ SG_ AC_IndHeatSignal : 15|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_PeakAirSwiSignal : 16|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_OffSwiSignal : 17|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_ECOSwiSignal : 18|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_AutoSwiSignal : 19|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_A_CSwiSignal : 20|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_DefComSignal : 21|1@1+ (1,0) [0|1] ""  AC
+ SG_ AC_PTCActComStatus : 22|1@1+ (1,0) [0|1] ""  AC
+
+BO_ 2566852377 AC_State: 8 AC
+ SG_ Set_Temperature : 0|7@1+ (0.5,0) [0|63.5] "℃"  IECU
+ SG_ Circulate_State : 7|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Blow_Mode : 9|3@1+ (1,0) [0|15] ""  IECU
+ SG_ Air_Volume : 12|4@1+ (1,0) [0|7] ""  IECU
+ SG_ Independent_Heating : 16|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Parking_AC : 17|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Switch_OFF : 18|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Switch_ECO : 19|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Switch_Auto : 20|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Switch_AC : 21|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Defrost_State : 22|1@1+ (1,0) [0|1] ""  IECU
+ SG_ Outdoor_Temperature : 24|8@1+ (0.5,-40) [-40|85] "℃"  IECU
+ SG_ Indoor_Temperature : 32|8@1+ (0.5,-40) [-40|85] "℃"  IECU
+ SG_ AC_Evaporation_Temperature : 40|8@1+ (0.5,-40) [-40|85] "℃"  IECU
+ SG_ Gear_PTC : 48|2@1+ (1,0) [0|3] ""  IECU
+ SG_ Switch_PTC : 50|1@1+ (1,0) [0|1] ""  IECU
+
+BO_ 2566521366 TS_Angle_sensor1: 8 TS
+ SG_ Bewis_Signal_Pitch : 0|16@1+ (0.01,0) [-90|90] "度"  IECU
+ SG_ Bewis_Signal_Roll : 16|16@1+ (0.01,0) [-180|180] "度"  IECU
+ SG_ Bewis_Signal_Yaw : 32|16@1+ (0.01,0) [0|360] "度"  IECU
+ SG_ Bewis_Signal_Ealiver_Count1 : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566521367 TS_Accelerometer2: 8 TS
+ SG_ Bewis_Signal_AccX : 0|20@1+ (0.0001,0) [-6|6] "g"  IECU
+ SG_ Bewis_Signal_AccY : 20|20@1+ (0.0001,0) [-6|6] "g"  IECU
+ SG_ Bewis_Signal_AccZ : 40|20@1+ (0.0001,0) [-6|6] "g"  IECU
+ SG_ Bewis_Signal_Ealiver_Count2 : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566521368 TS_Angula_velocity_sensor3: 8 TS
+ SG_ Bewis_Signal_GyroX : 0|20@1+ (0.001,0) [-500|500] "°/s"  IECU
+ SG_ Bewis_Signal_GyroY : 20|20@1+ (0.001,0) [-500|500] "°/s"  IECU
+ SG_ Bewis_Signal_GyroZ : 40|20@1+ (0.001,0) [-500|500] "°/s"  IECU
+ SG_ Bewis_Signal_Ealiver_Count3 : 60|4@1+ (1,0) [0|15] ""  IECU
+
+BO_ 2566845491 TPMS_StsMsg: 8 TPMS
+ SG_ TPMS_Site : 0|8@1+ (1,0) [0|250] ""  IECU
+ SG_ TPMS_Pressure : 8|8@1+ (5.5,0) [0|1397] "kPa"  IECU
+ SG_ TPMS_Tmp : 16|16@1+ (0.03125,-273) [-273|1735] "℃"  IECU
+ SG_ TPMS_Sensor_LossWarning : 32|2@1+ (1,0) [0|3] ""  IECU
+ SG_ TPMS_FItSts : 34|2@1+ (1,0) [0|3] ""  IECU
+ SG_ TPMS_LowPowerWarning : 36|2@1+ (1,0) [0|3] ""  IECU
+ SG_ TPMS_RapidLeakWarning : 38|2@1+ (1,0) [0|3] ""  IECU
+ SG_ TPMS_PressureWarning : 40|3@1+ (1,0) [0|7] ""  IECU
+ SG_ TPMS_TmpWarning : 43|1@1+ (1,0) [0|1] ""  IECU
+ SG_ TPMS_LifeSig : 56|8@1+ (1,0) [0|255] ""  IECU
+
+
+
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "BaudRate" FLOAT 0 2000000;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmMessageCount" INT 1 255;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_  "ILTxTimeout" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagState" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","immediate";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagUudtResponse" ENUM  "false","true";
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 1;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 65535;
+BA_DEF_DEF_  "DBName" "ydzt";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "BaudRate" 2000000;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "NmMessageCount" 255;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 2000;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 640;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "ILTxTimeout" 0;
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 320;
+BA_DEF_DEF_  "ILUsed" "yes";
+BA_DEF_DEF_  "NodeLayerModules" " ";
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 50;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "DiagState" "no";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "DiagUudtResponse" "false";
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_ "NmMessageCount" 255;
+BA_ "Manufacturer" "Vector";
+BA_ "NmAsrRepeatMessageTime" 3200;
+BA_ "NmAsrTimeoutTime" 2000;
+BA_ "DBName" "ECAN";
+BA_ "GenMsgSendType" BO_ 2566885377 0;
+BA_ "GenMsgCycleTime" BO_ 2566885377 50;
+BA_ "VFrameFormat" BO_ 2566885377 1;
+BA_ "GenMsgILSupport" BO_ 2566885377 1;
+BA_ "GenMsgSendType" BO_ 2566873633 0;
+BA_ "GenMsgCycleTime" BO_ 2566873633 50;
+BA_ "VFrameFormat" BO_ 2566873633 1;
+BA_ "GenMsgILSupport" BO_ 2566873633 1;
+BA_ "GenMsgSendType" BO_ 2552296239 0;
+BA_ "GenMsgCycleTime" BO_ 2552296239 500;
+BA_ "VFrameFormat" BO_ 2552296239 1;
+BA_ "GenMsgILSupport" BO_ 2552296239 1;
+BA_ "GenMsgSendType" BO_ 2566852377 0;
+BA_ "GenMsgCycleTime" BO_ 2566852377 100;
+BA_ "VFrameFormat" BO_ 2566852377 1;
+BA_ "GenMsgILSupport" BO_ 2566852377 1;
+BA_ "GenMsgSendType" BO_ 2566521366 0;
+BA_ "GenMsgCycleTime" BO_ 2566521366 20;
+BA_ "VFrameFormat" BO_ 2566521366 1;
+BA_ "GenMsgILSupport" BO_ 2566521366 1;
+BA_ "GenMsgSendType" BO_ 2566521367 0;
+BA_ "GenMsgCycleTime" BO_ 2566521367 20;
+BA_ "VFrameFormat" BO_ 2566521367 1;
+BA_ "GenMsgILSupport" BO_ 2566521367 1;
+BA_ "GenMsgSendType" BO_ 2566521368 0;
+BA_ "GenMsgCycleTime" BO_ 2566521368 20;
+BA_ "VFrameFormat" BO_ 2566521368 1;
+BA_ "GenMsgILSupport" BO_ 2566521368 1;
+BA_ "GenMsgSendType" BO_ 2566845491 0;
+BA_ "GenMsgCycleTime" BO_ 2566845491 500;
+BA_ "VFrameFormat" BO_ 2566845491 1;
+BA_ "GenMsgILSupport" BO_ 2566845491 1;
+VAL_ 2566885377 TurnLeftLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 EmergencyLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 WindshieldWasherRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 HornRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 TurnRightLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 HighBeamLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 RearFogLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 FrontFogLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 FlashEndLampRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 DippedHeadLightRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 WorkLightRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 ParkingLightsRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 ReversingLightRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566885377 PoliceCeilingLightRequest 0 "No request" 1 "Request" 2 "Reserved" ;
+VAL_ 2566873633 Parking_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Low_Beam_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 High_Beam_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Front_Fog_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Rear_Fog_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Working_Light_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Turn_Left_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Turn_Right_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Emergency_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Brake_Lights_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Windshield_Wiper_Status 0 "Off" 1 "Low Speed" 2 "High Speed" 3 "Interval" 4 "One Shot" 14 "Error" 15 "Not Available" ;
+VAL_ 2566873633 Windshield_Washer_Status 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Windshield_Wiper_Position 0 "On Stop Position" 1 "Not On Stop Position" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 Door_Left_Open 0 "False" 1 "True" 3 "Not Available" ;
+VAL_ 2566873633 Door_Right_Open 0 "False" 1 "True" 3 "Not Available" ;
+VAL_ 2566873633 ReversingLightStatus 0 "No request" 1 "Request" 2 "Reserved" 3 "Not Available" ;
+VAL_ 2566873633 FlashEndLampStatus 0 "No request" 1 "Request" 2 "Reserved" 3 "Not Available" ;
+VAL_ 2566873633 HornStatus 0 "Off" 1 "On" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 2566873633 AutoLightsStatus 0 "Off" 1 "On" 2 "Reserved" 3 "Not Available" ;
+VAL_ 2566873633 SystemPowerMode 3 "Crank Request(KL50)" 2 "Run(KL15)" 1 "Accessory(KLR)" 0 "Off(KL30)" ;
+VAL_ 2552296239 AC_LoopSignal 0 "外循环" 1 "内循环" ;
+VAL_ 2552296239 AC_BlowSignal 0 "脸部" 1 "脸足双开" 2 "足部" 3 "足部除霜" 4 "除霜" ;
+VAL_ 2552296239 AC_AirSignal 0 "关闭" 1 "一级吹风" 2 "二级吹风" 3 "三级吹风" 4 "四级吹风" 5 "五级吹风" 6 "六级吹风" 7 "七级吹风" 8 "八级吹风" 8 "八级吹风" ;
+VAL_ 2552296239 AC_IndHeatSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_PeakAirSwiSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_OffSwiSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_ECOSwiSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_AutoSwiSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_A_CSwiSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_DefComSignal 0 "关闭" 1 "开启" ;
+VAL_ 2552296239 AC_PTCActComStatus 0 "关闭" 1 "开启" ;
+VAL_ 2566852377 Circulate_State 0 "内循环" 1 "外循环" ;
+VAL_ 2566852377 Blow_Mode 0 "脸部" 1 "双水平" 2 "足部" 3 "足部除霜" 4 "除霜" 5 "保留" 6 "保留" 7 "无效" ;
+VAL_ 2566852377 Air_Volume 0 "关闭" 1 "一级吹风角度" 2 "二级吹风角度" 3 "三级吹风角度" 4 "四级吹风角度" 5 "五级吹风角度" 6 "六级吹风角度" 7 "七级吹风角度" 8 "八级吹风角度" ;
+VAL_ 2566852377 Independent_Heating 0 "未激活" 1 "激活" ;
+VAL_ 2566852377 Parking_AC 0 "未激活" 1 "激活" ;
+VAL_ 2566852377 Switch_OFF 0 "未激活" 1 "激活" ;
+VAL_ 2566852377 Switch_ECO 0 "未激活" 1 "激活" ;
+VAL_ 2566852377 Switch_Auto 0 "未激活" 1 "激活" ;
+VAL_ 2566852377 Switch_AC 0 "关闭" 1 "开启" ;
+VAL_ 2566852377 Defrost_State 0 "未激活" 1 "激活" ;
+VAL_ 2566852377 Outdoor_Temperature 255 "无效" ;
+VAL_ 2566852377 Indoor_Temperature 255 "无效" ;
+VAL_ 2566852377 AC_Evaporation_Temperature 255 "无效" ;
+VAL_ 2566852377 Gear_PTC 0 "未激活" 1 "激活B回路" 2 "激活A回路" 3 "激活A+B回路" ;
+VAL_ 2566852377 Switch_PTC 0 "OFF" 1 "ON" ;
+VAL_ 2566845491 TPMS_Site 0 "第一轴左" 1 "第一轴右" 16 "第二轴左外" 17 "第二轴左内" 18 "第二轴右内" 19 "第二轴右外" 32 "第三轴左外" 33 "第三轴左内" 34 "第三轴右内" 35 "第三轴右外" 48 "第四轴左外" 49 "第四轴左内" 50 "第四轴右内" 51 "第四轴右外" ;
+VAL_ 2566845491 TPMS_Pressure 255 "无效" ;
+VAL_ 2566845491 TPMS_Tmp 255 "无效" ;
+VAL_ 2566845491 TPMS_Sensor_LossWarning 0 "正常" 1 "丢失" 2 "未学习传感器ID" 3 "无效" ;
+VAL_ 2566845491 TPMS_FItSts 0 "无报警" 1 "报警" 3 "无效" ;
+VAL_ 2566845491 TPMS_LowPowerWarning 0 "正常" 1 "低电量报警" ;
+VAL_ 2566845491 TPMS_RapidLeakWarning 0 "无报警" 1 "快速漏气报警" 3 "无效" ;
+VAL_ 2566845491 TPMS_PressureWarning 0 "超高压" 1 "高压" 2 "正常" 3 "低压" 4 "超低压" 7 "无效" ;
+VAL_ 2566845491 TPMS_TmpWarning 0 "无报警" 1 "报警" ;
+

@@ -1,0 +1,129 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ADC
+
+
+BO_ 513 VLC_Internal_Data: 64 ADC
+ SG_ VLC_VehStandstill : 412|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_Tr_Ratio : 440|12@1+ (0.02,0) [0|81.9] "" Vector__XXX
+ SG_ VLC_State_VLCSts : 332|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VLC_State_tEC : 432|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VLC_State_tDC : 360|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VLC_State_SwitchToDriveMode : 127|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwitchToBrakeMode : 126|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwEC_5 : 125|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwEC_4 : 124|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwEC_3 : 111|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwEC_2 : 110|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwEC_1 : 109|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_7 : 108|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_6 : 95|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_5 : 94|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_4 : 93|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_3 : 92|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_2 : 79|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_SwDC_1 : 78|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_Override2DC : 77|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_FslopECDCused : 416|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_State_FdrvEnoughSwtOutECDC : 76|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_EngNotResponseSW2DC : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_ECenable : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_DriveOff2EC : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_DevEnable : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_DCenable : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_State_axvTracMin : 400|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_State_AxTarEnable : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_ShiftInProgress : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_PI_EngTrqReq : 384|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ VLC_PCtrl_FxvReqRaw : 368|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_NoBrakeForce : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_Ma_Ratio : 352|8@1+ (0.005,1) [1|2.275] "" Vector__XXX
+ SG_ VLC_Ki : 336|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ VLC_IdleTrqCompensation_N : 320|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ VLC_ICtrl_FxvReqRaw : 304|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_Fz : 288|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_FF_FxvReqValue : 272|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_FF_EngTrqMax : 256|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ VLC_FF_EngTrqInc : 240|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ VLC_F_wind : 224|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_F_slope : 208|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_F_friction : 192|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_F_driveNeg : 176|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_F_drive : 160|16@1- (10,0) [-327680|327670] "" Vector__XXX
+ SG_ VLC_EngTrqReqMin : 144|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ VLC_EngTrqReqMax : 128|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ VLC_EngNotResponse_b : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_DDE_UpdateEnable_b : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_DDE_axvTracActMean : 112|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_DDE_axvModelResidual : 96|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_DDE_axvClosedLoopControl : 80|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_Cruise_ACCSts : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VLC_Cruise_ACC_DrvOffReq : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_ACC_DecelerateJerk : 64|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_ACC_ComfortBandUpperValue : 48|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_ACC_ComfortBandLowerValue : 32|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_ACC_BrakePrefer : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VLC_ACC_axvCvAim : 16|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+ SG_ VLC_ACC_AccelerateJerk : 0|12@1- (0.01,0) [-20.48|20.47] "" Vector__XXX
+
+
+
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "vlc";
+BA_ "VFrameFormat" BO_ 513 14;
+

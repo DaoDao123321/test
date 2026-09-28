@@ -1,0 +1,995 @@
+VERSION "created by canmatrix"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ADAS GW
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ DataSum_CEPS2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MessageCounter_CEPS2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SteeringErrEvent3SS : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ SteeringErrEvent3ASS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ StateTemperatureSS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ StateVoltageSS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SteeringSysStaSS : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteeringOverrideVSS : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteeringOverrideSS : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CurrentDriverTorqueVSS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CurrentDriverTorqueSS : 0|16@1- (0.01,0) [-20|20] "Nm" Vector__XXX
+ SG_ DataSum_CEPS1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MessageCounter_CEPS1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SteeringErrEvent2SS : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ SteeringErrEvent2ASS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CurrentSWSpeedVSS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CurrentSWAngleVSS : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CurrentSWSpeedSS : 0|16@1- (0.1,0) [-2000|2000] "deg/s" Vector__XXX
+ SG_ CurrentSWAngleSS : 0|16@1- (0.1,0) [-3276.8|3276.8] "deg" Vector__XXX
+
+BO_ 2566873552 SWAS_BCM: 8 GW
+ SG_ ACCSwt_En : 8|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ACCSwt_Adj : 10|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ CCSwt_SMinus : 2|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ CCSwt_Rplus : 5|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ CCSwt_En : 0|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2147485262 IFC_CCP_DTO: 8 ADAS
+ SG_ IFC_CCP_DTO_Sig : 0|64@1+ (1,0) [0|255] ""  GW
+
+BO_ 2147485263 IFC_CCP_CRO: 8 GW
+ SG_ IFC_CCP_CRO_Sig : 0|64@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2298375691 HRW_EBS: 8 GW
+ SG_ FrontAxleLeftWheelSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+ SG_ FrontAxleRightWheelSpeed : 16|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+ SG_ RearAxleLeftWheelSpeed : 32|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+ SG_ RearAxleRightWheelSpeed : 48|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+
+BO_ 2348810282 TSC1_ACC: 8 ADAS
+ SG_ TSC1_OvrCtrlMod : 0|2@1+ (1,0) [0|3] ""  GW
+ SG_ TSC1_ReqSpdCtrlCond : 2|2@1+ (1,0) [0|3] ""  GW
+ SG_ TSC1_OvrCtrlModePrio : 4|2@1+ (1,0) [0|3] ""  GW
+ SG_ TSC1_ReqSpdSpdLim : 8|16@1+ (0.125,0) [0|8031.88] "rpm"  GW
+ SG_ TSC1_ReqTrqTrqLim : 24|8@1+ (1,-125) [-125|125] "%"  GW
+ SG_ TSC1_TrmRate : 32|3@1+ (1,0) [0|7] ""  GW
+ SG_ TSC1_CtrlPurp : 35|5@1+ (1,0) [0|31] ""  GW
+ SG_ TSC1_EngReqTrqHighRslt : 40|4@1+ (0.125,0) [0|0.875] "%"  GW
+ SG_ TSC1_MessageCnt : 56|4@1+ (1,0) [0|15] "count"  GW
+ SG_ TSC1_MessageChecksum : 60|4@1+ (1,0) [0|15] "count"  GW
+
+BO_ 2349075242 XBR_AEBS_ACC: 8 ADAS
+ SG_ ExternalAccelerationDemand : 0|16@1+ (0.00048828125,-15.687) [-15.687|15.687] "m/s2"  GW
+ SG_ XBREBIMode : 16|2@1+ (1,0) [0|3] ""  GW
+ SG_ XBRPriority : 18|2@1+ (1,0) [0|3] ""  GW
+ SG_ XBRControlMode : 20|2@1+ (1,0) [0|3] ""  GW
+ SG_ XBRurgency : 24|8@1+ (0.4,0) [0|100] "%"  GW
+ SG_ MessageCounterXBR : 56|4@1+ (1,0) [0|15] ""  GW
+ SG_ checksum : 60|4@1+ (1,0) [0|15] ""  GW
+
+BO_ 2349541938 AEBS2_BCM: 8 GW
+ SG_ AEBSEnSwt : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ AEBS2MsgCntr : 56|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ AEBS2MsgCrc : 60|4@1+ (1,0) [0|15] ""  ADAS
+
+BO_ 2364539395 ETC1_TCU: 8 GW
+ SG_ ETC1_TrmDrvEngaged : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ETC1_TrmShiftProc : 4|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ETC1_PerClutSlip : 24|8@1+ (0.4,0) [0|100] "%"  ADAS
+
+BO_ 2364539648 EEC2_EECU: 8 GW
+ SG_ AP_KickdownSwt : 2|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ AccPedalPos : 8|8@1+ (0.4,0) [0|100] "%"  ADAS
+ SG_ ActuMaxAvailableEngPcntTorque : 48|8@1+ (0.4,0) [0|100] "%"  ADAS
+
+BO_ 2364539904 EEC1_EECU: 8 GW
+ SG_ Enginetorquemode : 0|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ ActualEngPercentTorq : 4|4@1+ (0.125,0) [0|0.875] "%"  ADAS
+ SG_ DriverJsdemandEng_PerTorq : 8|8@1+ (1,-125) [-125|125] "%"  ADAS
+ SG_ Actualengine_percenttorque : 16|8@1+ (1,-125) [-125|125] "%"  ADAS
+ SG_ Enginespeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm"  ADAS
+ SG_ SourceAddressControlDevice_Eng : 40|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Enginedemand_percenttorque : 56|8@1+ (1,-125) [-125|125] "%"  ADAS
+
+BO_ 2364550954 AEBS1_AEBS: 8 ADAS
+ SG_ AdvEmergencyBrakSysSt : 0|4@1+ (1,0) [0|15] ""  GW
+ SG_ RlvntObjctDtctdFrAEB : 8|3@1+ (1,0) [0|7] ""  GW
+ SG_ TmeToCollisionWithRelevantObject : 16|8@1+ (0.05,0) [0|12.5] "s"  GW
+
+BO_ 2364620051 ASSC1_LKAS: 8 ADAS
+ SG_ LaneKeepingAssistSystemState : 8|4@1+ (1,0) [0|15] ""  GW
+
+BO_ 2365484270 TCO1_IC: 8 GW
+ SG_ Tachographvehiclespeed : 48|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+
+BO_ 2365547678 AutoDrive_ADCU: 8 GW
+ SG_ CRC8_ADCU : 0|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Counter_ADCU : 8|4@1+ (1,0) [0|14] ""  ADAS
+ SG_ ADModeEnablePS : 16|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ADModeEngagePS : 20|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2365552938 LKASControlRequest_LKAS: 8 ADAS
+ SG_ SWAngleRequestPS : 0|16@1- (0.1,0) [-3276.8|3276.8] "deg"  GW
+ SG_ SWAngleRequestValidPS : 16|2@1+ (1,0) [0|3] ""  GW
+ SG_ MessageCounterLKAS : 48|8@1+ (1,0) [0|255] ""  GW
+ SG_ DataSumLKAS : 56|8@1+ (1,0) [0|255] ""  GW
+
+BO_ 2431649768 FLI1_LDWS: 8 ADAS
+ SG_ LaneDepartureRight : 4|2@1+ (1,0) [0|3] ""  GW
+ SG_ LaneDepartureLeft : 6|2@1+ (1,0) [0|3] ""  GW
+
+BO_ 2432593706 ACC1_ACC: 8 ADAS
+ SG_ AccePedalPosCalcut : 56|8@1+ (0.4,0) [0|102] "" Vector__XXX
+ SG_ SpdofForwardVeh : 0|8@1+ (1,0) [0|250] "km/h"  GW
+ SG_ DisttoForwardVeh : 8|8@1+ (1,0) [0|250] "m"  GW
+ SG_ AdapCruiseCtrlSetSpd : 16|8@1+ (1,0) [0|250] "km/h"  GW
+ SG_ AdapCruiseCtrlMode : 24|3@1+ (1,0) [0|7] ""  GW
+ SG_ AdapCruiseCtrlsetDistMode : 27|3@1+ (1,0) [0|7] ""  GW
+ SG_ ACCTargetDetected : 48|2@1+ (1,0) [0|3] ""  GW
+ SG_ ACCSysShutoffWarn : 50|2@1+ (1,0) [0|3] ""  GW
+ SG_ ACCDistanceAlertSignal : 52|2@1+ (1,0) [0|3] ""  GW
+
+BO_ 2561217330 FLIC_LKA_BCM: 8 GW
+ SG_ LaneKeepingAssistEnableCommand : 2|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2561271858 FLIC_BCM: 8 GW
+ SG_ LDWSFunDisSt : 0|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2564434673 Phyrequest: 8 GW
+ SG_ Request_Phy : 0|64@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2564485418 Phyresponse: 8 ADAS
+ SG_ Response : 0|64@1+ (1,0) [0|255] ""  GW
+
+BO_ 2564554745 Funrequest: 8 GW
+ SG_ Request_Fun : 0|64@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2566877738 EPBC1_ACC: 8 ADAS
+ SG_ ParkingBrakeControl : 32|8@1+ (0.4,0) [0|100] "%"  GW
+
+BO_ 2565603072 TP_DT_EECU: 8 GW
+ SG_ PacketisedData_EECU : 8|56@1+ (1,0) [0|7.20576E+016] ""  ADAS
+ SG_ SequenceNumber_EECU : 0|8@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2565668608 TP_BAM_EECU: 8 GW
+ SG_ ControlByte_EECU : 0|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ TotalNumberOfPackets_EECU : 24|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ ParameterGroupNumber_EECU : 40|24@1+ (1,0) [0|16777215] ""  ADAS
+ SG_ TotalNumberOfBbytes_EECU : 8|16@1+ (1,0) [0|65535] ""  ADAS
+
+BO_ 2565865739 EBC1_EBS: 8 GW
+ SG_ ASREngineControlActive : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ASRBrakeControlActive : 2|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ AntilockbrakingABSActive : 4|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ EBSbrakeswitch : 6|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ BrakePedalPosition : 8|8@1+ (0.4,0) [0|100] "%"  ADAS
+ SG_ ABSOffroadSwitch : 16|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ASROffroadSwitch : 18|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ASR_hillholder_Switch : 20|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractionControlOverrideSwitch : 22|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ AcceleratorInterlockSwitch : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ EngineDerateSwitch : 26|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ AuxiliaryEngineShutdownSwitch : 28|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ RemoteAcceleratorEnableSwitch : 30|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ EngineRetarderSelection : 32|8@1+ (0.4,0) [0|100] "%"  ADAS
+ SG_ ABSFullyOperational : 40|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ EBSRedWarningLampState : 42|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ABS_EBSAmberWarningSignal : 44|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ATC_ASRLampState : 46|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ SrcAddrssOfCntrllngDvcFrBrkeCtrl : 48|8@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2565866755 ETC2_TCU: 8 GW
+ SG_ ETC2_TrmSelectedGr : 0|8@1+ (1,-125) [-125|125] "gearvalue"  ADAS
+ SG_ ETC2_TrmActGrRatio : 8|16@1+ (0.001,0) [0|65.535] ""  ADAS
+ SG_ ETC2_TrmCurrGr : 24|8@1+ (1,-125) [-125|125] "gearvalue"  ADAS
+
+BO_ 2565867787 VDC2_EBS: 8 GW
+ SG_ SteeringWheelAngle : 0|16@1+ (0.000976563,-31.374) [-31.374|31.374] "rad"  ADAS
+ SG_ YawRate : 24|16@1+ (0.00012207,-3.92) [-3.92|3.92] "rad/s"  ADAS
+ SG_ LateralAcceleration : 40|16@1+ (0.000488281,-15.687) [-15.687|15.687] "m/s2"  ADAS
+ SG_ LongitudinalAcceleration : 56|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s2"  ADAS
+
+BO_ 2365428224 EOI_EECU: 8 GW
+ SG_ EngineOperatingState : 0|4@1+ (1,0) [0|15] ""  ADAS
+
+BO_ 2566767627 EBC5_EBS: 8 GW
+ SG_ BrakeTemperatureWarning : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ HaltBrakeMode : 2|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ HillHolderMode : 5|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ FoundationBrakeUse : 8|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ XBRSystemState : 10|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ XBRActiveControlMode : 12|4@1+ (1,0) [0|7] ""  ADAS
+ SG_ XBRAccelerationLimit : 16|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s2"  ADAS
+ SG_ ParkingBrakeActuatorFullyActivat : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ EmergencyBrakingActive : 26|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ RailroadMode : 28|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566787664 EPBS1_EPB: 8 GW
+ SG_ EPB_ParkBraStatus : 0|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566803211 VDC1_EBS: 8 GW
+ SG_ VDCLampState : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ VDCFullyoperational : 2|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ VDCBrakeLightRequest : 4|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ROPEngineControlActive : 8|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ROPBrakeControlActive : 10|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ YCEngineControlActive : 12|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ YCBrakeControlActive : 14|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566806504 FLI2_LDWS: 8 ADAS
+ SG_ LaneTrackingStatusRightSide : 2|2@1+ (1,0) [0|3] ""  GW
+ SG_ LaneTrackingStatusLeftSide : 4|2@1+ (1,0) [0|3] ""  GW
+ SG_ LnDpartureIndicationEnableStatus : 6|2@1+ (1,0) [0|3] ""  GW
+ SG_ DepWarnSysSt : 48|4@1+ (1,0) [0|15] ""  GW
+ SG_ CamSt : 52|4@1+ (1,0) [0|15] ""  GW
+
+BO_ 2566811659 CVW_EBS: 8 GW
+ SG_ GrossCombinationWeight_ : 16|16@1+ (10,0) [0|642550] "kg"  ADAS
+
+BO_ 2566831883 EBC2_EBS: 8 GW
+ SG_ FrontAxleSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+ SG_ RelativeSpeedFrontAxleLeftWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  ADAS
+ SG_ RelativeSpeedFrontAxleRightWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  ADAS
+ SG_ RelativeSpeedRearAxle1LeftWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  ADAS
+ SG_ RelativeSpeedRearAxle1RightWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  ADAS
+ SG_ RelativeSpeedRearAxle2LeftWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  ADAS
+ SG_ RelativeSpeedRearAxle2RightWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h"  ADAS
+
+BO_ 2566832622 VDHR_IC: 8 GW
+ SG_ HghRsolutionTotalVehicleDistance : 0|32@1+ (0.005,0) [0|21055406] "km"  ADAS
+ SG_ HighResolutionTripDistance : 32|32@1+ (0.005,0) [0|21055406] "km"  ADAS
+
+BO_ 2566834848 DM1_AEBS: 8 ADAS
+ SG_ AmberWarnLampStAEBS : 2|2@1+ (1,0) [0|3] ""  GW
+ SG_ SPN_LeastbyteofSPNAEBS : 16|8@1+ (1,0) [0|255] ""  GW
+ SG_ SPN_SecondbyteofSPNAEBS : 24|8@1+ (1,0) [0|255] ""  GW
+ SG_ FMIAEBS : 32|5@1+ (1,0) [0|31] ""  GW
+ SG_ SPN_3MostsignificantbitsAEBS : 37|3@1+ (1,0) [0|7] ""  GW
+ SG_ OC_CurrCountAEBS : 40|7@1+ (1,0) [0|127] ""  GW
+ SG_ SPNConversionMethodAEBS : 47|1@1+ (1,0) [0|1] ""  GW
+
+BO_ 2566834920 DM1_LDWS: 8 ADAS
+ SG_ AmberWarnLampStLDWS : 2|2@1+ (1,0) [0|3] ""  GW
+ SG_ SPN_LeastbyteofSPNLDWS : 16|8@1+ (1,0) [0|255] ""  GW
+ SG_ SPN_SecondbyteofSPNLDWS : 24|8@1+ (1,0) [0|255] ""  GW
+ SG_ FMILDWS : 32|5@1+ (1,0) [0|31] ""  GW
+ SG_ SPN_3MostsignificantbitsLDWS : 37|3@1+ (1,0) [0|7] ""  GW
+ SG_ OC_CurrCountLDWS : 40|7@1+ (1,0) [0|127] ""  GW
+ SG_ SPNConversionMethodLDWS : 47|1@1+ (1,0) [0|1] ""  GW
+
+BO_ 2566838551 AUXIO1_IC: 8 GW
+ SG_ TrailerABSFullyOperational : 10|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TrailerABSDetected : 12|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TrailerConnected : 14|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566840064 EEC3_EECU: 8 GW
+ SG_ NominalFriction_PercentTorque : 0|8@1+ (1,-125) [-125|125] "%"  ADAS
+ SG_ EstimtdEngParasiticLosses_PerTrq : 32|8@1+ (1,-125) [-125|125] "%"  ADAS
+
+BO_ 2566841088 EC1_EECU: 40 GW
+ SG_ EngReferenceTorque : 152|16@1+ (1,0) [0|64255] "Nm"  ADAS
+ SG_ EngRqstTorqueCtrlRangeLowerLimit : 208|8@1+ (1,-125) [-125|125] "%"  ADAS
+ SG_ EngRqstTorqueCtrlRangeUpperLimit : 216|8@1+ (1,-125) [-125|125] "%"  ADAS
+
+BO_ 2566842094 TD_TBOX: 8 GW
+ SG_ Seconds : 0|8@1+ (0.25,0) [0|59.75] ""  ADAS
+ SG_ Minutes : 8|8@1+ (1,0) [0|59] ""  ADAS
+ SG_ Hours : 16|8@1+ (1,0) [0|23] ""  ADAS
+ SG_ Month : 24|8@1+ (1,0) [1|12] ""  ADAS
+ SG_ Day : 32|8@1+ (0.25,0) [0.25|31.75] ""  ADAS
+ SG_ Year : 40|8@1+ (1,1985) [1985|2235] ""  ADAS
+ SG_ LocalMinuteOffset : 48|8@1+ (1,-125) [-125|125] ""  ADAS
+ SG_ LocalHourOffset : 56|8@1+ (1,-125) [-125|125] ""  ADAS
+
+BO_ 2566844672 CCVS_VECU: 8 GW
+ SG_ TwoSpdAxleSwt : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ Wheel_BasedVehSpd : 8|16@1+ (0.00390625,0) [0|250.996] "km/h"  ADAS
+ SG_ CruiseCtrlActive : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CruiseCtrlEnableSwt : 26|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ ServiceBrakeSwt : 28|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CltchSwt : 30|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CruiseCtrlSetSwt : 32|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CruiseCtrlCoastSwt : 34|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CruiseCtrlResumeSwt : 36|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CruiseCtrlAccSwt : 38|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CruiseCtrlSetSpd : 40|8@1+ (1,0) [0|250] "km/h"  ADAS
+ SG_ PTO_St : 48|5@1+ (1,0) [0|31] ""  ADAS
+ SG_ CruiseCtrlSt : 53|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ CCVS_MsgCounter : 56|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ CCVS_CheckSum : 60|4@1+ (1,0) [0|15] ""  ADAS
+
+BO_ 2566858290 BCMD_BCM: 8 GW
+ SG_ WsherDrv : 44|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ HiSpdWprDrv : 46|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ LwSpdWprDrv : 48|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566858311 CIOMD1_CIOM: 8 GW
+ SG_ TractorFrontPositionLightDriver : 0|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorSidePositionLightDriver : 2|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRearPositionLightDriver : 4|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeftLowBeamRelayDriver : 6|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRightLowBeamRelayDriver : 8|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeftHightBeamRelayDriver : 10|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRightHightBeamRelayDriver : 12|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeftAuxHghtBeamRlayDrv : 14|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRghtAuxHghtBeamRlayDrv : 16|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorFront_LeftFogRelayDriver : 18|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorFront_RightFogRelayDriver : 20|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeft_frontTurnLightDriver : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRight_frontTurnLightDrv : 26|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeft_rearTurnLightDriver : 28|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRight_rearTurnLightDriver : 30|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeft_RearFogLightDriver : 32|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRight_RearFogLightDriver : 34|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeftReverseLightDriver : 36|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRightReverseLightDriver : 38|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorBrakeLightDriver : 40|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566859079 CIOMD2_CIOM: 8 GW
+ SG_ TrailerLeftTurnLightDriver : 10|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TrailerRightTurnLightDriver : 12|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TrailerReverseLightDriver : 14|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TrailerBrakeLightDriver : 18|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TrailerRearFogLightDriver : 22|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorLeft_SideTurnLightDriver : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ TractorRight_SideTurnLightDriver : 26|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566859244 LDCMS_DCM: 8 GW
+ SG_ LeftLockStateSwitch : 26|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ LeftDoorOpenSwitch : 28|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566859826 BCMS_BCM: 8 GW
+ SG_ LftStBltSwt : 4|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566866218 ControlMode_LKAS: 8 ADAS
+ SG_ LKASControlMode : 0|1@1+ (1,0) [0|1] ""  GW
+ SG_ LKA_Takeover_Request : 1|1@1+ (1,0) [0|1] ""  GW
+
+BO_ 2566875186 State_BCM: 8 GW
+ SG_ RLS_Brightness_FW : 0|8@1+ (400,0) [0|101200] ""  ADAS
+ SG_ RLS_Rain_Intensity : 8|4@1+ (10,0) [0|100] "%"  ADAS
+ SG_ ADModeOfBCM : 12|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ AmbientLightStatus : 20|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ SeatVibrationDrive : 24|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ LeftTurnSwitch : 28|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ RightTurnSwitch : 30|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ HazardlightSwitch : 32|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ FogLightOpenSwitch : 34|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ FogLightCloseSwitch : 36|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ HeadlampSwitch : 38|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ WiperSwitch : 40|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ WasherMotor : 42|2@1+ (1,0) [0|3] ""  ADAS
+
+BO_ 2566877659 STATUS_HOD: 8 GW
+ SG_ CRC8_STATUS_HOD : 0|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Counter_STATUS_HOD : 8|4@1+ (1,0) [0|14] ""  ADAS
+ SG_ HODStatus : 16|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ HODDiagnose : 20|4@1+ (1,0) [0|15] ""  ADAS
+
+BO_ 2566879763 ECUControlInformation1_EHPS: 8 GW
+ SG_ CurrentSWAnglePS : 0|16@1- (0.1,0) [-3276.8|3276.8] "deg"  ADAS
+ SG_ CurrentSWSpeedPS : 16|16@1- (0.1,0) [-2000|2000] "deg/s"  ADAS
+ SG_ CurrentSWAngleValidPS : 32|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ CurrentSWSpeedValidPS : 34|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ MessageCounterECUC1 : 48|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ DataSumECUC1 : 56|8@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2566880019 ECUControlInformation2_EHPS: 8 GW
+ SG_ CurrentDriverTorquePS : 0|16@1- (0.01,0) [-20|20] "Nm"  ADAS
+ SG_ CurrentDriverTorqueValidPS : 16|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ steeringsystemModeADAS : 18|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ SteeringOverridePS : 24|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ SteeringOverrideValidPS : 28|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ SteeringSystemStatusPS : 32|4@1+ (1,0) [0|15] ""  ADAS
+ SG_ StateVoltagePS : 36|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ StateTemperaturePS : 38|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ SteeringErrorEvent1ActivePS : 40|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ SteeringErrorEvent1PS : 42|6@1+ (1,0) [0|63] ""  ADAS
+ SG_ MessageCounterECUC2 : 48|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ DataSumECUC2 : 56|8@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 2566881066 AEBState_AEBS: 8 ADAS
+ SG_ AEBSystemState : 0|2@1+ (1,0) [0|3] ""  GW
+ SG_ Distance_to_AEBS_Rel_Obj : 8|8@1+ (1,0) [0|250] "m"  GW
+ SG_ Rel_Speed_to_AEBS_Rel_Obj : 16|8@1+ (1,-125) [-125|125] "km/h"  GW
+ SG_ CollisionWarningCategory : 24|4@1+ (1,0) [0|15] ""  GW
+
+BO_ 2632777704 TP_BAM_LDW: 8 ADAS
+ SG_ ControlByte_LDW : 0|8@1+ (1,0) [0|255] ""  GW
+ SG_ TotalNumberOfPackets_LDW : 8|8@1+ (1,0) [0|255] ""  GW
+ SG_ ParameterGroupNumber_LDW : 16|24@1+ (1,0) [0|16777200] ""  GW
+ SG_ TotalNumberOfBbytes_LDW : 48|16@1+ (1,0) [0|65535] ""  GW
+
+BO_ 2632712096 TP_DT_AEB: 8 ADAS
+ SG_ PacketisedData_AEB : 0|56@1+ (1,0) [0|7.20576E+016] ""  GW
+ SG_ SequenceNumber_AEB : 56|8@1+ (1,0) [0|255] ""  GW
+
+BO_ 2632712168 TP_DT_LDW: 8 ADAS
+ SG_ PacketisedData_LDW : 0|56@1+ (1,0) [0|7.20576E+016] ""  GW
+ SG_ SequenceNumber_LDW : 56|8@1+ (1,0) [0|255] ""  GW
+
+BO_ 2632777632 TP_BAM_AEB: 8 ADAS
+ SG_ ControlByte_AEB : 0|8@1+ (1,0) [0|255] ""  GW
+ SG_ TotalNumberOfPackets_AEB : 8|8@1+ (1,0) [0|255] ""  GW
+ SG_ ParameterGroupNumber_AEB : 16|24@1+ (1,0) [0|16777200] ""  GW
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 2147485262 IFC_CCP_DTO_Sig "IFC_CCP_DTO_Sig";
+CM_ SG_ 2147485263 IFC_CCP_CRO_Sig "IFC_CCP_DTO_Sig";
+CM_ SG_ 2298375691 FrontAxleLeftWheelSpeed "High resolution measurement of the speed of the left wheel of the steer axle.";
+CM_ SG_ 2298375691 FrontAxleRightWheelSpeed "High Resolution measurement of the speed of the right wheel of the steer axle.";
+CM_ SG_ 2298375691 RearAxleLeftWheelSpeed "High Resolution measurement of the speed of the left wheel of the rear axle.";
+CM_ SG_ 2298375691 RearAxleRightWheelSpeed "High Resolution measurement of the speed of the right wheel of the rear axle.";
+CM_ SG_ 2348810282 TSC1_OvrCtrlMod "Engine Override Control Mode";
+CM_ SG_ 2348810282 TSC1_ReqSpdCtrlCond "Engine Requested Speed Control Conditions";
+CM_ SG_ 2348810282 TSC1_OvrCtrlModePrio "Override Control Mode Priority";
+CM_ SG_ 2348810282 TSC1_ReqSpdSpdLim "Engine Requested Speed/Speed Limit";
+CM_ SG_ 2348810282 TSC1_ReqTrqTrqLim "Engine Requested Torque/Torque Limit";
+CM_ SG_ 2348810282 TSC1_TrmRate "TSC1 Transmission Rate";
+CM_ SG_ 2348810282 TSC1_CtrlPurp "TSC1 Control Purpose";
+CM_ SG_ 2348810282 TSC1_EngReqTrqHighRslt "Engine Requested Torque (Fractional)";
+CM_ SG_ 2348810282 TSC1_MessageCnt "Message Counter";
+CM_ SG_ 2348810282 TSC1_MessageChecksum "Message Checksum";
+CM_ SG_ 2349541938 AEBSEnSwt "Driver activation demand for Advanced Emergency
+Braking System
+AEBS enable switch status";
+CM_ SG_ 2349541938 AEBS2MsgCntr "AEBS2 message Counter";
+CM_ SG_ 2349541938 AEBS2MsgCrc "AEBS2 message checksum";
+CM_ SG_ 2364539395 ETC1_TrmDrvEngaged "Driveline engaged indicates the transmission controlled portion of the driveline is engaged sufficiently to allow a transfer of torque through the transmission.  ";
+CM_ SG_ 2364539395 ETC1_TrmShiftProc "Indicates that the transmission is in process of shifting from the current gear to the selected gear. ";
+CM_ SG_ 2364539395 ETC1_PerClutSlip "Parameter which represents the ratio of input shaft speed to current engine speed (in percent).
+Percent Clutch Slip = ((Engine rpm - Input shaft rpm)/(Engine rpm)) x 100";
+CM_ SG_ 2364539648 AccPedalPos "Accelerator pedal position";
+CM_ SG_ 2364539648 ActuMaxAvailableEngPcntTorque "Actual Maximum Available Engine - Percent Torque";
+CM_ SG_ 2364539904 Enginetorquemode "Engine Torque Mode";
+CM_ SG_ 2364539904 ActualEngPercentTorq "Fractional part of actual engine torque percentage";
+CM_ SG_ 2364539904 DriverJsdemandEng_PerTorq "Engine Torque Percentage Based on Driver's Intention";
+CM_ SG_ 2364539904 Actualengine_percenttorque "Actual Torque Percentage of Engine";
+CM_ SG_ 2364539904 Enginespeed "engine speed";
+CM_ SG_ 2364539904 SourceAddressControlDevice_Eng "Source address of engine control device";
+CM_ SG_ 2364539904 Enginedemand_percenttorque "Percentage of engine required torque";
+CM_ SG_ 2364550954 RlvntObjctDtctdFrAEB "Relevant object detected for advanced emergency";
+CM_ SG_ 2364550954 TmeToCollisionWithRelevantObject "Time to collision with relevant object";
+CM_ SG_ 2365547678 CRC8_ADCU "cyclic redundancy check";
+CM_ SG_ 2365547678 Counter_ADCU "counter";
+CM_ SG_ 2365547678 ADModeEnablePS "permission to enable Auto Derive mode(ADU_PS)";
+CM_ SG_ 2365547678 ADModeEngagePS "asking to engage Auto Derive mode(ADU_PS)";
+CM_ SG_ 2365552938 SWAngleRequestPS "Steering wheel LKA angle request";
+CM_ SG_ 2432593706 SpdofForwardVeh "speed of forward vehicle";
+CM_ SG_ 2432593706 DisttoForwardVeh "distance to the forward vehicle";
+CM_ SG_ 2432593706 ACCSysShutoffWarn "Suggesting non-deriver exist ACC notification. Triggering Condition: during system activation, speed of vehicle is higher or lower than the permitted speed.";
+CM_ SG_ 2432593706 ACCDistanceAlertSignal "ACC ask driver to take control over";
+CM_ SG_ 2561271858 LDWSFunDisSt "Lane Departure Warning Enable Command";
+CM_ SG_ 2564434673 Request_Phy "Physical request";
+CM_ SG_ 2564485418 Response "Response";
+CM_ SG_ 2564554745 Request_Fun "Functional request";
+CM_ SG_ 2566877738 ParkingBrakeControl "Both tractor and trailer break together";
+CM_ SG_ 2565865739 AntilockbrakingABSActive "Current ABS active status (main system)";
+CM_ SG_ 2565865739 EBSbrakeswitch "Brake switch (main system)";
+CM_ SG_ 2565865739 BrakePedalPosition "Brake padel position (main system)";
+CM_ SG_ 2565866755 ETC2_TrmSelectedGr "The gear that the transmission will attempt to achieve during the current shift if a shift is in progress, or the next shift if one is pending (i.e., waiting for torque reduction to initiate the shift).
+Negative values are reverse gears, positive values are forward gears, zero is neutral, 251 (FBh) is park.";
+CM_ SG_ 2565866755 ETC2_TrmActGrRatio "Actual ratio of input shaft speed to output shaft speed.";
+CM_ SG_ 2565866755 ETC2_TrmCurrGr "The gear currently engaged in the transmission or the last gear engaged while the transmission is in the process of shifting to the new or selected gear.  Transitions toward a destination gear will not be indicated.  Once the selected gear has been engaged then Transmission Current Gear (SPN 523) will reflect that gear.
+Negative values are reverse gears, positive values are forward gears, zero is neutral, 251 (FBh) is park.";
+CM_ SG_ 2565867787 YawRate "Indicates the rate of rotation about the vertical axis (i.e. the z-axis).  A positive yaw rate signal results when the vehicle turns counter-clockwise.   ";
+CM_ SG_ 2565867787 LongitudinalAcceleration "Indicates the longitudinal acceleration of the vehicle. A positive longitudinal acceleration signal results when the vehicle speed increases, regardless of driving the vehicle forward or backward.  This parameter is applicable to vehicle speed measurement systems, such as passive wheel speed sensors, that are not capable of determining the direction of the vehicle motion.  See SPN 5348 for an alternate longitudinal acceleration.";
+CM_ SG_ 2365428224 EngineOperatingState "This parameter is used to indicate the current state, or mode, of operation by the engine.  This is a status parameter.";
+CM_ SG_ 2566787664 EPB_ParkBraStatus "EPB parking status";
+CM_ SG_ 2566806504 CamSt "indicate the camera status";
+CM_ SG_ 2566811659 GrossCombinationWeight_ "presision may not be satisfied, 5%-30%";
+CM_ SG_ 2566832622 HghRsolutionTotalVehicleDistance "Factor:5mOffset: 0Range:0~21055406km";
+CM_ SG_ 2566832622 HighResolutionTripDistance "High Resolution Trip Distance";
+CM_ SG_ 2566840064 NominalFriction_PercentTorque "Friction Torque Percentage";
+CM_ SG_ 2566840064 EstimtdEngParasiticLosses_PerTrq "Assessment of actual engine loss-torque percentage";
+CM_ SG_ 2566842094 Seconds "Factor:0.25sOffset: 0Range:0~59.75s";
+CM_ SG_ 2566842094 Minutes "Factor:1minOffset: 0Range:0~59mins";
+CM_ SG_ 2566842094 Hours "Factor:1hrOffset: 0Range:0~23hr";
+CM_ SG_ 2566842094 Month "Factor:25daysOffset: 0Range:0~31.75days";
+CM_ SG_ 2566842094 Day "Factor:1monthOffset: 0Range:1~12months";
+CM_ SG_ 2566842094 Year "Factor:1yearOffset: 1985yearRange:1985~2235years";
+CM_ SG_ 2566842094 LocalMinuteOffset "Factor:1minOffset: -125minRange:-59~59mins";
+CM_ SG_ 2566842094 LocalHourOffset "Factor:1hrOffset: -125hrRange:-23~23hr";
+CM_ SG_ 2566844672 CruiseCtrlActive "status of CC ring on internal CAN and status of CC regulation on FMS public network";
+CM_ SG_ 2566858290 WsherDrv "Wash Driver";
+CM_ SG_ 2566858290 HiSpdWprDrv "Hight Speed Wiper Driver";
+CM_ SG_ 2566858290 LwSpdWprDrv "Low Speed Wiper Driver";
+CM_ SG_ 2566858311 TractorFrontPositionLightDriver "Tractor front position light";
+CM_ SG_ 2566858311 TractorSidePositionLightDriver "Tractor side position light";
+CM_ SG_ 2566858311 TractorRearPositionLightDriver "Tractor rear position light";
+CM_ SG_ 2566858311 TractorLeftLowBeamRelayDriver "Tractor left low beam relay";
+CM_ SG_ 2566858311 TractorRightLowBeamRelayDriver "Tractor right low beam relay";
+CM_ SG_ 2566858311 TractorLeftHightBeamRelayDriver "Tractor left high beam relay";
+CM_ SG_ 2566858311 TractorRightHightBeamRelayDriver "Tractor right high beam relay";
+CM_ SG_ 2566858311 TractorLeftAuxHghtBeamRlayDrv "Tractor left auxiliary high beam relay";
+CM_ SG_ 2566858311 TractorRghtAuxHghtBeamRlayDrv "Tractor right auxiliary high beam relay";
+CM_ SG_ 2566858311 TractorFront_LeftFogRelayDriver "Tractor front left fog relay";
+CM_ SG_ 2566858311 TractorFront_RightFogRelayDriver "Tractor front right fog relay";
+CM_ SG_ 2566858311 TractorLeft_frontTurnLightDriver "Tractor left front turn light";
+CM_ SG_ 2566858311 TractorRight_frontTurnLightDrv "Tractor right front turn light";
+CM_ SG_ 2566858311 TractorLeft_rearTurnLightDriver "Tractor left rear turn light";
+CM_ SG_ 2566858311 TractorRight_rearTurnLightDriver "Tractor right rear turn light";
+CM_ SG_ 2566858311 TractorLeft_RearFogLightDriver "Tractor left rear fog light";
+CM_ SG_ 2566858311 TractorRight_RearFogLightDriver "Tractor right rear fog light";
+CM_ SG_ 2566858311 TractorLeftReverseLightDriver "Tractor left reverse light";
+CM_ SG_ 2566858311 TractorRightReverseLightDriver "Tractor right reverse light";
+CM_ SG_ 2566858311 TractorBrakeLightDriver "Tractor brake light";
+CM_ SG_ 2566859079 TrailerLeftTurnLightDriver "Trailer left turn light";
+CM_ SG_ 2566859079 TrailerRightTurnLightDriver "Trailer right turn light";
+CM_ SG_ 2566859079 TrailerReverseLightDriver "Trailer reverse light";
+CM_ SG_ 2566859079 TrailerBrakeLightDriver "Trailer brake light";
+CM_ SG_ 2566859079 TrailerRearFogLightDriver "Trailer rear fog light";
+CM_ SG_ 2566859079 TractorLeft_SideTurnLightDriver "Tractor left-side trun light driver";
+CM_ SG_ 2566859079 TractorRight_SideTurnLightDriver "Tractor right-side turn light driver";
+CM_ SG_ 2566859244 LeftLockStateSwitch "Left door lock switch state";
+CM_ SG_ 2566859244 LeftDoorOpenSwitch "Left door open switch";
+CM_ SG_ 2566859826 LftStBltSwt "Left Seat Belt Switch";
+CM_ SG_ 2566866218 LKASControlMode "if ADAS is in the truing angle request mode";
+CM_ SG_ 2566866218 LKA_Takeover_Request "LKA ask deriver to take control over";
+CM_ SG_ 2566875186 RLS_Brightness_FW "The Visible Ambientlight (550nm) measured by Spot FW";
+CM_ SG_ 2566875186 RLS_Rain_Intensity "This signal delivers information about rain intensity: from 0%(no rain) to 100% (very heavy rain)";
+CM_ SG_ 2566875186 ADModeOfBCM "BCM auto derive mode feedback";
+CM_ SG_ 2566875186 AmbientLightStatus "Ambient light status";
+CM_ SG_ 2566875186 SeatVibrationDrive "Seat vibration status";
+CM_ SG_ 2566875186 LeftTurnSwitch "Left turn switch";
+CM_ SG_ 2566875186 RightTurnSwitch "Right turn switch";
+CM_ SG_ 2566875186 HazardlightSwitch "Hazard light switch";
+CM_ SG_ 2566875186 FogLightOpenSwitch "Fog light on switch";
+CM_ SG_ 2566875186 FogLightCloseSwitch "Fog light off switch";
+CM_ SG_ 2566875186 HeadlampSwitch "Head lamp switch statusA+ vehicle not used";
+CM_ SG_ 2566875186 WiperSwitch "Washer switch statusA+ vehicle not used";
+CM_ SG_ 2566875186 WasherMotor "Washer motor status (A+ vehicle not used)";
+CM_ SG_ 2566877659 HODStatus "detect if Steering wheel is held";
+CM_ SG_ 2566877659 HODDiagnose "Steering wheel diagnose";
+CM_ SG_ 2566880019 steeringsystemModeADAS "Indicate EHPS reponse status under ADAS condition. In other words, it represents if EPS acknowledge the turing angle requested made by LKA";
+CM_ SG_ 2566881066 AEBSystemState "AEB status signal";
+CM_ SG_ 2566881066 Distance_to_AEBS_Rel_Obj "distance to the front obj detected by AEBS";
+CM_ SG_ 2566881066 Rel_Speed_to_AEBS_Rel_Obj "relative speed to the front obj detected by AEBS";
+CM_ SG_ 2566881066 CollisionWarningCategory "AEBS collosion warning category";
+BA_DEF_ EV_  "NmType" STRING ;
+BA_DEF_ EV_  "NmMessageCount" INT 2 128;
+BA_DEF_ EV_  "NmBaseAddress" HEX 1024 1279;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 65535;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "NoSigSendType","OnWrite","OnWriteWithRepetitiy","OnChange","OnChangeWithRepetitiy","IfActive","IfActiveWithRepetitiy";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 65535;
+BA_DEF_ BO_  "XcpMessage" ENUM  "NO","YES";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_  "Transmitters" STRING ;
+BA_DEF_ BO_  "Receivers" STRING ;
+BA_DEF_ BO_  "PduRGateWay" ENUM  "NO","YES";
+BA_DEF_ BO_  "NmMessage" ENUM  "NO","YES";
+BA_DEF_ BO_  "GenMsgTimeoutValue" INT 0 65535;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "YES","NO";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_  "FunReqGroup" INT 0 255;
+BA_DEF_ BO_  "DiagResp" ENUM  "NO","YES";
+BA_DEF_ BO_  "DiagReqPhy" ENUM  "NO","YES";
+BA_DEF_ BO_  "DiagReqFun" ENUM  "NO","YES";
+BA_DEF_ BO_  "CcpMessage" ENUM  "NO","YES";
+BA_DEF_ BO_  "J1939Type" ENUM  "NO","PGN_FIXEDLEN_BAM","PGN_FIXEDLEN_PTP","PGN_DYNAMICLEN_BAM","PGN_DYNAMICLEN_PTP","CM_FIXEDLEN_BAM","CM_FIXEDLEN_PTP","CM_DYNAMICLEN_BAM","CM_DYNAMICLEN_PTP","DT_FIXEDLEN_BAM","DT_FIXEDLEN_PTP","DT_DYNAMICLEN_BAM","DT_DYNAMICLEN_PTP";
+BA_DEF_ BU_  "BitOrder" ENUM  "LSB","MSB";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "NmType" "None";
+BA_DEF_DEF_  "NmMessageCount" 32;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "XcpMessage" "NO";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "Transmitters" "Default";
+BA_DEF_DEF_  "Receivers" "Default";
+BA_DEF_DEF_  "PduRGateWay" "NO";
+BA_DEF_DEF_  "NmMessage" "NO";
+BA_DEF_DEF_  "GenMsgTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "YES";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "FunReqGroup" 0;
+BA_DEF_DEF_  "DiagResp" "NO";
+BA_DEF_DEF_  "DiagReqPhy" "NO";
+BA_DEF_DEF_  "DiagReqFun" "NO";
+BA_DEF_DEF_  "CcpMessage" "NO";
+BA_DEF_DEF_  "J1939Type" "NO";
+BA_DEF_DEF_  "BitOrder" "LSB";
+BA_DEF_DEF_  "DBName" "Created_By_Canmatrix ";
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "DBName" "Created_By_Canmatrix";
+BA_ "VFrameFormat" BO_ 2566873552 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566873552 1000;
+BA_ "GenMsgCycleTime" BO_ 2566873552 200;
+BA_ "GenMsgSendType" BO_ 2147485262 1;
+BA_ "GenMsgILSupport" BO_ 2147485262 1;
+BA_ "CcpMessage" BO_ 2147485262 1;
+BA_ "VFrameFormat" BO_ 2147485262 1;
+BA_ "VFrameFormat" BO_ 2147485263 1;
+BA_ "GenMsgSendType" BO_ 2147485263 1;
+BA_ "GenMsgILSupport" BO_ 2147485263 1;
+BA_ "CcpMessage" BO_ 2147485263 1;
+BA_ "VFrameFormat" BO_ 2298375691 1;
+BA_ "GenMsgTimeoutValue" BO_ 2298375691 100;
+BA_ "GenMsgCycleTime" BO_ 2298375691 20;
+BA_ "VFrameFormat" BO_ 2348810282 1;
+BA_ "GenMsgTimeoutValue" BO_ 2348810282 50;
+BA_ "GenMsgCycleTime" BO_ 2348810282 10;
+BA_ "VFrameFormat" BO_ 2349075242 1;
+BA_ "GenMsgTimeoutValue" BO_ 2349075242 100;
+BA_ "GenMsgCycleTime" BO_ 2349075242 20;
+BA_ "VFrameFormat" BO_ 2349541938 1;
+BA_ "GenMsgTimeoutValue" BO_ 2349541938 250;
+BA_ "GenMsgCycleTime" BO_ 2349541938 50;
+BA_ "VFrameFormat" BO_ 2364539395 1;
+BA_ "GenMsgTimeoutValue" BO_ 2364539395 50;
+BA_ "GenMsgCycleTime" BO_ 2364539395 10;
+BA_ "VFrameFormat" BO_ 2364539648 1;
+BA_ "GenMsgTimeoutValue" BO_ 2364539648 250;
+BA_ "GenMsgCycleTime" BO_ 2364539648 50;
+BA_ "VFrameFormat" BO_ 2364539904 1;
+BA_ "GenMsgTimeoutValue" BO_ 2364539904 100;
+BA_ "GenMsgCycleTime" BO_ 2364539904 20;
+BA_ "VFrameFormat" BO_ 2364550954 1;
+BA_ "GenMsgTimeoutValue" BO_ 2364550954 250;
+BA_ "GenMsgCycleTime" BO_ 2364550954 50;
+BA_ "VFrameFormat" BO_ 2364620051 1;
+BA_ "GenMsgTimeoutValue" BO_ 2364620051 250;
+BA_ "GenMsgCycleTime" BO_ 2364620051 50;
+BA_ "VFrameFormat" BO_ 2365484270 1;
+BA_ "GenMsgTimeoutValue" BO_ 2365484270 250;
+BA_ "GenMsgCycleTime" BO_ 2365484270 50;
+BA_ "VFrameFormat" BO_ 2365547678 1;
+BA_ "GenMsgTimeoutValue" BO_ 2365547678 500;
+BA_ "GenMsgCycleTime" BO_ 2365547678 100;
+BA_ "VFrameFormat" BO_ 2365552938 1;
+BA_ "GenMsgTimeoutValue" BO_ 2365552938 100;
+BA_ "GenMsgCycleTime" BO_ 2365552938 20;
+BA_ "VFrameFormat" BO_ 2431649768 1;
+BA_ "GenMsgTimeoutValue" BO_ 2431649768 250;
+BA_ "GenMsgCycleTime" BO_ 2431649768 50;
+BA_ "VFrameFormat" BO_ 2432593706 1;
+BA_ "GenMsgTimeoutValue" BO_ 2432593706 500;
+BA_ "GenMsgCycleTime" BO_ 2432593706 100;
+BA_ "VFrameFormat" BO_ 2561217330 1;
+BA_ "GenMsgTimeoutValue" BO_ 2561217330 500;
+BA_ "GenMsgCycleTime" BO_ 2561217330 100;
+BA_ "VFrameFormat" BO_ 2561271858 1;
+BA_ "GenMsgTimeoutValue" BO_ 2561271858 1000;
+BA_ "GenMsgCycleTime" BO_ 2561271858 200;
+BA_ "VFrameFormat" BO_ 2564434673 1;
+BA_ "GenMsgSendType" BO_ 2564434673 1;
+BA_ "GenMsgILSupport" BO_ 2564434673 1;
+BA_ "DiagReqPhy" BO_ 2564434673 1;
+BA_ "GenMsgSendType" BO_ 2564485418 1;
+BA_ "GenMsgILSupport" BO_ 2564485418 1;
+BA_ "DiagResp" BO_ 2564485418 1;
+BA_ "VFrameFormat" BO_ 2564485418 1;
+BA_ "GenMsgTimeoutValue" BO_ 2564485418 500;
+BA_ "GenMsgCycleTime" BO_ 2564485418 100;
+BA_ "VFrameFormat" BO_ 2564554745 1;
+BA_ "GenMsgSendType" BO_ 2564554745 1;
+BA_ "GenMsgILSupport" BO_ 2564554745 1;
+BA_ "DiagReqFun" BO_ 2564554745 1;
+BA_ "VFrameFormat" BO_ 2566877738 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566877738 500;
+BA_ "GenMsgCycleTime" BO_ 2566877738 100;
+BA_ "VFrameFormat" BO_ 2565603072 1;
+BA_ "GenMsgSendType" BO_ 2565603072 1;
+BA_ "GenMsgILSupport" BO_ 2565603072 1;
+BA_ "J1939Type" BO_ 2565603072 11;
+BA_ "VFrameFormat" BO_ 2565668608 1;
+BA_ "GenMsgSendType" BO_ 2565668608 1;
+BA_ "GenMsgILSupport" BO_ 2565668608 1;
+BA_ "J1939Type" BO_ 2565668608 7;
+BA_ "VFrameFormat" BO_ 2565865739 1;
+BA_ "GenMsgTimeoutValue" BO_ 2565865739 500;
+BA_ "GenMsgCycleTime" BO_ 2565865739 100;
+BA_ "VFrameFormat" BO_ 2565866755 1;
+BA_ "GenMsgTimeoutValue" BO_ 2565866755 500;
+BA_ "GenMsgCycleTime" BO_ 2565866755 100;
+BA_ "VFrameFormat" BO_ 2565867787 1;
+BA_ "GenMsgTimeoutValue" BO_ 2565867787 100;
+BA_ "GenMsgCycleTime" BO_ 2565867787 20;
+BA_ "VFrameFormat" BO_ 2365428224 1;
+BA_ "GenMsgTimeoutValue" BO_ 2365428224 1250;
+BA_ "GenMsgCycleTime" BO_ 2365428224 250;
+BA_ "VFrameFormat" BO_ 2566767627 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566767627 500;
+BA_ "GenMsgCycleTime" BO_ 2566767627 100;
+BA_ "VFrameFormat" BO_ 2566787664 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566787664 500;
+BA_ "GenMsgCycleTime" BO_ 2566787664 100;
+BA_ "VFrameFormat" BO_ 2566803211 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566803211 500;
+BA_ "GenMsgCycleTime" BO_ 2566803211 100;
+BA_ "VFrameFormat" BO_ 2566806504 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566806504 500;
+BA_ "GenMsgCycleTime" BO_ 2566806504 100;
+BA_ "VFrameFormat" BO_ 2566811659 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566811659 5000;
+BA_ "GenMsgCycleTime" BO_ 2566811659 1000;
+BA_ "VFrameFormat" BO_ 2566831883 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566831883 500;
+BA_ "GenMsgCycleTime" BO_ 2566831883 100;
+BA_ "VFrameFormat" BO_ 2566832622 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566832622 5000;
+BA_ "GenMsgCycleTime" BO_ 2566832622 1000;
+BA_ "VFrameFormat" BO_ 2566834848 1;
+BA_ "GenMsgILSupport" BO_ 2566834848 1;
+BA_ "GenMsgCycleTime" BO_ 2566834848 1000;
+BA_ "J1939Type" BO_ 2566834848 7;
+BA_ "VFrameFormat" BO_ 2566834920 1;
+BA_ "GenMsgILSupport" BO_ 2566834920 1;
+BA_ "GenMsgCycleTime" BO_ 2566834920 1000;
+BA_ "J1939Type" BO_ 2566834920 7;
+BA_ "VFrameFormat" BO_ 2566838551 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566838551 500;
+BA_ "GenMsgCycleTime" BO_ 2566838551 100;
+BA_ "VFrameFormat" BO_ 2566840064 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566840064 100;
+BA_ "GenMsgCycleTime" BO_ 2566840064 20;
+BA_ "VFrameFormat" BO_ 2566841088 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566841088 25000;
+BA_ "GenMsgCycleTime" BO_ 2566841088 5000;
+BA_ "VFrameFormat" BO_ 2566842094 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566842094 5000;
+BA_ "GenMsgCycleTime" BO_ 2566842094 1000;
+BA_ "VFrameFormat" BO_ 2566844672 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566844672 500;
+BA_ "GenMsgCycleTime" BO_ 2566844672 100;
+BA_ "VFrameFormat" BO_ 2566858290 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566858290 500;
+BA_ "GenMsgCycleTime" BO_ 2566858290 100;
+BA_ "VFrameFormat" BO_ 2566858311 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566858311 500;
+BA_ "GenMsgCycleTime" BO_ 2566858311 100;
+BA_ "VFrameFormat" BO_ 2566859079 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566859079 500;
+BA_ "GenMsgCycleTime" BO_ 2566859079 100;
+BA_ "VFrameFormat" BO_ 2566859244 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566859244 500;
+BA_ "GenMsgCycleTime" BO_ 2566859244 100;
+BA_ "VFrameFormat" BO_ 2566859826 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566859826 500;
+BA_ "GenMsgCycleTime" BO_ 2566859826 100;
+BA_ "VFrameFormat" BO_ 2566866218 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566866218 500;
+BA_ "GenMsgCycleTime" BO_ 2566866218 100;
+BA_ "VFrameFormat" BO_ 2566875186 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566875186 500;
+BA_ "GenMsgCycleTime" BO_ 2566875186 100;
+BA_ "VFrameFormat" BO_ 2566877659 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566877659 500;
+BA_ "GenMsgCycleTime" BO_ 2566877659 100;
+BA_ "VFrameFormat" BO_ 2566879763 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566879763 100;
+BA_ "GenMsgCycleTime" BO_ 2566879763 20;
+BA_ "VFrameFormat" BO_ 2566880019 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566880019 100;
+BA_ "GenMsgCycleTime" BO_ 2566880019 20;
+BA_ "VFrameFormat" BO_ 2566881066 1;
+BA_ "GenMsgTimeoutValue" BO_ 2566881066 250;
+BA_ "GenMsgCycleTime" BO_ 2566881066 50;
+BA_ "VFrameFormat" BO_ 2632777704 1;
+BA_ "GenMsgSendType" BO_ 2632777704 1;
+BA_ "GenMsgILSupport" BO_ 2632777704 1;
+BA_ "J1939Type" BO_ 2632777704 7;
+BA_ "VFrameFormat" BO_ 2632712096 1;
+BA_ "GenMsgSendType" BO_ 2632712096 1;
+BA_ "GenMsgILSupport" BO_ 2632712096 1;
+BA_ "J1939Type" BO_ 2632712096 11;
+BA_ "GenMsgSendType" BO_ 2632712168 1;
+BA_ "GenMsgILSupport" BO_ 2632712168 1;
+BA_ "VFrameFormat" BO_ 2632712168 1;
+BA_ "J1939Type" BO_ 2632712168 11;
+BA_ "GenMsgSendType" BO_ 2632777632 1;
+BA_ "GenMsgILSupport" BO_ 2632777632 1;
+BA_ "VFrameFormat" BO_ 2632777632 1;
+BA_ "J1939Type" BO_ 2632777632 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566767627 ParkingBrakeActuatorFullyActivat "ParkingBrakeActuatorFullyActivated";
+VAL_ 3221225472 SteeringErrEvent3SS 8 "(code of error event)" 7 "(code of error event)" 6 "(code of error event)" 5 "(code of error event)" 4 "(code of error event)" 3 "(code of error event)" 2 "(code of error event)" 1 "(code of error event)" 0 "(code of error event)" ;
+VAL_ 3221225472 SteeringErrEvent3ASS 1 "Active" 0 "Inactive" ;
+VAL_ 3221225472 StateTemperatureSS 1 "Over Heat" 0 "Normal" ;
+VAL_ 3221225472 StateVoltageSS 2 "Under Voltage" 1 "Over Voltage" 0 "Normal" ;
+VAL_ 3221225472 SteeringSysStaSS 4 "Reserve" 3 "Fault" 2 "Hydraulic Failure( Not applicable at B0 sample)" 1 "No Electrical Assistance" 0 "Normal" ;
+VAL_ 3221225472 SteeringOverrideVSS 1 "Invalid" 0 "Vaild" ;
+VAL_ 3221225472 SteeringOverrideSS 2 "Driver Reaction" 1 "Active" 0 "Inactive" ;
+VAL_ 3221225472 CurrentDriverTorqueVSS 1 "Invalid" 0 "Vaild" ;
+VAL_ 3221225472 SteeringErrEvent2SS 8 "(code of error event)" 7 "(code of error event)" 6 "(code of error event)" 5 "(code of error event)" 4 "(code of error event)" 3 "(code of error event)" 2 "(code of error event)" 1 "(code of error event)" 0 "(code of error event)" ;
+VAL_ 3221225472 SteeringErrEvent2ASS 1 "Active" 0 "Inactive" ;
+VAL_ 3221225472 CurrentSWSpeedVSS 1 "Invalid" 0 "Vaild" ;
+VAL_ 3221225472 CurrentSWAngleVSS 1 "Invalid" 0 "Vaild" ;
+VAL_ 2566873552 ACCSwt_En 1 "on" 0 "off" ;
+VAL_ 2566873552 ACCSwt_Adj 1 "on" 0 "off" ;
+VAL_ 2566873552 CCSwt_SMinus 1 "on" 0 "off" ;
+VAL_ 2566873552 CCSwt_Rplus 1 "on" 0 "off" ;
+VAL_ 2566873552 CCSwt_En 1 "on" 0 "off" ;
+VAL_ 2348810282 TSC1_OvrCtrlMod 0 "Override disabled - Disable any existing control commanded by the source of this command." 1 "Speed control - Govern speed to the included desired speed value" 2 "Torque control - Control torque to the included desired torque value" 3 "Speed/torque limit control - Limit speed and/or torque based on the included limit values. The speed limit governor is a droop governor where the speed limit value defines the speed at the amximum torque available during this operation" ;
+VAL_ 2348810282 TSC1_ReqSpdCtrlCond 0 "Transient Optimized for driveline disengaged and non-lockup conditions" 1 "Stability Optimized for driveline disengaged and non-lockup condition" 2 "Stability Optimized for driveline engaged and/or in lockup condition 1 (e.g. vehicle driveline" 3 "Stability Optimized for driveline engaged and/or in lockup condition 2 (e.g., PTO driveline)" ;
+VAL_ 2348810282 TSC1_OvrCtrlModePrio 0 "Highest priority" 1 "High priority" 2 "Medium priority" 3 "Low priority" ;
+VAL_ 2348810282 TSC1_ReqSpdSpdLim 413732 "Error" 415029 "Not available" ;
+VAL_ 2348810282 TSC1_ReqTrqTrqLim 596 "Error" 597 "Not available" ;
+VAL_ 2348810282 TSC1_TrmRate 0 "1000 ms transmission rate" 1 "750 ms transmission  rate" 2 "500 ms transmission rrate" 3 "250 ms transmission tate" 4 "100 ms transmission rate" 5 "50 ms transmission rate" 6 "20 ms transmission rate" 7 "Use standard TSC1 transmission rates of 10 ms to engine" ;
+VAL_ 2348810282 TSC1_CtrlPurp 0 "P1 = Accelerator Pedal/Operator Selection" 1 "P2 = Cruise Control" 2 "P3 = PTO Govvernor" 3 "P4 = Road Speed Governor" 4 "P5 = Engine Protection" 49 "P32 = Temporary Power Train Control ( Original use of TSC1 Command)" ;
+VAL_ 2348810282 TSC1_EngReqTrqHighRslt 0 "+0.000%" 1 "+0.125%" 7 "+0.875%" ;
+VAL_ 2349075242 XBREBIMode 0 "No Endurance Brake Integration allowed" 1 "Only Endurance Braked allowed" 2 "Endurance Brake Integration allowed" 3 "Not available" ;
+VAL_ 2349075242 XBRPriority 0 "Highest prioritity" 1 "High Prioritity" 2 "Medium prioritity" 3 "Low prioritity" ;
+VAL_ 2349075242 XBRControlMode 0 "Overide disabled" 1 "Acceleration control with addition mode" 2 "Acceleration control with maximum mode" 3 "Not available" ;
+VAL_ 2349541938 AEBSEnSwt 0 "the driver does not want the Advanced Emergency Braking System to warn or intervene at any time (deactivation of system)" 1 "the driver wants the Advanced Emergency Braking System to warn or intervene if necessary (no deactivation of system)" 2 "reserved" 3 "Do not care/Take no action" ;
+VAL_ 2364539395 ETC1_TrmDrvEngaged 0 "Driveline disengaged" 1 "Driveline engaged" 2 "Error" 3 "Not available" ;
+VAL_ 2364539395 ETC1_TrmShiftProc 0 "Shift is not in process" 1 "Shift in process" 2 "Error" 3 "Not available" ;
+VAL_ 2364539648 AP_KickdownSwt 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2364539904 Enginetorquemode 0 "Low idle governor/no request (default mode)" 1 "Accelerator pedal/operator selection" 2 "Cruise control" 3 "PTO governor" 4 "Road speed governor" 5 "ASR control" 6 "Transmission control" 7 "ABS control" 8 "Torque limiting" 9 "High speed governor" 10 "Braking system" 11 "Remote accelerator" 12 "Service procedure" 13 "not defined" 14 "Other" 15 "Not available" ;
+VAL_ 2364539904 ActualEngPercentTorq 0 "+0.000%" 1 "+0.125%" 7 "+0.875%" ;
+VAL_ 2364550954 AdvEmergencyBrakSysSt 0 "SystemIsNotReady" 1 "SystemIsTemporarilyNotAvailable" 2 "SystemIsDeactivatedByDriver" 3 "SystemIsReadyAndActivated" 4 "DriverOverridesSystem" 5 "CollisionWarningActive (vehicle)" 6 "CollisionWarningWithBraking (vehicle)" 7 "EmergencyBrakingActive (vehicle)" 8 "CollisionWarningActive (pedestrian)" 9 "CollisionWarningWithBraking (pedestrian)" 10 "EmergencyBrakingActive  (pedestrian)" 11 "ReservedForFutureUse" 12 "ReservedForFutureUse" 13 "ReservedForFutureUse" 14 "ErrorIndication" 15 "NotAvailable_NotInstalled" ;
+VAL_ 2364550954 RlvntObjctDtctdFrAEB 0 "no relevant object monitored" 1 "relevant object is being monitored" 2 "relevant object is not being detected reliably" 6 "error indication" 7 "not available/not installed" ;
+VAL_ 2364620051 LaneKeepingAssistSystemState 0 "System is not ready (initialization not finished)" 1 "System is temporarily not available (not all activation conditions fulfulled)" 2 "System is deactivated by driver" 3 "System is ready (no warnings active)" 4 "Active lane keeping suppressed by operator behavior (e.g. turn signal)" 5 "System is actuating" 6 "Reserved" 7 "Reserved" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Error" 15 "Not Available" ;
+VAL_ 2365484270 Tachographvehiclespeed 413732 "Error" 415029 "Not available" ;
+VAL_ 2365547678 ADModeEnablePS 0 "inhabit" 1 "enable" 2 "fail" 3 "off" ;
+VAL_ 2365547678 ADModeEngagePS 0 "inhabit" 1 "engage" 2 "reserve" 3 "reserve" ;
+VAL_ 2365552938 SWAngleRequestValidPS 0 "Valid" 1 "Invalid" ;
+VAL_ 2431649768 LaneDepartureRight 0 "Middle of the vehicle does not depart the lane to the left side" 1 "Middle of the vehicle departs the lane to the left side" 2 "Reserved" 3 "Take no action" ;
+VAL_ 2431649768 LaneDepartureLeft 0 "Middle of the vehicle does not depart the lane to the right side" 1 "Middle of the vehicle departs the lane to the right side" 2 "Reserved" 3 "Take no action" ;
+VAL_ 2432593706 AdapCruiseCtrlMode 0 "Off (Standby, enabled, ready for activation)" 1 "Speed control active" 2 "Distance control active" 3 "Overtake mode" 4 "Hold mode" 5 "Finish mode" 6 "Disabled or error condition" 7 "Not available/not valid" ;
+VAL_ 2432593706 AdapCruiseCtrlsetDistMode 0 "ACC Distance mode #1 (largest distance)" 1 "ACC Distance mode #2" 2 "ACC Distance mode #3" 3 "ACC Distance mode #4" 4 "ACC Distance mode #5 (shortest distance)" 5 "Conventional cruise control mode" 6 "Error condition" 7 "Not available/not valid" ;
+VAL_ 2432593706 ACCTargetDetected 0 "No targets detected" 1 "Target detected" 2 "Reserved" 3 "Take no action" ;
+VAL_ 2432593706 ACCSysShutoffWarn 0 "ACC SSOW Not Active" 1 "ACC SSOW Active" 2 "Reserved" 3 "Take no action" ;
+VAL_ 2432593706 ACCDistanceAlertSignal 0 "ACC DAS Not Active" 1 "ACC DAS Active" 2 "Reserved" 3 "Take no action" ;
+VAL_ 2561217330 LaneKeepingAssistEnableCommand 0 "Disable lane keeping assist" 1 "Enable lane keeping assist" 2 "Reserved" 3 "Do not care" ;
+VAL_ 2561271858 LDWSFunDisSt 0 "Disable Lane Departure Warning" 1 "Enable Lane Departure Warning" 2 "Reserved" 3 "Do not care" ;
+VAL_ 2566877738 ParkingBrakeControl 0 "ParkingBrakeNotSet." 593 "ParkingBraketSet" 594 "Mid Position" ;
+VAL_ 2565865739 ASREngineControlActive 0 "ASR engine control passive but installed" 1 "ASR engine control active" 2 "Reserved" 3 "Don't care/Take no action" ;
+VAL_ 2565865739 ASRBrakeControlActive 0 "ASR passive" 1 "ASR active, transmitted when ABS control or retarder control or engine drag torque control is active." 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2565865739 AntilockbrakingABSActive 0 "ABS passive but installed" 1 "ABS active" 2 "Reserved" 3 "Donot care / Take no action" ;
+VAL_ 2565865739 EBSbrakeswitch 0 "Brake pedal is not being pressed" 1 "Brake pedal is being pressed" 2 "Error indicator" 3 "Not available or not installed" ;
+VAL_ 2565865739 ABSOffroadSwitch 0 "ABS off-road switch passive" 1 "ABS off-road switch active" ;
+VAL_ 2565865739 ASROffroadSwitch 0 "ATC off-road switch passive" 1 "ATC off-road switch active" ;
+VAL_ 2565865739 ASR_hillholder_Switch 0 "hill holder switch passive" 1 "hill holder switch active" 2 "Error indicator" 3 "not available (HSA not configured)" ;
+VAL_ 2565865739 TractionControlOverrideSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available or not installed" ;
+VAL_ 2565865739 AcceleratorInterlockSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2565865739 EngineDerateSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2565865739 AuxiliaryEngineShutdownSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2565865739 RemoteAcceleratorEnableSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2565865739 ABSFullyOperational 0 "not fully operational, transmitted" 1 "fully operational" ;
+VAL_ 2565865739 EBSRedWarningLampState 0 "EBS red warning lamp off" 1 "EBS red warning lamp on" 2 "EBS red warning lamp not supported (no EBD)" ;
+VAL_ 2565865739 ABS_EBSAmberWarningSignal 0 "ABS lamp off" 1 "ABS lamp on" ;
+VAL_ 2565865739 ATC_ASRLampState 0 "ATC lamp off" 1 "ATC lamp on" ;
+VAL_ 2365428224 EngineOperatingState 0 "Engine Stopped" 1 "Pre-Start" 2 "Starting" 3 "Warm-Up" 4 "Running" 5 "Cool-down" 6 "Engine Stopping" 7 "Post-Run" 14 "reserved" 15 "not available" ;
+VAL_ 2566767627 BrakeTemperatureWarning 0 "Not Active" 1 "Active" 2 "Reserved" 3 "not available" ;
+VAL_ 2566767627 HaltBrakeMode 0 "Inactive" 1 "Active" 2 "Active, but not functioning properly. (This mode may be used to warn the driver)" 6 "Hill holder not functional" 7 "Not available" ;
+VAL_ 2566767627 HillHolderMode 0 "Inactive" 1 "Active" 2 "Active, but will change to inactive in a short time. (This mode may be used to warn the driver)" 6 "Hill holder not functional" 7 "Not available" ;
+VAL_ 2566767627 FoundationBrakeUse 0 "Foundation brakes not in use" 1 "Foundation brakes in use" 2 "Reserved" 3 "Not available" ;
+VAL_ 2566767627 XBRSystemState 0 "Any external brake demand will be accepted (brake system fully operational)" 1 "Only external brake demand of highest XBR Priority (00) will be accepted (e.g. because the temperature limit of the brake system is exceeded)" 2 "No external brake demand will be accepted (e.g. because of fault in brake system)" 3 "not available" ;
+VAL_ 2566767627 XBRActiveControlMode 0 "No brake demand being executed (default mode)" 1 "Driver's brake demand being executed, no external brake demand" 2 "Addition mode of XBR acceleration control being executed" 3 "Maximum mode of XBR acceleration control being executed" 7 "Not available" ;
+VAL_ 2566767627 EmergencyBrakingActive 0 "Hybrid System Stop Indicator is off" 1 "Hybrid System Stop Indicator is on continuously" 2 "Hybrid System Stop Indicator is flashing" 3 "Not available" ;
+VAL_ 2566787664 EPB_ParkBraStatus 0 "Not Available" 1 "Enable" 2 "Disable" 3 "Error" ;
+VAL_ 2566803211 VDCLampState 0 "Off" 1 "On" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566803211 VDCFullyoperational 0 "Not fully operational" 1 "Fully operational" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566803211 VDCBrakeLightRequest 0 "Turn brake light not on" 1 "Turn brake light on" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566803211 ROPEngineControlActive 0 "ROP engine control passive but installed" 1 "ROP engine control active" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566803211 ROPBrakeControlActive 0 "ROP brake control passive but installed" 1 "ROP brake control active" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566803211 YCEngineControlActive 0 "YC engine control passive but installed" 1 "YC engine control active" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566803211 YCBrakeControlActive 0 "YC brake control passive but installed" 1 "YC brake control active" 2 "Reserved" 3 "Do not care/Take no action" ;
+VAL_ 2566806504 LaneTrackingStatusRightSide 0 "Not Tracking Right side" 1 "Tracking Right side" 2 "Reserved" 3 "Do not Care / Take no action" ;
+VAL_ 2566806504 LaneTrackingStatusLeftSide 0 "Not Tracking Left side" 1 "Tracking Left side" 2 "Reserved" 3 "Do not Care / Take no action" ;
+VAL_ 2566806504 LnDpartureIndicationEnableStatus 0 "Lane Departure indication disabled" 1 "Lane Departure Indication enabled" 2 "Reserved" 3 "Not Used" ;
+VAL_ 2566806504 DepWarnSysSt 0 "System is not ready (initialization not finished)" 1 "System is temporarily not available (not all activation conditions fulfulled)" 2 "System is deactivated by driver" 3 "System is ready (no warnings active)" 4 "Active warning suppressed by operator behavior (e.g. turn signal)" 5 "System is warning lane departure" 14 "Error" 15 "Not available" ;
+VAL_ 2566806504 CamSt 0 "Fully Operational (camera is working normally)" 1 "Warming up / Initializing" 2 "Reserved" 3 "Blocked" 4 "Misaligned" 5 "Reserved" 6 "Reserved" 7 "Reserved" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Error" ;
+VAL_ 2566834848 AmberWarnLampStAEBS 0 "Lamp Off" 1 "Lamp On" 2 "reserved" 3 "Do not Care / Take no action" ;
+VAL_ 2566834920 AmberWarnLampStLDWS 0 "Lamp Off" 1 "Lamp On" 2 "reserved" 3 "Do not Care / Take no action" ;
+VAL_ 2566838551 TrailerABSFullyOperational 0 "Trailer ABS not fully operational" 1 "Trailer ABS fully operational" 2 "Error" 3 "Not available" ;
+VAL_ 2566838551 TrailerABSDetected 0 "Trailer ABS not detected" 1 "Trailer ABS detected" 2 "Error" 3 "Not available" ;
+VAL_ 2566838551 TrailerConnected 0 "Trailer not connected" 1 "Trailer connected" 2 "Error" 3 "Not available" ;
+VAL_ 2566844672 TwoSpdAxleSwt 0 "Low speed range" 1 "High speed range" ;
+VAL_ 2566844672 CruiseCtrlActive 0 "CC switched off" 1 "CC switch on" ;
+VAL_ 2566844672 CruiseCtrlEnableSwt 0 "Disabled" 1 "Enabled" ;
+VAL_ 2566844672 ServiceBrakeSwt 0 "Disabled" 1 "Enabled" ;
+VAL_ 2566844672 CltchSwt 0 "Released" 1 "Depressed" ;
+VAL_ 2566844672 CruiseCtrlSetSwt 0 "Not in position on" 1 "In position on" ;
+VAL_ 2566844672 CruiseCtrlCoastSwt 0 "Not in position decelerate" 1 "In position decelerate" ;
+VAL_ 2566844672 CruiseCtrlResumeSwt 0 "Not in position resume" 1 "In position resume" ;
+VAL_ 2566844672 CruiseCtrlAccSwt 0 "Not in position accelerate" 1 "In position accelerate" ;
+VAL_ 2566844672 PTO_St 31 "Not avail" 30 "undefined" 11 "undefined" 10 "Preprogrammed set speed #1..#8" 9 "Accelerator override" 8 "Accelerator" 7 "Resume" 6 "Decelerate/Coast" 5 "Set" 4 "Remote standby" 3 "Standby" 2 "Remote hold" 1 "Hold" 0 "Off/Disabled" ;
+VAL_ 2566844672 CruiseCtrlSt 0 "Off/Disabled" 1 "Hold" 2 "Accelerate" 3 "Decelerate/Coast" 4 "Resume" 5 "Set" 6 "Accelerator override" 7 "Not available" ;
+VAL_ 2566858290 WsherDrv 3 "Not avaliable" 2 "Error" 1 "ON" 0 "Off" ;
+VAL_ 2566858290 HiSpdWprDrv 3 "Not avaliable" 2 "Error" 1 "ON" 0 "Off" ;
+VAL_ 2566858290 LwSpdWprDrv 3 "Not avaliable" 2 "Error" 1 "ON" 0 "Off" ;
+VAL_ 2566858311 TractorFrontPositionLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorSidePositionLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRearPositionLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeftLowBeamRelayDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRightLowBeamRelayDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeftHightBeamRelayDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRightHightBeamRelayDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeftAuxHghtBeamRlayDrv 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRghtAuxHghtBeamRlayDrv 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorFront_LeftFogRelayDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorFront_RightFogRelayDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeft_frontTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRight_frontTurnLightDrv 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeft_rearTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRight_rearTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeft_RearFogLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRight_RearFogLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorLeftReverseLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorRightReverseLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566858311 TractorBrakeLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TrailerLeftTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TrailerRightTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TrailerReverseLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TrailerBrakeLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TrailerRearFogLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TractorLeft_SideTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859079 TractorRight_SideTurnLightDriver 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859244 LeftLockStateSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859244 LeftDoorOpenSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566859826 LftStBltSwt 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 2566866218 LKASControlMode 0 "not request mode" 1 "request mode" ;
+VAL_ 2566866218 LKA_Takeover_Request 0 "No request" 1 "Request" ;
+VAL_ 2566875186 ADModeOfBCM 0 "Not Ready" 1 "Ready" 2 "Engaged" 3 "fault" ;
+VAL_ 2566875186 AmbientLightStatus 0 "no display" 1 "AD enable status color on" 2 "AD engage status color on" 3 "AD fallback status color on" 4 "AD fallback status color breathing" ;
+VAL_ 2566875186 SeatVibrationDrive 0 "No action" 1 "drive all motors vibrate at 1s on 1s off as a period" 2 "Drive all motors vibrate at 0.5s on 0.5s off as a period" 3 "Drive all motors vibrate at 0.25s on 0.25s off as a period" 4 "Drive all motors continuously vibrate" ;
+VAL_ 2566875186 LeftTurnSwitch 0 "Off" 1 "ON" 2 "Error" 3 "Not available" ;
+VAL_ 2566875186 RightTurnSwitch 0 "Off" 1 "ON" 2 "Error" 3 "Not available" ;
+VAL_ 2566875186 HazardlightSwitch 0 "Off" 1 "ON" 2 "Error" 3 "Not available" ;
+VAL_ 2566875186 FogLightOpenSwitch 0 "Off" 1 "ON" 2 "Error" 3 "Not available" ;
+VAL_ 2566875186 FogLightCloseSwitch 0 "Off" 1 "ON" 2 "Error" 3 "Not available" ;
+VAL_ 2566875186 HeadlampSwitch 0 "Off" 1 "ON" ;
+VAL_ 2566875186 WiperSwitch 0 "Off" 1 "ON" ;
+VAL_ 2566875186 WasherMotor 0 "Off" 1 "ON" ;
+VAL_ 2566877659 HODStatus 0 "Fault" 1 "No hand on" 2 "Single hand on" 3 "Two hands on" ;
+VAL_ 2566877659 HODDiagnose 0 "INIT (INIT_DIAG)" 1 "Rerserved" 2 "HOSWD_READY" 3 "Calibration error" 4 "System error" 5 "Non Permanent error" 6 "Rerserved" 7 "Rerserved" ;
+VAL_ 2566879763 CurrentSWAngleValidPS 0 "Valid" 1 "Invalid" ;
+VAL_ 2566879763 CurrentSWSpeedValidPS 0 "Valid" 1 "Invalid" ;
+VAL_ 2566880019 CurrentDriverTorqueValidPS 0 "Valid" 1 "Invalid" ;
+VAL_ 2566880019 steeringsystemModeADAS 0 "Inactive" 1 "Active" ;
+VAL_ 2566880019 SteeringOverridePS 0 "Inactive" 1 "Active" 2 "Driver Reaction" ;
+VAL_ 2566880019 SteeringOverrideValidPS 0 "Valid" 1 "Invalid" ;
+VAL_ 2566880019 SteeringSystemStatusPS 0 "Normal" 1 "No Electrical Assistance" 2 "Hydraulic Failure( Not applicable at B0 sample)" 3 "Fault" 4 "Reserve" ;
+VAL_ 2566880019 StateVoltagePS 0 "Normal" 1 "Over Voltage" 2 "Under Voltage" ;
+VAL_ 2566880019 StateTemperaturePS 0 "Normal" 1 "Over Heat" ;
+VAL_ 2566880019 SteeringErrorEvent1ActivePS 0 "Inactive" 1 "Active" ;
+VAL_ 2566881066 AEBSystemState 0 "OFF" 1 "On" ;
+VAL_ 2566881066 CollisionWarningCategory 0 "AEB Level 1" 1 "AEB Level 2" 2 "AEB Level 3" 3 "AEBP Level 1" 4 "AEBP Level 2" 5 "AEBP Level 3" ;
